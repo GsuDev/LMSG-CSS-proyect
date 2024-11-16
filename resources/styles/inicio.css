@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0; /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
+}
+/*Contenedor que agrupa a search-bar, menu-bar, features-bar*/
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+/*Eliminación del punto de las listas*/
+ul{
+    list-style: none;
+}
+/*Eliminación del subrayado de los enlaces*/
+ul li a {
+    text-decoration: none;
+}
+
+/*Contenedor del logo y la barra de búsqueda*/
+.search-bar{
+    display: flex;
+    position: relative;
+    height: 14vh;
+    align-items: center;
+    background-color: cadetblue;
+}
+
+.logo{
+    position: absolute;
+    left: 2vw;
+}
+
+.logo-img{
+    height: 11vh;
+}
+
+/*Search bar*/
+.search-box{
+    position: absolute;
+    right: 5vw;
+}
+
+/*Contenedor del menú*/
+.menu-bar{
+    background-color: aquamarine;
+}
+/*Menu de opciones, ul en flex*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    gap: 18vw;
+    justify-content: center;
+    height: 3vh;
+    text-align: center;    
+
+}
+
+/*Menu-inicio*/
+/*Referencia a submenu-inicio, exlusivamente cuando su padre (menu-inico), tenga el ratón encima (hover)*/
+.menu-inicio:hover .submenu-inicio{
+    display: block;
+    position: relative;
+
+  
+}
+.submenu-inicio{
+    display: none; /*Hace que no se vea a simple vista*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2vh;
+}
+
+/*Menu-productos*/
+/*Referencia a submenu-productos, exlusivamente cuando su padre (menu-productos), tenga el ratón encima (hover)*/
+.menu-productos:hover .submenu-productos{
+    display: block;
+    position: relative;
+
+  
+}
+.submenu-productos{
+    display: none; /*Hace que no se vea a simple vista*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2vh;
+
+
+}
+
+/*Menu-productos*/
+/*Referencia a submenu-nosotros, exlusivamente cuando su padre (menu-nosotros), tenga el ratón encima (hover)*/
+.menu-nosotros:hover .submenu-nosotros{
+    display: block;
+    position: relative;
+    
+  
+}
+.submenu-nosotros{
+    display: none; /*Hace que no se vea a simple vista*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 2vh;
+
+}
+nav a{
+    padding-bottom: 4vh;
+    border: 0;
+
+}
+
+/*Menu-contacto*/
+/*Referencia a submenu-contacto, exlusivamente cuando su padre (menu-contacto), tenga el ratón encima (hover)*/
+.menu-contacto:hover .submenu-contacto{
+    display: block;
+    position: relative;
+    border: 0;
+
+
+}
+.submenu-contacto{
+    display: none; /*Hace que no se vea a simple vista*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 1vh;
+
+}
+
+/*Ul de las características de la página en flex*/
+.feature-list{
+    display: flex;
+    flex-direction: row;
+    gap: 18vw;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}

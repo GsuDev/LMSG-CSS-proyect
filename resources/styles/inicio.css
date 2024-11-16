@@ -62,57 +62,32 @@ ul li a {
 
 /*Menu-inicio*/
 /*Referencia a submenu-inicio, exlusivamente cuando su padre (menu-inico), tenga el ratón encima (hover)*/
-.menu-inicio:hover .submenu-inicio{
-    display: block;
-    position: relative;
-
-  
+/* Estilo de cada elemento principal del menú */
+.menu > li {
+    position: relative; /* Mantiene a cada elemento en su lugar sin afectar a los demás */
 }
-.submenu-inicio{
-    display: none; /*Hace que no se vea a simple vista*/
+
+/* Submenú: inicialmente oculto */
+.submenu-inicio, .submenu-productos, .submenu-nosotros, .submenu-contacto {
+    display: none;
     position: absolute;
-    top: 0;
+    top: 100%; /* Coloca el submenú justo debajo del elemento padre */
     left: 0;
-    padding-top: 2vh;
+    background-color: aquamarine;
+    width: max-content; /* Ajusta el ancho del submenú según el contenido */
+    padding-top: 1vh; /* Ajusta según lo necesario */
 }
 
-/*Menu-productos*/
-/*Referencia a submenu-productos, exlusivamente cuando su padre (menu-productos), tenga el ratón encima (hover)*/
-.menu-productos:hover .submenu-productos{
+/* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
+.menu-inicio:hover .submenu-inicio,
+.menu-productos:hover .submenu-productos,
+.menu-nosotros:hover .submenu-nosotros,
+.menu-contacto:hover .submenu-contacto {
     display: block;
-    position: relative;
-
-  
-}
-.submenu-productos{
-    display: none; /*Hace que no se vea a simple vista*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 2vh;
-
-
 }
 
-/*Menu-productos*/
-/*Referencia a submenu-nosotros, exlusivamente cuando su padre (menu-nosotros), tenga el ratón encima (hover)*/
-.menu-nosotros:hover .submenu-nosotros{
-    display: block;
-    position: relative;
-    
-  
-}
-.submenu-nosotros{
-    display: none; /*Hace que no se vea a simple vista*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-top: 2vh;
-
-}
 nav a{
     padding-bottom: 4vh;
-    border: 0;
 
 }
 

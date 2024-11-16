@@ -91,23 +91,6 @@ nav a{
 
 }
 
-/*Menu-contacto*/
-/*Referencia a submenu-contacto, exlusivamente cuando su padre (menu-contacto), tenga el ratón encima (hover)*/
-.menu-contacto:hover .submenu-contacto{
-    display: block;
-    position: relative;
-    border: 0;
-
-
-}
-.submenu-contacto{
-    display: none; /*Hace que no se vea a simple vista*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 1vh;
-
-}
 
 /*Ul de las características de la página en flex*/
 .feature-list{

@@ -31,18 +31,18 @@
                         <li><a href="#">Submenu 2</a></li>
                         <li><a href="#">Submenu 3</a></li>
                     </ul>
-                
-                
-                
-                </li>                
+
+
+
+                </li>
                 <li class="menu-productos"><a href="#">Productos</a>
                     <ul class="submenu-productos">
                         <li><a href="#">Submenu 1</a></li>
                         <li><a href="#">Submenu 2</a></li>
                         <li><a href="#">Submenu 3</a></li>
                     </ul>
-                
-                
+
+
                 </li>
                 <li class="menu-nosotros"><a href="#">Nosotros</a>
                     <ul class="submenu-nosotros">
@@ -57,7 +57,7 @@
                         <li><a href="#">Submenu 2</a></li>
                         <li><a href="#">Submenu 3</a></li>
                     </ul>
-                
+
                 </li>
             </ul>
 
@@ -69,14 +69,58 @@
             <!--Creación de lista, para las características, en flex-->
             <ul class="feature-list">
                 <!--Cada elemento de la lista es una característica-->
-                <li><a href="#">Caracteristica 1</a></li>
-                <li><a href="#">Caracteristica 2</a></li>
-                <li><a href="#">Caracteristica 3</a></li>   
+                <li><a href="#">Envío 24/48h</a></li>
+                <li><a href="#">10% de descuento en compras superiores a 100€</a></li>
+                <li><a href="#">2x1 en artículos LEGO</a></li>
 
             </ul>
         </div>
 
     </header>
+
+    <!--Creación del contenedor que contiene todos los elementos del carrusel-->
+    <div class="carousel">
+        <!--Creación del contenedor que contiene las imágenes del carrusel-->
+        <!--HAY QUE PONER IMAGENES NUEVAS, CORRESPONDIENTES AL TAMAÑO ESTO ERA UNA PRUEBA-->
+        <div class="carousel-track">
+            <img src="resources/media/img/carrusel_01.jpg" alt="Imagen 1">
+            <img src="resources/media/img/carrusel_02.jpg" alt="Imagen 2">
+            <img src="resources/media/img/carrusel_02.jpg" alt="Imagen 2">
+        </div>
+        <!--Botones para desplazar el carrusel-->
+        <button class="carousel-button prev">◀</button>
+        <button class="carousel-button next">▶</button>
+    </div>
+
+    <script src="carrusel.js"></script>
+
+
+    <!--Creación del contenedor (de diferentes tipos de juguetes), que agrupa a otros contenedores (en display-flex)-->
+    <div class="seleccionador-juguetes">
+
+
+        <!--En cada contenedor eliminaremos la palabra y pondremos un LOGO-->
+        <!--Creación del contenedor de LEGO-->
+        <div class="lego">
+            LEGO
+        </div>
+        <!--Creación del contenedor de Minecraft-->
+        <div class="minecraft">
+            minecraft
+        </div>
+            
+        <!--Creación del contenedor de Mario Bros-->
+        <div class="mario-bros">
+        mario-bros
+
+        </div>
+        <!--Creación del contenedor de Star Wars-->
+        <div class="star-wars">
+            Star Wars
+        </div>
+
+    </div>
+
 
 </body>
 

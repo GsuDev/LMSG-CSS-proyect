@@ -1,28 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    margin: 0; /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
+
+body {
+    margin: 0;
+    /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
 }
+
 /*Contenedor que agrupa a search-bar, menu-bar, features-bar*/
-header{
+header {
     display: flex;
     flex-direction: column;
 }
 
 /*Eliminación del punto de las listas*/
-ul{
+ul {
     list-style: none;
 }
+
 /*Eliminación del subrayado de los enlaces*/
 ul li a {
     text-decoration: none;
 }
 
 /*Contenedor del logo y la barra de búsqueda*/
-.search-bar{
+.search-bar {
     display: flex;
     position: relative;
     height: 14vh;
@@ -30,52 +34,61 @@ ul li a {
     background-color: cadetblue;
 }
 
-.logo{
+.logo {
     position: absolute;
     left: 2vw;
 }
 
-.logo-img{
+.logo-img {
     height: 11vh;
 }
 
 /*Search bar*/
-.search-box{
+.search-box {
     position: absolute;
     right: 5vw;
 }
 
 /*Contenedor del menú*/
-.menu-bar{
+.menu-bar {
     background-color: aquamarine;
 }
+
 /*Menu de opciones, ul en flex*/
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     gap: 18vw;
     justify-content: center;
     height: 3vh;
-    text-align: center;    
+    text-align: center;
 
 }
 
 /*Menu-inicio*/
 /*Referencia a submenu-inicio, exlusivamente cuando su padre (menu-inico), tenga el ratón encima (hover)*/
 /* Estilo de cada elemento principal del menú */
-.menu > li {
-    position: relative; /* Mantiene a cada elemento en su lugar sin afectar a los demás */
+.menu>li {
+    position: relative;
+    /* Mantiene a cada elemento en su lugar sin afectar a los demás */
 }
 
 /* Submenú: inicialmente oculto */
-.submenu-inicio, .submenu-productos, .submenu-nosotros, .submenu-contacto {
+.submenu-inicio,
+.submenu-productos,
+.submenu-nosotros,
+.submenu-contacto {
     display: none;
     position: absolute;
-    top: 100%; /* Coloca el submenú justo debajo del elemento padre */
+    top: 100%;
+    /* Coloca el submenú justo debajo del elemento padre */
     left: 0;
     background-color: aquamarine;
-    width: max-content; /* Ajusta el ancho del submenú según el contenido */
-    padding-top: 1vh; /* Ajusta según lo necesario */
+    width: max-content;
+    /* Ajusta el ancho del submenú según el contenido */
+    padding-top: 1vh;
+    /* Ajusta según lo necesario */
+    z-index: 2;
 }
 
 /* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
@@ -86,18 +99,126 @@ ul li a {
     display: block;
 }
 
-nav a{
+nav a {
     padding-bottom: 4vh;
 
 }
 
 
 /*Ul de las características de la página en flex*/
-.feature-list{
+.feature-list {
     display: flex;
     flex-direction: row;
     gap: 18vw;
     justify-content: center;
     align-items: center;
     background-color: burlywood;
+}
+
+/* Contenedor del carrusel */
+.carousel {
+    position: relative;
+    width: 100vw;
+    /* Ocupa todo el ancho de la pantalla */
+    height: 40vh;
+    /* Ajusta la altura del carrusel al 80% de la pantalla */
+    margin: auto;
+    overflow: hidden;
+    border: 0.1vw solid aqua;
+}
+
+/* Pista del carrusel */
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 300%;
+    /* Ajustado para tres imágenes */
+}
+
+/* Imágenes */
+.carousel-track img {
+    width: 100vw;
+    /* Las imágenes ocupan todo el ancho de la pantalla */
+    height: 100%;
+    /* Las imágenes se ajustan a la altura del contenedor */
+    object-fit: contain;
+    /* Mantiene la proporción sin recortar las imágenes */
+    display: block;
+    margin: auto;
+    /* Centra la imagen dentro del contenedor */
+}
+
+/* Botones */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 3.5vw;
+    height: 3.5vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 2vw;
+}
+
+/* Posicionamiento de los botones */
+.carousel-button.prev {
+    left: 5vw;
+}
+
+.carousel-button.next {
+    right: 5vw;
+}
+
+
+/*Contenedor de algunos tipos de  juguetes*/
+
+.seleccionador-juguetes {
+    display: flex;
+    flex-direction: row;
+    gap: 8vw;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+
+/*Contenedor donde se encuentra un logo de lego y sus juguetes*/
+.lego{
+    background-color: cadetblue;
+    height: 15vh;
+    width: 15vw;
+    border: 0.3vw solid cadetblue;
+    border-radius: 0.5vw;
+}
+/*Contenedor donde se encuentra un logo de minecraft y sus juguetes*/
+.minecraft{
+    background-color: cadetblue;
+    height: 15vh;
+    width: 15vw;
+    border: 0.3vw solid cadetblue;
+    border-radius: 0.5vw;
+}
+
+/*Contenedor donde se encuentra un logo demario-bros y sus juguetes*/
+.mario-bros{
+    background-color: cadetblue;
+    height: 15vh;
+    width: 15vw;
+    border: 0.3vw solid cadetblue;
+    border-radius: 0.5vw;
+}
+
+/*Contenedor donde se encuentra un logo de lego y sus juguetes*/
+.star-wars{
+    background-color: cadetblue;
+    height: 15vh;
+    width: 15vw;
+    border: 0.3vw solid cadetblue;
+    border-radius: 0.5vw;
 }

@@ -83,9 +83,13 @@
         <!--Creación del contenedor que contiene las imágenes del carrusel-->
         <!--HAY QUE PONER IMAGENES NUEVAS, CORRESPONDIENTES AL TAMAÑO ESTO ERA UNA PRUEBA-->
         <div class="carousel-track">
-            <img src="resources/media/img/carrusel_01.jpg" alt="Imagen 1">
-            <img src="resources/media/img/carrusel_02.jpg" alt="Imagen 2">
-            <img src="resources/media/img/carrusel_02.jpg" alt="Imagen 2">
+            <div class="imagen1-carrusel">
+                <img src="resources/media/img/carrusel_01.jpg" alt="Imagen 1">
+            </div>
+            <!--Contenedor para la imagen 2, del carrusel-->
+            <div class="imagen2-carrusel">
+                <img src="resources/media/img/carrusel_02.jpg" alt="Imagen 2">
+            </div>
         </div>
         <!--Botones para desplazar el carrusel-->
         <button class="carousel-button prev">◀</button>
@@ -102,26 +106,111 @@
         <!--En cada contenedor eliminaremos la palabra y pondremos un LOGO-->
         <!--Creación del contenedor de LEGO-->
         <div class="lego">
-            LEGO
+            <img src="resources/media/logos/icons8-lego-144.png">
         </div>
+
         <!--Creación del contenedor de Minecraft-->
         <div class="minecraft">
-            minecraft
+            <img src="resources/media/logos/icons8-minecraft-144.png">
         </div>
-            
+
         <!--Creación del contenedor de Mario Bros-->
         <div class="mario-bros">
-        mario-bros
-
+            <img src="resources/media/logos/icons8-super-mario-144.png">
         </div>
         <!--Creación del contenedor de Star Wars-->
         <div class="star-wars">
-            Star Wars
+            <img src="resources/media/logos/icons8-la-guerra-de-las-galaxias-144.png">
+        </div>
+
+        <!--Creación del contenedor de Bob Esponja-->
+        <div class="bob-esponja">
+            <img src="resources/media/logos/icons8-bob-esponja-144.png">
+        </div>
+
+    </div>
+
+    <!--Creación de un contenedor, donde nos encontramos con 3 más, (3 fotos de productos)-->
+    <div class="productos-imprescindibles">
+        <!--Contenedor donde nos encontramos, la foto del altavoz-->
+        <div class="altavoz-musica">
+            <div class="img-altavoz-musica">
+                <img src="resources/media/img/pixlr-image-generator-e7d8043b-20b0-4e92-8243-9dcd4d884f6b.png">
+                <p>!LLEVATE LA FIESTA A TODAS PARTES! <br> ALTAVOZ BLUETOOTH 345XY; 29,99€</p>
+            </div>
+        </div>
+        <!--Contenedor donde nos encontramos la foto del bebe-->
+
+        <div class="bebe">
+            <div class="img-bebe">
+                <img src="resources/media/img/pixlr-image-generator-bd50e0d0-08f5-4531-81c2-327828b7ae60.png">
+
+            </div>
+
+        </div>
+
+        <!--Contenedor donde nos encontramos la foto del coche-->
+
+        <div class="coche">
+            <div class="img-coche">
+                <img src="resources/media/img/pixlr-image-generator-b0a4df70-f085-4bec-8eb3-1001c49ec82a.png">
+            </div>
         </div>
 
     </div>
 
 
+    <!--Creación de un contenedor, para la sugerencia de productos recomendados (slider)-->
+
+    <div class="productos-recomendados">
+        <!--Contenedor, donde encontraremos una breve introducción o título, de productos recomendados-->
+        <div class="introduccion-productos-recomendados">
+            PRODUCTOS RECOMENDADOS
+        </div>
+        <!--Contenedor, para el slider de productos recomendados, y los botones-->
+        <div class="slider-container">
+            <button id="prev-btn" class="slider-btn">◀</button>
+
+            <!--Contenedor, para agrupar las imágenes-->
+            <div class="slider">
+
+                <!--Contenedor, para las imágenes, que se desplazan con el slider-->
+                <div class="slider-track">
+
+                    <div class="imagen1-slider">
+                        <img src="resources/media/img/carrusel_01.jpg" alt="Image 1" class="slider-img">
+                    </div>
+
+                    <div class="imagen2-slider">
+                        <img src="resources/media/img/carrusel_02.jpg" alt="Image 2" class="slider-img">
+                    </div>
+
+                    <div class="imagen3-slider">
+                        <img src="resources/media/img/carrusel_03.jpg" alt="Image 3" class="slider-img">
+                    </div>
+
+                    <div class="imagen4-slider">
+                        <img src="resources/media/img/carrusel_04.jpg" alt="Image 4" class="slider-img">
+                    </div>
+
+                    <div class="imagen5-slider">
+                        <img src="resources/media/img/pixlr-image-generator-b0a4df70-f085-4bec-8eb3-1001c49ec82a.png"
+                            alt="Image 5" class="slider-img">
+                    </div>
+
+                    <div class="imagen6-slider">
+                        <img src="resources/media/img/pixlr-image-generator-e7d8043b-20b0-4e92-8243-9dcd4d884f6b.png"
+                            alt="Image 6" class="slider-img">
+                    </div>
+                </div>
+
+            </div>
+            <button id="next-btn" class="slider-btn">▶</button>
+
+        </div>
+        <!--Java Script del slider. MAL-->
+        <script src="productos-slider.js"></script>
+    </div>
 </body>
 
 </html>

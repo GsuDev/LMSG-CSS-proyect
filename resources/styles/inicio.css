@@ -52,6 +52,7 @@ ul li a {
 /*Contenedor del menú*/
 .menu-bar {
     background-color: aquamarine;
+
 }
 
 /*Menu de opciones, ul en flex*/
@@ -65,8 +66,8 @@ ul li a {
 
 }
 
-/*Menu-inicio*/
-/*Referencia a submenu-inicio, exlusivamente cuando su padre (menu-inico), tenga el ratón encima (hover)*/
+
+
 /* Estilo de cada elemento principal del menú */
 .menu>li {
     position: relative;
@@ -89,6 +90,7 @@ ul li a {
     padding-top: 1vh;
     /* Ajusta según lo necesario */
     z-index: 2;
+  
 }
 
 /* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
@@ -118,9 +120,7 @@ nav a {
 /* Contenedor del carrusel */
 .carousel {
     position: relative;
-    width: 100vw;
-    /* Ocupa todo el ancho de la pantalla */
-    height: 40vh;
+    height: 53vh;
     /* Ajusta la altura del carrusel al 80% de la pantalla */
     margin: auto;
     overflow: hidden;
@@ -131,7 +131,7 @@ nav a {
 .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 300%;
+    width: 100vw;
     /* Ajustado para tres imágenes */
 }
 
@@ -176,49 +176,278 @@ nav a {
     right: 5vw;
 }
 
+/* Contenedor de una imagen del carrusel (muñecas)*/
+.imagen1-carrusel {
+    height: 55vh;
+    width: 100vw;
+}
+
+/*Primera imagen del carrusel (árbol de navidad)*/
+.imagen1-carrusel img {
+    width: 100vw;
+}
+
+
+/* Contenedor de una imagen del carrusel (muñecas)*/
+.imagen2-carrusel {
+    height: 55vh;
+    width: 100vw;
+}
+
+/*Segunda imagen del carrusel (árbol de navidad)*/
+.imagen2-carrusel img {
+    width: 100vw;
+}
+
+
 
 /*Contenedor de algunos tipos de  juguetes*/
 
 .seleccionador-juguetes {
     display: flex;
     flex-direction: row;
-    gap: 8vw;
+    gap: 4vw;
     justify-content: center;
     align-items: center;
     background-color: burlywood;
+    margin-top: 5.3vh;
 }
 
 /*Contenedor donde se encuentra un logo de lego y sus juguetes*/
-.lego{
+.lego {
     background-color: cadetblue;
-    height: 15vh;
-    width: 15vw;
+    height: 22vh;
+    width: 17vw;
     border: 0.3vw solid cadetblue;
     border-radius: 0.5vw;
+    position: relative;
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
 }
+
+
 /*Contenedor donde se encuentra un logo de minecraft y sus juguetes*/
-.minecraft{
+.minecraft {
     background-color: cadetblue;
-    height: 15vh;
+    height: 22vh;
     width: 15vw;
     border: 0.3vw solid cadetblue;
     border-radius: 0.5vw;
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
 }
 
 /*Contenedor donde se encuentra un logo demario-bros y sus juguetes*/
-.mario-bros{
+.mario-bros {
     background-color: cadetblue;
-    height: 15vh;
+    height: 22vh;
     width: 15vw;
     border: 0.3vw solid cadetblue;
     border-radius: 0.5vw;
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
 }
 
 /*Contenedor donde se encuentra un logo de lego y sus juguetes*/
-.star-wars{
+.star-wars {
     background-color: cadetblue;
-    height: 15vh;
+    height: 22vh;
     width: 15vw;
     border: 0.3vw solid cadetblue;
     border-radius: 0.5vw;
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+}
+
+/*Contenedor donde se encuentra un logo de bob esponja y sus juguetes*/
+.bob-esponja {
+    background-color: cadetblue;
+    height: 22vh;
+    width: 15vw;
+    border: 0.3vw solid cadetblue;
+    border-radius: 0.5vw;
+    display: flex;
+    /* Activa Flexbox */
+    justify-content: center;
+    /* Centra horizontalmente el contenido */
+    align-items: center;
+    /* Centra verticalmente el contenido */
+}
+
+/*Contenedor, que agrupa "productos-imprescindibles, en display-flex*/
+.productos-imprescindibles {
+    display: flex;
+    flex-direction: row;
+    gap: 6vw;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rosybrown;
+    margin-top: 9vh;
+
+}
+
+/*Asignamiento de tamaños, al contenedor que abarca el contenedor de la imagen*/
+.altavoz-musica {
+    background-color: yellow;
+    /*Altura del contenedor de la imagen*/
+    height: 65vh;
+    width: 40vw;
+
+}
+
+/*Foto del altavoz-musica*/
+.img-altavoz-musica img {
+    background-color: yellowgreen;
+    border-radius: 2vw;
+    width: 27vw;
+    margin-bottom: 2vh;
+}
+
+
+/*Contenedor de la foto del bebe*/
+.bebe {
+    background-color: yellow;
+    /*Altura del contenedor de la imagen*/
+    height: 65vh;
+    width: 40vw;
+
+}
+
+/*Foto del bebe*/
+.img-bebe img {
+    background-color: yellowgreen;
+    border-radius: 2vw;
+    width: 27vw;
+}
+
+/*Contenedor de la foto del coche*/
+.coche {
+    background-color: yellow;
+    height: 65vh;
+    /*Altura del contenedor de la imagen*/
+
+    width: 40vw;
+}
+
+/*Foto del coche*/
+.img-coche img {
+    background-color: yellowgreen;
+    border-radius: 2vw;
+    width: 27vw;
+}
+
+
+/*Productos recomendados, contenedor que los agrupara a todos junto con la introducción*/
+.productos-recomendados {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(80, 48, 48);
+    margin-top: 4vh;
+}
+
+
+
+/*APARTIR DE AQUI MAL*/
+
+/*Introducción a los productos recomendados*/
+.introduccion-productos-recomendados {
+    font-size: 2.5vw;
+    margin-bottom: 4vh;
+}
+
+/* Estilos para el contenedor general de productos recomendados */
+.slider-container {
+    position: relative;
+    width: 80vw;
+    /* Ocupa el 80% del ancho del viewport */
+    max-width: 90vw;
+    /* Máximo de 90% del ancho del viewport */
+    margin: 0 auto;
+    /* Centrado horizontal */
+    overflow: hidden;
+    /* Oculta las imágenes que no están visibles */
+}
+
+/* Contenedor que agrupa las imágenes */
+.slider {
+    display: flex;
+    /* Alinea las imágenes en fila */
+    width: 100%;
+}
+
+/* Contenedor que contiene las imágenes del slider */
+.slider-track {
+    display: flex;
+    /* Alineación horizontal */
+    transition: transform 0.5s ease;
+    /* Transición suave para el movimiento */
+}
+
+/* Estilo para las imágenes */
+.slider-img {
+    width: 100vw;
+    /* Cada imagen ocupa el 100% del ancho del viewport */
+    height: 60vh;
+    /* Las imágenes ocupan el 60% de la altura del viewport */
+    flex-shrink: 0;
+    /* Evita que las imágenes se reduzcan */
+    object-fit: cover;
+    /* Asegura que las imágenes cubran todo el contenedor sin deformarse */
+    border-radius: 1vw;
+    /* Bordes redondeados con una medida relativa */
+}
+
+/* Estilo general para los botones de navegación */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    /* Centrado vertical */
+    transform: translateY(-50%);
+    /* Ajuste preciso */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    color: white;
+    /* Color del texto blanco */
+    border: none;
+    padding: 2vw;
+    /* Padding relativo al viewport */
+    cursor: pointer;
+    z-index: 10;
+    /* Para asegurarse de que los botones estén por encima de las imágenes */
+}
+
+/* Posicionamiento de los botones */
+#prev-btn {
+    left: 2vw;
+    /* Botón de retroceso en la izquierda con margen relativo */
+}
+
+#next-btn {
+    right: 2vw;
+    /* Botón de avance en la derecha con margen relativo */
+}
+
+/* Efecto hover en los botones */
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fondo más oscuro cuando se pasa el ratón */
 }

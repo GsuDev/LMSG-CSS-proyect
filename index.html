@@ -15,11 +15,10 @@
         <!--Creación del container de la barra de búsqueda	-->
         <div class="search-bar">
             <!--Creación de un contenedor para el logo-->
-            <div class="logo"><img class="logo-img" src="resources/media/logos/logo.png" alt="logo"></div>
-            <div class="search-box"><input class="search-input" type="text" placeholder="Buscar..."></div>
+            <div class="logo"><img class="#" src="#" alt="logo"></div>
+            <div class="search-box"><input class="search-input" type="text" placeholder="Busca aquí algo divertido "></div>
 
         </div>
-
         <!--Menú de navegación-->
         <nav class="menu-bar">
             <!--Creación del menú de navegación-->
@@ -84,11 +83,19 @@
         <!--HAY QUE PONER IMAGENES NUEVAS, CORRESPONDIENTES AL TAMAÑO ESTO ERA UNA PRUEBA-->
         <div class="carousel-track">
             <div class="imagen1-carrusel">
-                <img src="resources/media/img/carrusel_01.jpg" alt="Imagen 1">
+                <img src="resources/media/img/carrusel1_01.jpg" alt=Imagen 1>
             </div>
             <!--Contenedor para la imagen 2, del carrusel-->
             <div class="imagen2-carrusel">
-                <img src="resources/media/img/carrusel_02.jpg" alt="Imagen 2">
+                <img src="resources/media/img/carrusel1_02.jpg" alt="Imagen 2">
+            </div>
+            <!--Contenedor para la imagen 3, del carrusel-->
+            <div class="imagen3-carrusel">
+                <img src="resources/media/img/carrusel1_03.jpg" alt="Imagen 2">
+            </div>
+            <!--Contenedor para la imagen 4, del carrusel-->
+            <div class="imagen4-carrusel">
+                <img src="resources/media/img/carrusel1_04.jpg" alt="Imagen 2">
             </div>
         </div>
         <!--Botones para desplazar el carrusel-->
@@ -135,15 +142,15 @@
         <!--Contenedor donde nos encontramos, la foto del altavoz-->
         <div class="altavoz-musica">
             <div class="img-altavoz-musica">
-                <img src="resources/media/img/produto_recomendado_01.png">
-                <p>!LLEVATE LA FIESTA A TODAS PARTES! <br> ALTAVOZ BLUETOOTH 345XY; 29,99€</p>
+                <img src="resources/media/img/Box-ppl-420x210-Karaoke-MusicStar-Navidad-cambiocolor.jpeg">
+
             </div>
         </div>
         <!--Contenedor donde nos encontramos la foto del bebe-->
 
         <div class="bebe">
             <div class="img-bebe">
-                <img src="resources/media/img/producto_recomendado_02.png">
+                <img src="resources/media/img/Box-ppl-420x210-Mu-eco-LoveBebe-Navidad-cambiocolor.jpeg">
 
             </div>
 
@@ -153,64 +160,125 @@
 
         <div class="coche">
             <div class="img-coche">
-                <img src="resources/media/img/producto_recomendado_03.png">
+                <img src="resources/media/img/Box-ppl-420x210-CocheRC-MotorCO-Navidad-cambiocolor.jpeg">
             </div>
         </div>
 
     </div>
 
+    <!--Contenedor para información adicional de la página, en display-flex-->
+    <div class="informacion-adicional">
 
-    <!--Creación de un contenedor, para la sugerencia de productos recomendados (slider)-->
-
-    <div class="productos-recomendados">
-        <!--Contenedor, donde encontraremos una breve introducción o título, de productos recomendados-->
-        <div class="introduccion-productos-recomendados">
-            PRODUCTOS RECOMENDADOS
+        <!--Contenedor con información del punto de recogida-->
+        <div class="punto-recogida">
+            <img src="resources/media/logos/punto-pick-up (1).png">
+            <p class="active">Punto de recogida</p>
+            <p>Enviamos tu pedido al punto de recogida que elijas</p>
         </div>
-        <!--Contenedor, para el slider de productos recomendados, y los botones-->
-        <div class="slider-container">
-            <button id="prev-btn" class="slider-btn">◀</button>
 
-            <!--Contenedor, para agrupar las imágenes-->
-            <div class="slider">
-
-                <!--Contenedor, para las imágenes, que se desplazan con el slider-->
-                <div class="slider-track">
-
-                    <div class="imagen1-slider">
-                        <img src="resources/media/img/carrusel_01.jpg" alt="Image 1" class="slider-img">
-                    </div>
-
-                    <div class="imagen2-slider">
-                        <img src="resources/media/img/carrusel_02.jpg" alt="Image 2" class="slider-img">
-                    </div>
-
-                    <div class="imagen3-slider">
-                        <img src="resources/media/img/carrusel_03.jpg" alt="Image 3" class="slider-img">
-                    </div>
-
-                    <div class="imagen4-slider">
-                        <img src="resources/media/img/carrusel_04.jpg" alt="Image 4" class="slider-img">
-                    </div>
-
-                    <div class="imagen5-slider">
-                        <img src="resources/media/img/pixlr-image-generator-b0a4df70-f085-4bec-8eb3-1001c49ec82a.png"
-                            alt="Image 5" class="slider-img">
-                    </div>
-
-                    <div class="imagen6-slider">
-                        <img src="resources/media/img/pixlr-image-generator-e7d8043b-20b0-4e92-8243-9dcd4d884f6b.png"
-                            alt="Image 6" class="slider-img">
-                    </div>
-                </div>
-
-            </div>
-            <button id="next-btn" class="slider-btn">▶</button>
-
+        <!--Contenedor con información del punto de entrega-->
+        <div class="click-collet">
+            <img src="resources/media/logos/click (1).png">
+            <p class="active">Click & Collect</p>
+            <p>Compra online y recoge en tu tienda más cercana</p>
         </div>
-        <!--Java Script del slider. MAL-->
-        <script src="resources/scripts/productos-slider.js"></script>
+
+        <!--Contenedor con información del envío-->
+        <div class="envio">
+            <img src="resources/media/logos/entregas3horas (1).png">
+            <p class="active">Envío en 3 horas</p>
+            <p>Creemos que lo único por lo que tendríamos que tener prisa es por jugar</p>
+        </div>
+
+        <!--Contenedor con información de la devolución-->
+        <div class="devoluocion">
+            <img src="resources/media/logos/devoluciones (1).png">
+            <p class="active">Devolución gratis</p>
+            <p>¿No te gustó lo que compraste? Sin problema</p>
+        </div>
     </div>
+
+    <!--Contenedor de las opiniones-->
+    <div class="opiniones">
+        <!--Información de las opiniones-->
+        <div class="opiniones-informacion">
+            <img src="resources/media/img/Captura de pantalla 2024-11-19 170801.png">
+        </div>
+    </div>
+
+    <!--Contenedor de marcas colaboradoras-->
+    <div class="contenedor-marcas-colaboradoras">
+        <p class="active-colaboradora">Sigue a nuestra marca colaboradora</p>
+
+
+        <!--Contenedor que agrupa a preenatal y sus redes sociales-->
+        <div class="agrupacion-prenatal">
+            <!--Contenedor de la marca colaboradora prenatal-->
+            <div class="contenedor-prenatal">
+
+
+
+                <img src="resources/media/img/prenatal-footer.svg">
+            </div>
+            <!--Contenedor de las redes sociales de prenatal"-->
+            <div class="logos-prenatal">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES"> <img
+                        src="resources/media/logos/facebook-prenatal (1).svg"></a>
+                <a href="https://www.instagram.com/"> <img src="resources/media/logos/instagram-prenatal (1).svg"></a>
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES"> <img
+                        src="resources/media/logos/x-prenatal (1).svg"></a>
+                <a href="https://www.youtube.com/account"><img src="resources/media/logos/youtube-prenatal (1).svg"></a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!--Footer de la página-->
+    <footer>
+        <!--Creacion del contenedor que agrupa ayuda,servicios...En display-flex-->
+        <div class="contenedor-footer-principal">
+
+            <!--Contenedor de ayuda, y sus párrafos correspondientes-->
+            <div class="contenedor-ayuda">
+                <p class="active">AYUDA</p>
+                <p>Contacto</p>
+                <p>Opciones de entrega y costes</p>
+                <p>Métodos de pago</p>
+                <p>Promociones</p>
+            </div>
+
+            <!--Contenedor de servicios, y sus párrafos correspondientes-->
+            <div class="contenedor-servicios">
+                <p class="active">SERVICIOS</p>
+                <p>Tarjeta de regalo digital</p>
+                <p>Devoluciones y garantías</p>
+                <p>Family Club</p>
+                <p>Programa de fidelidad</p>
+            </div>
+
+            <!--Contenedor de empresa, y sus párrafos correspondientes-->
+            <div class="contenedor-empresa">
+                <p class="active">EMPRESA</p>
+                <p>Historia</p>
+                <p>Tiendas</p>
+                <p>Empleo</p>
+                <p>Afiliados</p>
+            </div>
+
+            <!--Contenedor de "otros" y sus párrafos correspondientes-->
+            <div class="contenedor-otros">
+                <p class="active">OTROS</p>
+                <p>Condiciones de compra</p>
+                <p>Política de privacidad</p>
+                <p>Política de cookies</p>
+                <p>Eventos</p>
+            </div>
+
+        </div>
+
+    </footer>
+
 </body>
 
 </html>

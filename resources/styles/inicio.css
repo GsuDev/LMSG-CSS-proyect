@@ -6,6 +6,7 @@
 
 body {
     margin: 0;
+    background-color: #FFFFFF;
     /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
 }
 
@@ -20,19 +21,17 @@ ul {
     list-style: none;
 }
 
+
 /*Eliminación del subrayado de los enlaces*/
 ul li a {
     text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.45vw;
 }
 
 /*Contenedor del logo y la barra de búsqueda*/
-.search-bar {
-    display: flex;
-    position: relative;
-    height: 14vh;
-    align-items: center;
-    background-color: cadetblue;
-}
+
 
 .logo {
     position: absolute;
@@ -43,16 +42,83 @@ ul li a {
     height: 11vh;
 }
 
+
+
+
+/* Contenedor de la barra de búsqueda y el logo */
+.search-bar {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 18vh; /* Altura del contenedor */
+    background-color: #E72B6F; /* Color de fondo */
+    
+  }
+  
+  /* Logo dentro del contenedor */
+  .logo {
+    width: 4vw; /* Tamaño del logo basado en el ancho del viewport */
+    height: auto; /* Mantener la proporción del logo */
+    margin-right: 2vw; /* Espaciado a la derecha del logo */
+  }
+  
 /*Search bar*/
-.search-box {
+ 
+  .search-box {
+    display: flex;
+    justify-content: center; /* Centra el input dentro de la caja */
+    background: rgba(255, 121, 176, 0.8); /* Color semitransparente */
+    border-radius: 1.5vw; /* Bordes redondeados */
+    padding: 0.5vh 1vw; /* Espaciado interno relativo */
+    width: 25%; 
     position: absolute;
-    right: 5vw;
-}
+    right: 60vw;
+  }
+  
+  /* Estilo para el campo de texto */
+  .search-input {
+    border: none; /* Sin borde */
+    background: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    font-size: 1.3vw; /* Tamaño de fuente relativo al ancho de la ventana */
+    outline: none; /* Sin borde al seleccionar */
+    padding: 0.5vh; /* Espaciado interno relativo */
+  }
+  
+  /* Efecto focus en el input (cuando el usuario hace click en el campo) */
+  .search-input:focus {
+    border-bottom: 0.1vw solid #ff79b0; /* Subraya el borde con el mismo color que el fondo */
+    transition: border-bottom 0.3s ease; /* Transición suave */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Contenedor del menú*/
 .menu-bar {
-    background-color: aquamarine;
 
+    background-color: #E72B6F;
+   
+
+}
+.menu-bar li{
+    padding: 0.7vw;
+}
+
+.menu-bar li:hover{
+    border-radius: 0.3vw;
+    background-color: #00e5ff;
+    box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1); /* Sombra con medidas relativas */
 }
 
 /*Menu de opciones, ul en flex*/
@@ -61,7 +127,7 @@ ul li a {
     flex-direction: row;
     gap: 18vw;
     justify-content: center;
-    height: 3vh;
+    height: 7vh;
     text-align: center;
 
 }
@@ -83,14 +149,16 @@ ul li a {
     position: absolute;
     top: 100%;
     /* Coloca el submenú justo debajo del elemento padre */
-    left: 0;
-    background-color: aquamarine;
+    left: 0.5vw;
+    background-color: #ff79b0;
+    border-radius: 0.8vw;
+    padding: 2vw;
     width: max-content;
     /* Ajusta el ancho del submenú según el contenido */
     padding-top: 1vh;
     /* Ajusta según lo necesario */
     z-index: 2;
-  
+
 }
 
 /* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
@@ -114,17 +182,17 @@ nav a {
     gap: 18vw;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
+    background-color: #c2c2c2;
+    height: 5vh;
 }
 
 /* Contenedor del carrusel */
 .carousel {
     position: relative;
-    height: 53vh;
+    height: 50vh;
     /* Ajusta la altura del carrusel al 80% de la pantalla */
     margin: auto;
     overflow: hidden;
-    border: 0.1vw solid aqua;
 }
 
 /* Pista del carrusel */
@@ -132,6 +200,7 @@ nav a {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100vw;
+
     /* Ajustado para tres imágenes */
 }
 
@@ -146,6 +215,8 @@ nav a {
     display: block;
     margin: auto;
     /* Centra la imagen dentro del contenedor */
+    border: 0.1vw #00e5ff solid;
+
 }
 
 /* Botones */
@@ -178,7 +249,6 @@ nav a {
 
 /* Contenedor de una imagen del carrusel (muñecas)*/
 .imagen1-carrusel {
-    height: 55vh;
     width: 100vw;
 }
 
@@ -190,7 +260,6 @@ nav a {
 
 /* Contenedor de una imagen del carrusel (muñecas)*/
 .imagen2-carrusel {
-    height: 55vh;
     width: 100vw;
 }
 
@@ -209,245 +278,275 @@ nav a {
     gap: 4vw;
     justify-content: center;
     align-items: center;
-    background-color: burlywood;
-    margin-top: 5.3vh;
 }
 
 /*Contenedor donde se encuentra un logo de lego y sus juguetes*/
 .lego {
-    background-color: cadetblue;
     height: 22vh;
-    width: 17vw;
-    border: 0.3vw solid cadetblue;
-    border-radius: 0.5vw;
-    position: relative;
+    width: 15vw;
     display: flex;
-    /* Activa Flexbox */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
+    background-color:#00e5ff ;
+    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
 }
 
+.lego:hover {
+    transform: scale(1.05);
+}
 
 /*Contenedor donde se encuentra un logo de minecraft y sus juguetes*/
 .minecraft {
-    background-color: cadetblue;
+    background-color: #00e5ff;
     height: 22vh;
     width: 15vw;
-    border: 0.3vw solid cadetblue;
-    border-radius: 0.5vw;
     display: flex;
-    /* Activa Flexbox */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
+    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+}
+.minecraft:hover {
+    transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo demario-bros y sus juguetes*/
 .mario-bros {
-    background-color: cadetblue;
+    background-color: #00e5ff;
     height: 22vh;
     width: 15vw;
-    border: 0.3vw solid cadetblue;
-    border-radius: 0.5vw;
     display: flex;
-    /* Activa Flexbox */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
+    
+    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+}
+
+.mario-bros:hover {
+    transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo de lego y sus juguetes*/
 .star-wars {
-    background-color: cadetblue;
+    background-color: #00e5ff;
     height: 22vh;
     width: 15vw;
-    border: 0.3vw solid cadetblue;
-    border-radius: 0.5vw;
     display: flex;
-    /* Activa Flexbox */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
+ 
+    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+}
+.star-wars:hover {
+    transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo de bob esponja y sus juguetes*/
 .bob-esponja {
-    background-color: cadetblue;
+    background-color: #00e5ff;
     height: 22vh;
     width: 15vw;
-    border: 0.3vw solid cadetblue;
-    border-radius: 0.5vw;
     display: flex;
-    /* Activa Flexbox */
     justify-content: center;
-    /* Centra horizontalmente el contenido */
     align-items: center;
-    /* Centra verticalmente el contenido */
+     
+    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+    text-align: center;
+    transition: transform 0.8s ease-in-out;
+
+}
+
+.bob-esponja:hover{
+    transform: scale(1.05);
 }
 
 /*Contenedor, que agrupa "productos-imprescindibles, en display-flex*/
 .productos-imprescindibles {
     display: flex;
     flex-direction: row;
-    gap: 6vw;
-    justify-content: space-around;
+    gap: 3vw;
+    justify-content: center;
     align-items: center;
-    background-color: rosybrown;
-    margin-top: 9vh;
+    margin-top: 20vh;
 
 }
 
+
 /*Asignamiento de tamaños, al contenedor que abarca el contenedor de la imagen*/
 .altavoz-musica {
-    background-color: yellow;
     /*Altura del contenedor de la imagen*/
-    height: 65vh;
-    width: 40vw;
-
+    height: 45vh;
+    width: 30vw;
 }
 
 /*Foto del altavoz-musica*/
 .img-altavoz-musica img {
-    background-color: yellowgreen;
     border-radius: 2vw;
-    width: 27vw;
-    margin-bottom: 2vh;
+
+    width: 30vw;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+    transition: transform 0.8s ease-in-out;
+
 }
+
 
 
 /*Contenedor de la foto del bebe*/
 .bebe {
-    background-color: yellow;
     /*Altura del contenedor de la imagen*/
-    height: 65vh;
-    width: 40vw;
+    height: 45vh;
+    width: 30vw;
 
 }
 
 /*Foto del bebe*/
 .img-bebe img {
-    background-color: yellowgreen;
     border-radius: 2vw;
-    width: 27vw;
+    width: 30vw;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+
 }
 
 /*Contenedor de la foto del coche*/
 .coche {
-    background-color: yellow;
-    height: 65vh;
-    /*Altura del contenedor de la imagen*/
-
-    width: 40vw;
+    height: 45vh;
+    width: 30vw;
 }
 
 /*Foto del coche*/
 .img-coche img {
-    background-color: yellowgreen;
     border-radius: 2vw;
-    width: 27vw;
+    width: 30vw;
+    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+
 }
 
+/*Información adicional*/
 
-/*Productos recomendados, contenedor que los agrupara a todos junto con la introducción*/
-.productos-recomendados {
+.informacion-adicional {
     display: flex;
-    flex-direction: column;
-    gap: 2vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/*Parrafos de cada información adicional, resaltados*/
+.active {
+    text-align: center;
+    color:#00829b;
+    font-weight: bold;
+}
+.active-colaboradora{
+    text-align: center;
+    color:#333333;
+    font-weight: bold;
+    margin-bottom: 2.5vh;
+}
+
+.informacion-adicional p {
+    font-size: 1.2vw;
+}
+
+/*Centramos todos los contenedos, que son hijos directos de informacion-adicional*/
+.informacion-adicional>div {
+    text-align: center;
+    width: 19vw;
+}
+
+/*Información de las opiniones*/
+
+.opiniones {
+    display: flex;
+
     justify-content: center;
     align-items: center;
-    background-color: rgb(80, 48, 48);
-    margin-top: 4vh;
+    margin-top: 9vh;
 }
 
+.opiniones-informacion img {
+    width: 98vw;
 
 
-/*APARTIR DE AQUI MAL*/
+}
 
-/*Introducción a los productos recomendados*/
-.introduccion-productos-recomendados {
+/*Marcas colaboradoras (Prenatal)*/
+.contenedor-prenatal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
+}
+
+.contenedor-marcas-colaboradoras>p {
+    margin-top: 6vh; /*Lo separo de las opiniones*/
     font-size: 2.5vw;
-    margin-bottom: 4vh;
+    font-weight: bold;
 }
-
-/* Estilos para el contenedor general de productos recomendados */
-.slider-container {
-    position: relative;
-    width: 80vw;
-    /* Ocupa el 80% del ancho del viewport */
-    max-width: 90vw;
-    /* Máximo de 90% del ancho del viewport */
-    margin: 0 auto;
-    /* Centrado horizontal */
-    overflow: hidden;
-    /* Oculta las imágenes que no están visibles */
-}
-
-/* Contenedor que agrupa las imágenes */
-.slider {
+.agrupacion-prenatal{
     display: flex;
-    /* Alinea las imágenes en fila */
-    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E72B6F;
+    height: 15vw;
 }
 
-/* Contenedor que contiene las imágenes del slider */
-.slider-track {
+.contenedor-prenatal{
     display: flex;
-    /* Alineación horizontal */
-    transition: transform 0.5s ease;
-    /* Transición suave para el movimiento */
+    flex-direction: row;
+}
+.logos-prenatal{
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 1.5vh;
 }
 
-/* Estilo para las imágenes */
-.slider-img {
-    width: 100vw;
-    /* Cada imagen ocupa el 100% del ancho del viewport */
-    height: 60vh;
-    /* Las imágenes ocupan el 60% de la altura del viewport */
-    flex-shrink: 0;
-    /* Evita que las imágenes se reduzcan */
-    object-fit: cover;
-    /* Asegura que las imágenes cubran todo el contenedor sin deformarse */
-    border-radius: 1vw;
-    /* Bordes redondeados con una medida relativa */
+/*Footer*/
+/*Agrupa a todo el footer, aplicamos display-flex*/
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1.5vh;
+    align-items: center;
+    justify-content: space-around;
 }
 
-/* Estilo general para los botones de navegación */
-.slider-btn {
-    position: absolute;
-    top: 50%;
-    /* Centrado vertical */
-    transform: translateY(-50%);
-    /* Ajuste preciso */
-    background-color: rgba(0, 0, 0, 0.5);
-    /* Fondo semitransparente */
-    color: white;
-    /* Color del texto blanco */
-    border: none;
-    padding: 2vw;
-    /* Padding relativo al viewport */
-    cursor: pointer;
-    z-index: 10;
-    /* Para asegurarse de que los botones estén por encima de las imágenes */
+/*Contenedor que agrupa a ayuda,servicios...*/
+.contenedor-footer-principal{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12vw;
+
 }
 
-/* Posicionamiento de los botones */
-#prev-btn {
-    left: 2vw;
-    /* Botón de retroceso en la izquierda con margen relativo */
+/*Aplicamos estilos a los párrafos*/
+/*Título de ayuda, servicios...*/
+.contenedor-footer-principal .active{
+    text-align: center;
+    color:#333333;
+    font-weight: bold;
+    font-size: 1.3vw;
+    margin-bottom: 0.9vw;
+  
 }
-
-#next-btn {
-    right: 2vw;
-    /* Botón de avance en la derecha con margen relativo */
-}
-
-/* Efecto hover en los botones */
-.slider-btn:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Fondo más oscuro cuando se pasa el ratón */
+.contenedor-footer-principal p{
+    font-size: 1vw;
+    margin-bottom: 0.4vw;
+    color: #5c5c5c;
 }

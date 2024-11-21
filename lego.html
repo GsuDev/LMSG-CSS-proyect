@@ -4,9 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/lego.css">
+    <link rel="stylesheet" href="resources/styles/lego.css">
 </head>
 <body>
-    
+    <!--Cabecera donde apareceran las barras de búsqueda y el logo-->
+    <header>
+        <!--Creación del container de la barra de búsqueda	-->
+        <div class="search-bar">
+            <!--Creación de un contenedor para el logo-->
+            <div class="logo"><img class="#" src="#" alt="logo"></div>
+            <div class="search-box"><input class="search-input" type="text" placeholder="Busca aquí algo divertido "></div>
+        </div>
+        <!--Menú de navegación-->
+        <nav class="menu-bar">
+            <!--Creación del menú de navegación-->
+            <ul class="menu">
+                <li class="menu-inicio"><a href="#">Inicio</a>
+                    <!--Creación de clase para identificar a cada elemento del menu, evitamos que se abran todos a la vez-->
+                    <ul class="submenu-inicio">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-productos"><a href="#">Productos</a>
+                    <ul class="submenu-productos">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-nosotros"><a href="#">Nosotros</a>
+                    <ul class="submenu-nosotros">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-contacto"><a href="#">Contacto</a>
+                    <ul class="submenu-contacto">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+        <!--Características de la página-->
+        <div class="features-bar">
+            <!--Creación de lista, para las características, en flex-->
+            <ul class="feature-list">
+                <!--Cada elemento de la lista es una característica-->
+                <li><a href="#">Envío 24/48h</a></li>
+                <li><a href="#">10% de descuento en compras superiores a 100€</a></li>
+                <li><a href="#">2x1 en artículos LEGO</a></li>
+
+            </ul>
+        </div>
+
+    </header>
 </body>
 </html>

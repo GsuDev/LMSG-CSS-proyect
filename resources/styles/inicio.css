@@ -50,12 +50,23 @@ ul li a {
   background-color: #e72b6f; /* Color de fondo */
 }
 
-/* Logo dentro del contenedor */
+/* Contenedor donde se encuentra el logo de la jugueteria */
 .logo {
-  width: 4vw; /* Tamaño del logo basado en el ancho del viewport */
+  width: 8vw; /* Tamaño del logo basado en el ancho del viewport */
   height: auto; /* Mantener la proporción del logo */
-  margin-right: 2vw; /* Espaciado a la derecha del logo */
 }
+
+/*Icono de la search bar*/
+
+.search-box img{
+  height: 3vh;
+  position: absolute;
+  left: 1.7vw;
+  top: 1vh;
+}
+.search-box img:hover{
+  cursor: pointer;
+transform: scale(1.1);}
 
 /*Search bar*/
 
@@ -67,7 +78,7 @@ ul li a {
   padding: 0.5vh 1vw; /* Espaciado interno relativo */
   width: 25%;
   position: absolute;
-  right: 60vw;
+  right: 25vw;
 }
 
 /* Estilo para el campo de texto */
@@ -84,6 +95,23 @@ ul li a {
 .search-input:focus {
   border-bottom: 0.1vw solid #ff79b0; /* Subraya el borde con el mismo color que el fondo */
   transition: border-bottom 0.3s ease; /* Transición suave */
+}
+
+/*Iconos de la search bar*/
+.iconos{
+  display: flex;
+  flex-direction: row;
+  gap: 2.5vw;
+  height: 3.5vh;
+  position: absolute;
+  right: 3vw;
+  top: 7vh;
+}
+
+.iconos img:hover{
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  transform: scale(1.1)
 }
 
 /*Contenedor del menú*/
@@ -188,7 +216,6 @@ nav a {
   display: block;
   margin: auto;
   /* Centra la imagen dentro del contenedor */
-  border: 0.1vw #00e5ff solid;
 }
 
 /* Botones */
@@ -249,16 +276,14 @@ nav a {
   align-items: center;
 }
 .box{
-  height: 22vh;
   width: 15vw;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background-color: #00e5ff;
-  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  border-radius:7vh; /* Bordes redondeados relativos al alto de la ventana */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.5); /* Sombra relativa al alto */
   text-align: center;
   transition: transform 0.8s ease-in-out;
+  margin-top: 6vh;
 }
 .box:hover {
   transform: scale(1.05);
@@ -271,6 +296,10 @@ nav a {
   justify-content: center;
   align-items: center;
   margin-top: 20vh;
+}
+
+.productos-imprescindibles img:hover{
+  cursor: pointer;
 }
 
 /*Asignamiento de tamaños, al contenedor que abarca el contenedor de la imagen*/
@@ -398,12 +427,9 @@ nav a {
 /*Agrupa a todo el footer, aplicamos display-flex*/
 footer {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
   padding: 1.5vh;
-  align-items: center;
-  justify-content: space-around;
-}
+  }
 
 /*Contenedor que agrupa a ayuda,servicios...*/
 .contenedor-footer-principal {
@@ -428,4 +454,56 @@ footer {
   font-size: 1vw;
   margin-bottom: 0.4vw;
   color: #5c5c5c;
+}
+
+/*Simulacion de enlace, a los p del contenedor principal de footer*/
+.contenedor-footer-principal p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Contenedor de los metodos de pago y plataformas de descarga para la app*/
+.contenedor-descarga-pago {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+  gap: 17vw;
+  justify-content: center;
+  
+}
+
+/*Contenedor de las plataformas de descarga de la app*/
+.descarga {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  height: 15vh;
+
+}
+.iconos-descarga {  
+  position: absolute;
+  left: 0.01vw;
+  top: 4.5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+}
+
+.iconos-descarga img:hover{
+  cursor: pointer;
+}
+
+/*Contenedor de los metodos de pago*/
+.metodos-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  position: relative;
+  
+}
+.iconos-metodos-pago {
+  position: absolute;
+  top: 4.5vh;
+  left: 0.1vw;
 }

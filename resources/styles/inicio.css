@@ -1,143 +1,119 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    background-color: #FFFFFF;
-    /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
+  margin: 0;
+  background-color: #ffffff;
+  /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
 }
 
 /*Contenedor que agrupa a search-bar, menu-bar, features-bar*/
 header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*Eliminación del punto de las listas*/
 ul {
-    list-style: none;
+  list-style: none;
 }
-
 
 /*Eliminación del subrayado de los enlaces*/
 ul li a {
-    text-decoration: none;
-    color: #333333;
-    font-weight: bold;
-    font-size: 1.45vw;
+  text-decoration: none;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.45vw;
 }
 
 /*Contenedor del logo y la barra de búsqueda*/
 
-
 .logo {
-    position: absolute;
-    left: 2vw;
+  position: absolute;
+  left: 2vw;
 }
 
 .logo-img {
-    height: 11vh;
+  height: 11vh;
 }
-
-
-
 
 /* Contenedor de la barra de búsqueda y el logo */
 .search-bar {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    height: 18vh; /* Altura del contenedor */
-    background-color: #E72B6F; /* Color de fondo */
-    
-  }
-  
-  /* Logo dentro del contenedor */
-  .logo {
-    width: 4vw; /* Tamaño del logo basado en el ancho del viewport */
-    height: auto; /* Mantener la proporción del logo */
-    margin-right: 2vw; /* Espaciado a la derecha del logo */
-  }
-  
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 18vh; /* Altura del contenedor */
+  background-color: #e72b6f; /* Color de fondo */
+}
+
+/* Logo dentro del contenedor */
+.logo {
+  width: 4vw; /* Tamaño del logo basado en el ancho del viewport */
+  height: auto; /* Mantener la proporción del logo */
+  margin-right: 2vw; /* Espaciado a la derecha del logo */
+}
+
 /*Search bar*/
- 
-  .search-box {
-    display: flex;
-    justify-content: center; /* Centra el input dentro de la caja */
-    background: rgba(255, 121, 176, 0.8); /* Color semitransparente */
-    border-radius: 1.5vw; /* Bordes redondeados */
-    padding: 0.5vh 1vw; /* Espaciado interno relativo */
-    width: 25%; 
-    position: absolute;
-    right: 60vw;
-  }
-  
-  /* Estilo para el campo de texto */
-  .search-input {
-    border: none; /* Sin borde */
-    background: transparent; /* Fondo transparente */
-    color: white; /* Texto blanco */
-    font-size: 1.3vw; /* Tamaño de fuente relativo al ancho de la ventana */
-    outline: none; /* Sin borde al seleccionar */
-    padding: 0.5vh; /* Espaciado interno relativo */
-  }
-  
-  /* Efecto focus en el input (cuando el usuario hace click en el campo) */
-  .search-input:focus {
-    border-bottom: 0.1vw solid #ff79b0; /* Subraya el borde con el mismo color que el fondo */
-    transition: border-bottom 0.3s ease; /* Transición suave */
-  }
 
+.search-box {
+  display: flex;
+  justify-content: center; /* Centra el input dentro de la caja */
+  background: rgba(255, 121, 176, 0.8); /* Color semitransparente */
+  border-radius: 1.5vw; /* Bordes redondeados */
+  padding: 0.5vh 1vw; /* Espaciado interno relativo */
+  width: 25%;
+  position: absolute;
+  right: 60vw;
+}
 
+/* Estilo para el campo de texto */
+.search-input {
+  border: none; /* Sin borde */
+  background: transparent; /* Fondo transparente */
+  color: white; /* Texto blanco */
+  font-size: 1.3vw; /* Tamaño de fuente relativo al ancho de la ventana */
+  outline: none; /* Sin borde al seleccionar */
+  padding: 0.5vh; /* Espaciado interno relativo */
+}
 
-
-
-
-
-
-
-
-
-
+/* Efecto focus en el input (cuando el usuario hace click en el campo) */
+.search-input:focus {
+  border-bottom: 0.1vw solid #ff79b0; /* Subraya el borde con el mismo color que el fondo */
+  transition: border-bottom 0.3s ease; /* Transición suave */
+}
 
 /*Contenedor del menú*/
 .menu-bar {
-
-    background-color: #E72B6F;
-   
-
+  background-color: #e72b6f;
 }
-.menu-bar li{
-    padding: 0.7vw;
+.menu-bar li {
+  padding: 0.7vw;
 }
 
-.menu-bar li:hover{
-    border-radius: 0.3vw;
-    background-color: #00e5ff;
-    box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1); /* Sombra con medidas relativas */
+.menu-bar li:hover {
+  border-radius: 0.3vw;
+  background-color: #00e5ff;
+  box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1); /* Sombra con medidas relativas */
 }
 
 /*Menu de opciones, ul en flex*/
 .menu {
-    display: flex;
-    flex-direction: row;
-    gap: 18vw;
-    justify-content: center;
-    height: 7vh;
-    text-align: center;
-
+  display: flex;
+  flex-direction: row;
+  gap: 18vw;
+  justify-content: center;
+  height: 7vh;
+  text-align: center;
 }
 
-
-
 /* Estilo de cada elemento principal del menú */
-.menu>li {
-    position: relative;
-    /* Mantiene a cada elemento en su lugar sin afectar a los demás */
+.menu > li {
+  position: relative;
+  /* Mantiene a cada elemento en su lugar sin afectar a los demás */
 }
 
 /* Submenú: inicialmente oculto */
@@ -145,20 +121,19 @@ ul li a {
 .submenu-productos,
 .submenu-nosotros,
 .submenu-contacto {
-    display: none;
-    position: absolute;
-    top: 100%;
-    /* Coloca el submenú justo debajo del elemento padre */
-    left: 0.5vw;
-    background-color: #ff79b0;
-    border-radius: 0.8vw;
-    padding: 2vw;
-    width: max-content;
-    /* Ajusta el ancho del submenú según el contenido */
-    padding-top: 1vh;
-    /* Ajusta según lo necesario */
-    z-index: 2;
-
+  display: none;
+  position: absolute;
+  top: 100%;
+  /* Coloca el submenú justo debajo del elemento padre */
+  left: 0.5vw;
+  background-color: #ff79b0;
+  border-radius: 0.8vw;
+  padding: 2vw;
+  width: max-content;
+  /* Ajusta el ancho del submenú según el contenido */
+  padding-top: 1vh;
+  /* Ajusta según lo necesario */
+  z-index: 2;
 }
 
 /* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
@@ -166,387 +141,368 @@ ul li a {
 .menu-productos:hover .submenu-productos,
 .menu-nosotros:hover .submenu-nosotros,
 .menu-contacto:hover .submenu-contacto {
-    display: block;
+  display: block;
 }
 
 nav a {
-    padding-bottom: 1vh;
-
+  padding-bottom: 1vh;
 }
-
 
 /*Ul de las características de la página en flex*/
 .feature-list {
-    display: flex;
-    flex-direction: row;
-    gap: 18vw;
-    justify-content: center;
-    align-items: center;
-    background-color: #c2c2c2;
-    height: 5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 18vw;
+  justify-content: center;
+  align-items: center;
+  background-color: #c2c2c2;
+  height: 5vh;
 }
 
 /* Contenedor del carrusel */
 .carousel {
-    position: relative;
-    height: 50vh;
-    /* Ajusta la altura del carrusel al 80% de la pantalla */
-    margin: auto;
-    overflow: hidden;
+  position: relative;
+  height: 50vh;
+  /* Ajusta la altura del carrusel al 80% de la pantalla */
+  margin: auto;
+  overflow: hidden;
 }
 
 /* Pista del carrusel */
 .carousel-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100vw;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100vw;
 
-    /* Ajustado para tres imágenes */
+  /* Ajustado para tres imágenes */
 }
 
 /* Imágenes */
 .carousel-track img {
-    width: 100vw;
-    /* Las imágenes ocupan todo el ancho de la pantalla */
-    height: 100%;
-    /* Las imágenes se ajustan a la altura del contenedor */
-    object-fit: contain;
-    /* Mantiene la proporción sin recortar las imágenes */
-    display: block;
-    margin: auto;
-    /* Centra la imagen dentro del contenedor */
-    border: 0.1vw #00e5ff solid;
-
+  width: 100vw;
+  /* Las imágenes ocupan todo el ancho de la pantalla */
+  height: 100%;
+  /* Las imágenes se ajustan a la altura del contenedor */
+  object-fit: contain;
+  /* Mantiene la proporción sin recortar las imágenes */
+  display: block;
+  margin: auto;
+  /* Centra la imagen dentro del contenedor */
+  border: 0.1vw #00e5ff solid;
 }
 
 /* Botones */
 .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    border-radius: 50%;
-    width: 3.5vw;
-    height: 3.5vw;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-    font-size: 2vw;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 3.5vw;
+  height: 3.5vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 2vw;
 }
 
 /* Posicionamiento de los botones */
 .carousel-button.prev {
-    left: 5vw;
+  left: 5vw;
 }
 
 .carousel-button.next {
-    right: 5vw;
+  right: 5vw;
 }
 
 /* Contenedor de una imagen del carrusel (muñecas)*/
 .imagen1-carrusel {
-    width: 100vw;
+  width: 100vw;
 }
 
 /*Primera imagen del carrusel (árbol de navidad)*/
 .imagen1-carrusel img {
-    width: 100vw;
+  width: 100vw;
 }
-
 
 /* Contenedor de una imagen del carrusel (muñecas)*/
 .imagen2-carrusel {
-    width: 100vw;
+  width: 100vw;
 }
 
 /*Segunda imagen del carrusel (árbol de navidad)*/
 .imagen2-carrusel img {
-    width: 100vw;
+  width: 100vw;
 }
-
-
 
 /*Contenedor de algunos tipos de  juguetes*/
 
 .seleccionador-juguetes {
-    display: flex;
-    flex-direction: row;
-    gap: 4vw;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4vw;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Contenedor donde se encuentra un logo de lego y sus juguetes*/
 .lego {
-    height: 22vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:#00e5ff ;
-    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-    text-align: center;
-    transition: transform 0.8s ease-in-out;
+  height: 22vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #00e5ff;
+  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 
 .lego:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo de minecraft y sus juguetes*/
 .minecraft {
-    background-color: #00e5ff;
-    height: 22vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-    text-align: center;
-    transition: transform 0.8s ease-in-out;
+  background-color: #00e5ff;
+  height: 22vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 .minecraft:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo demario-bros y sus juguetes*/
 .mario-bros {
-    background-color: #00e5ff;
-    height: 22vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-    text-align: center;
-    transition: transform 0.8s ease-in-out;
+  background-color: #00e5ff;
+  height: 22vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 
 .mario-bros:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo de lego y sus juguetes*/
 .star-wars {
-    background-color: #00e5ff;
-    height: 22vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
-    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-    text-align: center;
-    transition: transform 0.8s ease-in-out;
+  background-color: #00e5ff;
+  height: 22vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 .star-wars:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 /*Contenedor donde se encuentra un logo de bob esponja y sus juguetes*/
 .bob-esponja {
-    background-color: #00e5ff;
-    height: 22vh;
-    width: 15vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-     
-    border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-    text-align: center;
-    transition: transform 0.8s ease-in-out;
+  background-color: #00e5ff;
+  height: 22vh;
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  text-align: center;
+  transition: transform 0.8s ease-in-out;
 }
 
-.bob-esponja:hover{
-    transform: scale(1.05);
+.bob-esponja:hover {
+  transform: scale(1.05);
 }
 
 /*Contenedor, que agrupa "productos-imprescindibles, en display-flex*/
 .productos-imprescindibles {
-    display: flex;
-    flex-direction: row;
-    gap: 3vw;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20vh;
-
+  display: flex;
+  flex-direction: row;
+  gap: 3vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20vh;
 }
-
 
 /*Asignamiento de tamaños, al contenedor que abarca el contenedor de la imagen*/
 .altavoz-musica {
-    /*Altura del contenedor de la imagen*/
-    height: 45vh;
-    width: 30vw;
+  /*Altura del contenedor de la imagen*/
+  height: 45vh;
+  width: 30vw;
 }
 
 /*Foto del altavoz-musica*/
 .img-altavoz-musica img {
-    border-radius: 2vw;
+  border-radius: 2vw;
 
-    width: 30vw;
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-    transition: transform 0.8s ease-in-out;
-
+  width: 30vw;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
+  transition: transform 0.8s ease-in-out;
 }
-
-
 
 /*Contenedor de la foto del bebe*/
 .bebe {
-    /*Altura del contenedor de la imagen*/
-    height: 45vh;
-    width: 30vw;
-
+  /*Altura del contenedor de la imagen*/
+  height: 45vh;
+  width: 30vw;
 }
 
 /*Foto del bebe*/
 .img-bebe img {
-    border-radius: 2vw;
-    width: 30vw;
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-
+  border-radius: 2vw;
+  width: 30vw;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
 }
 
 /*Contenedor de la foto del coche*/
 .coche {
-    height: 45vh;
-    width: 30vw;
+  height: 45vh;
+  width: 30vw;
 }
 
 /*Foto del coche*/
 .img-coche img {
-    border-radius: 2vw;
-    width: 30vw;
-    box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-
+  border-radius: 2vw;
+  width: 30vw;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
 }
 
 /*Información adicional*/
 
 .informacion-adicional {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*Parrafos de cada información adicional, resaltados*/
 .active {
-    text-align: center;
-    color:#00829b;
-    font-weight: bold;
+  text-align: center;
+  color: #00829b;
+  font-weight: bold;
 }
-.active-colaboradora{
-    text-align: center;
-    color:#333333;
-    font-weight: bold;
-    margin-bottom: 2.5vh;
+.active-colaboradora {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 2.5vh;
 }
 
 .informacion-adicional p {
-    font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 
 /*Centramos todos los contenedos, que son hijos directos de informacion-adicional*/
-.informacion-adicional>div {
-    text-align: center;
-    width: 19vw;
+.informacion-adicional > div {
+  text-align: center;
+  width: 19vw;
 }
 
 /*Información de las opiniones*/
 
 .opiniones {
-    display: flex;
+  display: flex;
 
-    justify-content: center;
-    align-items: center;
-    margin-top: 9vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vh;
 }
 
 .opiniones-informacion img {
-    width: 98vw;
-
-
+  width: 98vw;
 }
 
 /*Marcas colaboradoras (Prenatal)*/
 .contenedor-prenatal {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 9vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 9vh;
 }
 
-.contenedor-marcas-colaboradoras>p {
-    margin-top: 6vh; /*Lo separo de las opiniones*/
-    font-size: 2.5vw;
-    font-weight: bold;
+.contenedor-marcas-colaboradoras > p {
+  margin-top: 6vh; /*Lo separo de las opiniones*/
+  font-size: 2.5vw;
+  font-weight: bold;
 }
-.agrupacion-prenatal{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #E72B6F;
-    height: 15vw;
+.agrupacion-prenatal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e72b6f;
+  height: 15vw;
 }
 
-.contenedor-prenatal{
-    display: flex;
-    flex-direction: row;
+.contenedor-prenatal {
+  display: flex;
+  flex-direction: row;
 }
-.logos-prenatal{
-    display: flex;
-    flex-direction: row;
-    gap: 1vw;
-    margin-top: 1.5vh;
+.logos-prenatal {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+  margin-top: 1.5vh;
 }
 
 /*Footer*/
 /*Agrupa a todo el footer, aplicamos display-flex*/
 footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 1.5vh;
-    align-items: center;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5vh;
+  align-items: center;
+  justify-content: space-around;
 }
 
 /*Contenedor que agrupa a ayuda,servicios...*/
-.contenedor-footer-principal{
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    gap: 12vw;
-
+.contenedor-footer-principal {
+  margin-top: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  gap: 12vw;
 }
 
 /*Aplicamos estilos a los párrafos*/
 /*Título de ayuda, servicios...*/
-.contenedor-footer-principal .active{
-    text-align: center;
-    color:#333333;
-    font-weight: bold;
-    font-size: 1.3vw;
-    margin-bottom: 0.9vw;
-  
+.contenedor-footer-principal .active {
+  text-align: center;
+  color: #333333;
+  font-weight: bold;
+  font-size: 1.3vw;
+  margin-bottom: 0.9vw;
 }
-.contenedor-footer-principal p{
-    font-size: 1vw;
-    margin-bottom: 0.4vw;
-    color: #5c5c5c;
+.contenedor-footer-principal p {
+  font-size: 1vw;
+  margin-bottom: 0.4vw;
+  color: #5c5c5c;
 }

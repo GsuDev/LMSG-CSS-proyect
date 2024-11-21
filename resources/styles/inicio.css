@@ -248,9 +248,7 @@ nav a {
   justify-content: center;
   align-items: center;
 }
-
-/*Contenedor donde se encuentra un logo de lego y sus juguetes*/
-.lego {
+.box{
   height: 22vh;
   width: 15vw;
   display: flex;
@@ -262,84 +260,9 @@ nav a {
   text-align: center;
   transition: transform 0.8s ease-in-out;
 }
-
-.lego:hover {
+.box:hover {
   transform: scale(1.05);
 }
-
-/*Contenedor donde se encuentra un logo de minecraft y sus juguetes*/
-.minecraft {
-  background-color: #00e5ff;
-  height: 22vh;
-  width: 15vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-  text-align: center;
-  transition: transform 0.8s ease-in-out;
-}
-.minecraft:hover {
-  transform: scale(1.05);
-}
-
-/*Contenedor donde se encuentra un logo demario-bros y sus juguetes*/
-.mario-bros {
-  background-color: #00e5ff;
-  height: 22vh;
-  width: 15vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-  text-align: center;
-  transition: transform 0.8s ease-in-out;
-}
-
-.mario-bros:hover {
-  transform: scale(1.05);
-}
-
-/*Contenedor donde se encuentra un logo de lego y sus juguetes*/
-.star-wars {
-  background-color: #00e5ff;
-  height: 22vh;
-  width: 15vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-  text-align: center;
-  transition: transform 0.8s ease-in-out;
-}
-.star-wars:hover {
-  transform: scale(1.05);
-}
-
-/*Contenedor donde se encuentra un logo de bob esponja y sus juguetes*/
-.bob-esponja {
-  background-color: #00e5ff;
-  height: 22vh;
-  width: 15vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
-  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
-  text-align: center;
-  transition: transform 0.8s ease-in-out;
-}
-
-.bob-esponja:hover {
-  transform: scale(1.05);
-}
-
 /*Contenedor, que agrupa "productos-imprescindibles, en display-flex*/
 .productos-imprescindibles {
   display: flex;

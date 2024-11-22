@@ -120,12 +120,14 @@ transform: scale(1.1);}
 }
 .menu-bar li {
   padding: 0.7vw;
+
 }
 
 .menu-bar li:hover {
   border-radius: 0.3vw;
   background-color: #00e5ff;
-  box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1); /* Sombra con medidas relativas */
+  box-shadow: 0 0.5vh 2vh rgba(0, 1, 0, 1); /* Sombra con medidas relativas */
+
 }
 
 /*Menu de opciones, ul en flex*/
@@ -155,14 +157,22 @@ transform: scale(1.1);}
   /* Coloca el submenú justo debajo del elemento padre */
   left: 0.5vw;
   background-color: #ff79b0;
-  border-radius: 0.8vw;
-  padding: 2vw;
+  border-radius: 1vw;
+  padding: 1vw;
   width: max-content;
   /* Ajusta el ancho del submenú según el contenido */
   padding-top: 1vh;
   /* Ajusta según lo necesario */
   z-index: 2;
 }
+.submenu-nosotros>li,
+.submenu-productos>li,
+.submenu-inicio>li,
+.submenu-contacto>li{
+  border: 0.1vw solid black;
+
+}
+
 
 /* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
 .menu-inicio:hover .submenu-inicio,
@@ -171,6 +181,8 @@ transform: scale(1.1);}
 .menu-contacto:hover .submenu-contacto {
   display: block;
 }
+
+
 
 nav a {
   padding-bottom: 1vh;
@@ -217,7 +229,10 @@ nav a {
   margin: auto;
   /* Centra la imagen dentro del contenedor */
 }
-
+.menu-inicio{
+  font-size: 1vw;
+  color: red;
+}
 /* Botones */
 .carousel-button {
   position: absolute;

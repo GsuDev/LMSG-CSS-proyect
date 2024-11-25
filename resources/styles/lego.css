@@ -145,6 +145,17 @@ ul li a {
 nav a {
     padding-bottom: 1vh;
 }
+.direccion-bar a{
+    color: grey;
+    height: 5vh;
+    font-size: 1.3vw;
+    text-decoration: none;
+    padding: 1vh;
+}
+.direccion-bar a:hover{
+    text-decoration: underline;
+    color:#3d91ff9a
+}
 /*Ul de las características de la página en flex*/
 .feature-list {
     display: flex;
@@ -155,3 +166,123 @@ nav a {
     background-color: #c2c2c2;
     height: 5vh;
 }
+/*Estilos de el cuerpo*/
+
+/*Estilos del footer*/
+/*Marcas colaboradoras (Prenatal)*/
+.contenedor-prenatal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
+  }
+  
+  .contenedor-marcas-colaboradoras > p {
+    margin-top: 6vh; /*Lo separo de las opiniones*/
+    font-size: 2.5vw;
+    font-weight: bold;
+  }
+  .agrupacion-prenatal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e72b6f;
+    height: 15vw;
+  }
+  
+  .contenedor-prenatal {
+    display: flex;
+    flex-direction: row;
+  }
+  .logos-prenatal {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 1.5vh;
+  }
+  
+  /*Footer*/
+  /*Agrupa a todo el footer, aplicamos display-flex*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vh;
+    }
+  
+  /*Contenedor que agrupa a ayuda,servicios...*/
+  .contenedor-footer-principal {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12vw;
+  }
+  
+  /*Aplicamos estilos a los párrafos*/
+  /*Título de ayuda, servicios...*/
+  .contenedor-footer-principal .active {
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.3vw;
+    margin-bottom: 0.9vw;
+  }
+  .contenedor-footer-principal p {
+    font-size: 1vw;
+    margin-bottom: 0.4vw;
+    color: #5c5c5c;
+  }
+  
+  /*Simulacion de enlace, a los p del contenedor principal de footer*/
+  .contenedor-footer-principal p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /*Contenedor de los metodos de pago y plataformas de descarga para la app*/
+  .contenedor-descarga-pago {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    gap: 17vw;
+    justify-content: center;
+    
+  }
+  
+  /*Contenedor de las plataformas de descarga de la app*/
+  .descarga {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    position: relative;
+    height: 15vh;
+  
+  }
+  .iconos-descarga {  
+    position: absolute;
+    left: 0.01vw;
+    top: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+  }
+  
+  .iconos-descarga img:hover{
+    cursor: pointer;
+  }
+  
+  /*Contenedor de los metodos de pago*/
+  .metodos-pago {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    position: relative;
+    
+  }
+  .iconos-metodos-pago {
+    position: absolute;
+    top: 4.5vh;
+    left: 0.1vw;
+  }
+  

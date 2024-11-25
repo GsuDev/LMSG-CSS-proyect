@@ -145,16 +145,18 @@ ul li a {
 nav a {
     padding-bottom: 1vh;
 }
-.direccion-bar a{
+/*Barra de direcciones*/
+.direccion-bar{
+    padding: 10px;
+    font-size: .8vw;
     color: grey;
-    height: 5vh;
-    font-size: 1.3vw;
+}
+.direccion-bar a{
     text-decoration: none;
-    padding: 1vh;
 }
 .direccion-bar a:hover{
     text-decoration: underline;
-    color:#3d91ff9a
+    color:#0048a78a
 }
 /*Ul de las características de la página en flex*/
 .feature-list {
@@ -167,7 +169,23 @@ nav a {
     height: 5vh;
 }
 /*Estilos de el cuerpo*/
-
+/*Menu vertical*/
+.menu-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: space-around;
+    height: 30vh;
+    width: 10vw;
+    text-align: center;
+    background-color:#e72b6f;
+}
+.filtro{
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+    margin-top: 3vh;
+}
 /*Estilos del footer*/
 /*Marcas colaboradoras (Prenatal)*/
 .contenedor-prenatal {

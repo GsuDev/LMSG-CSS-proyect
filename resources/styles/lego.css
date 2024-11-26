@@ -150,6 +150,7 @@ nav a {
     padding: 10px;
     font-size: .8vw;
     color: grey;
+    margin-left: 12vw;
 }
 .direccion-bar a{
     text-decoration: none;
@@ -169,25 +170,32 @@ nav a {
     height: 5vh;
 }
 /*Estilos de el cuerpo*/
+.countainer {
+    margin-left: 15%;
+    margin-right: 15%;
+}
 /*Menu vertical*/
 .menu-vertical {
     display: flex;
     flex-direction: column;
     gap: 3vw;
-    justify-content: space-around;
-    height: 30vh;
+    justify-content: justify;
+    height: 50vh;
     width: 10vw;
     text-align: center;
     background-color:#e72b6f;
 }
 .filtro{
     display: flex;
-    flex-direction: column;
-    gap: 1vh;
-    margin-top: 3vh;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
 }
 /*Estilos del footer*/
 /*Marcas colaboradoras (Prenatal)*/
+.active-colaboradora {
+    text-align: center;
+  }
 .contenedor-prenatal {
     display: flex;
     justify-content: center;

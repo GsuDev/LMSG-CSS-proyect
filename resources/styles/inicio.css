@@ -1,12 +1,23 @@
+:root {
+    --bg-color: #EEEBE8;
+    --bg-contrast-color: #2E2F34;
+    --my-blue: #7AA1C4;
+    --my-orange: #EA8250;
+    --main-color: #9C234A;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  color: inherit;
 }
 
 body {
-  margin: 0;
-  background-color: #ffffff;
+  background-color: var(--bg-color);
+  color: var(--bg-contrast-color);
   /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
 }
 
@@ -16,58 +27,32 @@ header {
   flex-direction: column;
 }
 
-/*Eliminación del punto de las listas*/
-ul {
-  list-style: none;
-}
-
-/*Eliminación del subrayado de los enlaces*/
-ul li a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.45vw;
-}
-
-/*Contenedor del logo y la barra de búsqueda*/
-
-.logo {
-  position: absolute;
-  left: 2vw;
-}
-
-.logo-img {
-  height: 11vh;
-}
-
 /* Contenedor de la barra de búsqueda y el logo */
 .search-bar {
   display: flex;
   position: relative;
   justify-content: center;
+  gap: 50vw;
   align-items: center;
-  height: 18vh; /* Altura del contenedor */
-  background-color: #e72b6f; /* Color de fondo */
+  height: 10vh; /* Altura del contenedor */
+  background-color: var(--bg-color); /* Color de fondo */
+  overflow: hidden;
 }
 
-/* Logo dentro del contenedor */
-.logo {
-  width: 4vw; /* Tamaño del logo basado en el ancho del viewport */
-  height: auto; /* Mantener la proporción del logo */
-  margin-right: 2vw; /* Espaciado a la derecha del logo */
+/* Logo */
+.logo-img {
+  height: 25vh;
 }
 
-/*Search bar*/
-
+/*Caja de busqueda*/
 .search-box {
   display: flex;
   justify-content: center; /* Centra el input dentro de la caja */
-  background: rgba(255, 121, 176, 0.8); /* Color semitransparente */
+  background: var(--my-blue); /* Color semitransparente */
   border-radius: 1.5vw; /* Bordes redondeados */
   padding: 0.5vh 1vw; /* Espaciado interno relativo */
   width: 25%;
-  position: absolute;
-  right: 60vw;
+
 }
 
 /* Estilo para el campo de texto */
@@ -80,23 +65,33 @@ ul li a {
   padding: 0.5vh; /* Espaciado interno relativo */
 }
 
+/* Le cambio el color al placeholder */
+.search-input::placeholder {
+    color: var(--bg-contrast-color);
+}
+
 /* Efecto focus en el input (cuando el usuario hace click en el campo) */
 .search-input:focus {
-  border-bottom: 0.1vw solid #ff79b0; /* Subraya el borde con el mismo color que el fondo */
+  border-bottom: 0.1vw solid var(--bg-color); /* Subraya el borde con el mismo color que el fondo */
   transition: border-bottom 0.3s ease; /* Transición suave */
 }
 
 /*Contenedor del menú*/
 .menu-bar {
-  background-color: #e72b6f;
-}
-.menu-bar li {
-  padding: 0.7vw;
-}
+  background-color: var(--my-orange);
+  height: 5vh;
 
+}
+/* Estilo de cada elemento principal del menú */
+.menu-bar li {
+  list-style: none;
+  padding: 0.8vh 0.8vh;
+  margin: 0.3vh 0.3vh;
+}
+/* Efecto de hover */
 .menu-bar li:hover {
   border-radius: 0.3vw;
-  background-color: #00e5ff;
+  background-color: var(--my-blue);
   box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1); /* Sombra con medidas relativas */
 }
 
@@ -106,17 +101,16 @@ ul li a {
   flex-direction: row;
   gap: 18vw;
   justify-content: center;
-  height: 7vh;
-  text-align: center;
+  align-items: center;
+  height: inherit;
 }
 
 /* Estilo de cada elemento principal del menú */
 .menu > li {
-  position: relative;
-  /* Mantiene a cada elemento en su lugar sin afectar a los demás */
+  position: relative; /* Mantiene a cada elemento en su lugar sin afectar a los demás */
 }
 
-/* Submenú: inicialmente oculto */
+/* SubmenúS: inicialmente ocultoS */
 .submenu-inicio,
 .submenu-productos,
 .submenu-nosotros,
@@ -126,7 +120,7 @@ ul li a {
   top: 100%;
   /* Coloca el submenú justo debajo del elemento padre */
   left: 0.5vw;
-  background-color: #ff79b0;
+  background-color: var(--my-orange);
   border-radius: 0.8vw;
   padding: 2vw;
   width: max-content;
@@ -144,9 +138,6 @@ ul li a {
   display: block;
 }
 
-nav a {
-  padding-bottom: 1vh;
-}
 
 /*Ul de las características de la página en flex*/
 .feature-list {
@@ -155,7 +146,7 @@ nav a {
   gap: 18vw;
   justify-content: center;
   align-items: center;
-  background-color: #c2c2c2;
+  background-color: var(--main-color);
   height: 5vh;
 }
 
@@ -333,7 +324,7 @@ nav a {
 }
 .active-colaboradora {
   text-align: center;
-  color: #333333;
+  color: var(--bg-contrast-color);
   font-weight: bold;
   margin-bottom: 2.5vh;
 }
@@ -419,7 +410,7 @@ footer {
 /*Título de ayuda, servicios...*/
 .contenedor-footer-principal .active {
   text-align: center;
-  color: #333333;
+  color: var(--bg-contrast-color);
   font-weight: bold;
   font-size: 1.3vw;
   margin-bottom: 0.9vw;

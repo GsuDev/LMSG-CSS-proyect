@@ -75,16 +75,83 @@
             <div class="titulo-barbie"><h1>Barbie</h1"></div>
             <div class="texto-barbie"><p>✨ ¡Barbie es la muñeca más icónica del mundo, y en Jugueteka lo tenemos todo! 💖 Sabemos que siempre buscas lo último, ¡y Barbie se reinventa cada año con nuevos modelos y colecciones! 👗🌟
                 Desde la muñeca clásica hasta Dreamtopia 🦄, princesas 👑, profesiones 👩‍🚀 y fashionistas ✨, ¡encontrarás tu Barbie favorita al mejor precio! 💸 No olvides explorar sus increíbles accesorios, desde caravanas hasta casas y hospitales de mascotas. 🚐🏡 ¡Todo está en Jugueteka! 🎁🎀</p>
+                <div class="form-group">
+                <label class="control-label " for="sortForm1">
+                    Ordenar por:</label>
+
+                <form id="sortForm1" name="sortForm1" method="get" action="#">
+                    <select id="sortOptions1" name="sort" class="form-control">
+                        <option disabled="">Ordenar por:</option>
+                        <option value="relevance" selected="selected">
+                                Relevancia</option>
+                        <option value="name-asc">
+                                Nombre (ascendente)</option>
+                        <option value="name-desc">
+                                Nombre (descendente)</option>
+                        <option value="price-asc">
+                                Precio (más bajos primero)</option>
+                        <option value="price-desc">
+                                Precio (más altos primero)</option>
+                        <option value="stars-desc">
+                                Mejor Valorados</option>
+                        <option value="stars-asc">
+                                Peor Valorados</option>
+                        </select>
+                    <input type="hidden" name="q" value=":relevance">
+                    </form>
+            </div>
             </div>
         </div>
         <!--Contenedor donde nos encontramos los filtros de la página-->
-        <div class="menu-vertical">
-            <div class="filtro edad">FILTRO EDAD</div>
-            <div class="filtro precio">FILTRO PRECIO</div>
-            <div class="filtro valoracion">FILTRO VALORACION</div>
-            <div class="filtro categoria">FILTRO CATEGORIA</div>
-            <div class="filtro promocion">FILTRO PROMOCION</div>
-        </div>
+        <nav class="menu-vertical">
+            <ul>
+                <li class="filtro edad"><a href="#">Comprar por edad</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro precio"><a href="#">Comprar por precio</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro valoracion"><a href="#">Comprar por valoracion</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro categoria"><a href="#">Comprar por categoria</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro promocion"><a href="#">Comprar por promocion</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
         <!--Contenedor donde nos encontramos los productos de la página-->
         <div class="productos"></div>
     </div>

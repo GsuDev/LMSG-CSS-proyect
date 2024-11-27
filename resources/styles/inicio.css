@@ -1,3 +1,9 @@
+@font-face {
+    font-family: "Grandstander";
+    src: url(../fonts/Grandstander-VariableFont_wght.ttf) format("truetype");
+}
+
+
 :root {
     --bg-color: #EEEBE8;
     --bg-contrast-color: #2E2F34;
@@ -7,6 +13,7 @@
 }
 
 * {
+  /*Reseteamos los estilos por defecto*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,7 +25,7 @@
 body {
   background-color: var(--bg-color);
   color: var(--bg-contrast-color);
-  /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
+  font-family: 'Grandstander', sans-serif;
 }
 
 /*Contenedor que agrupa a search-bar, menu-bar, features-bar*/
@@ -32,16 +39,29 @@ header {
   display: flex;
   position: relative;
   justify-content: center;
-  gap: 50vw;
+  gap: 2vw;
   align-items: center;
   height: 10vh; /* Altura del contenedor */
-  background-color: var(--bg-color); /* Color de fondo */
+  background-color: var(--main-color); /* Color de fondo */
   overflow: hidden;
 }
-
+.search-bar-left {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  justify-content: center;
+  align-items: center;
+}
+.search-bar-right {
+  display: flex;
+  flex-direction: row;
+  gap: 2vw;
+  align-items: center;
+}
 /* Logo */
 .logo-img {
   height: 25vh;
+  margin-top: 2vh;
 }
 
 /*Caja de busqueda*/
@@ -51,7 +71,7 @@ header {
   background: var(--my-blue); /* Color semitransparente */
   border-radius: 1.5vw; /* Bordes redondeados */
   padding: 0.5vh 1vw; /* Espaciado interno relativo */
-  width: 25%;
+  width: 20vw;
 
 }
 
@@ -78,7 +98,8 @@ header {
 
 /*Contenedor del menú*/
 .menu-bar {
-  background-color: var(--my-orange);
+  background-color: var(--main-color);
+  color: var(--bg-color);
   height: 5vh;
 
 }
@@ -120,7 +141,7 @@ header {
   top: 100%;
   /* Coloca el submenú justo debajo del elemento padre */
   left: 0.5vw;
-  background-color: var(--my-orange);
+  background-color: var(--main-color);
   border-radius: 0.8vw;
   padding: 2vw;
   width: max-content;
@@ -146,8 +167,9 @@ header {
   gap: 18vw;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-color);
-  height: 5vh;
+  background-color: var(--my-orange);
+  height: 3vh;
+  color: var(--bg-contrast-color);
 }
 
 /* Contenedor del carrusel */
@@ -179,7 +201,7 @@ header {
   display: block;
   margin: auto;
   /* Centra la imagen dentro del contenedor */
-  border: 0.1vw #00e5ff solid;
+  border: 0.1vw var(--my-blue) solid;
 }
 
 /* Botones */
@@ -245,7 +267,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #00e5ff;
+  background-color: var(--my-orange);
   border-radius: 2vh; /* Bordes redondeados relativos al alto de la ventana */
   box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8); /* Sombra relativa al alto */
   text-align: center;
@@ -370,6 +392,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: none;
   background-color: #e72b6f;
   height: 15vw;
 }

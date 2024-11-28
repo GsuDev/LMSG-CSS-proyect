@@ -33,7 +33,7 @@ header {
     display: flex;
     position: relative;
     justify-content: center;
-    gap: 2vw;
+    gap: 5vw;
     align-items: center;
     height: 10vh;
     /* Altura del contenedor */
@@ -53,6 +53,9 @@ header {
     flex-direction: row;
     gap: 2vw;
     align-items: center;
+}
+.cart-img{
+    height: 4vh;
 }
 /* Logo */
 .logo-img {

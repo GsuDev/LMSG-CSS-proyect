@@ -254,13 +254,16 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--my-orange);
+    background-color: var(--my-blue);
     border-radius: 2vh;
     /* Bordes redondeados relativos al alto de la ventana */
     box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.8);
     /* Sombra relativa al alto */
     text-align: center;
     transition: transform 0.8s ease-in-out;
+}
+.box img {
+    height: 10vh;
 }
 .box:hover {
     transform: scale(1.05);

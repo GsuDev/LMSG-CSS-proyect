@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubre aquí todos los personajes y muñecos de Barbie - Jugueteka</title>
+    <link rel="stylesheet" href="resources/styles/lego.css">
+</head>
+
+<body>
+    <!--Cabecera donde apareceran las barras de búsqueda y el logo-->
+    <header>
+        <!--Creación del container de la barra de búsqueda	-->
+        <div class="search-bar">
+            <!--Creación de un contenedor para el logo-->
+            <div class="logo"><img class="#" src="#" alt="logo"></div>
+            <div class="search-box"><input class="search-input" type="text" placeholder="Busca aquí algo divertido ">
+            </div>
+        </div>
+        <!--Menú de navegación-->
+        <nav class="menu-bar">
+            <!--Creación del menú de navegación-->
+            <ul class="menu">
+                <li class="menu-inicio"><a href="#">Inicio</a>
+                    <!--Creación de clase para identificar a cada elemento del menu, evitamos que se abran todos a la vez-->
+                    <ul class="submenu-inicio">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-productos"><a href="#">Productos</a>
+                    <ul class="submenu-productos">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-nosotros"><a href="#">Nosotros</a>
+                    <ul class="submenu-nosotros">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+                </li>
+                <li class="menu-contacto"><a href="#">Contacto</a>
+                    <ul class="submenu-contacto">
+                        <li><a href="#">Submenu 1</a></li>
+                        <li><a href="#">Submenu 2</a></li>
+                        <li><a href="#">Submenu 3</a></li>
+                    </ul>
+
+                </li>
+            </ul>
+        </nav>
+        <!--Ubicación de la página-->
+        <div class="direccion-bar">
+            <a href="#">Inicio</a> / <a href="#">Barbie</a>
+        </div>
+        <!--Características de la página-->
+        <div class="features-bar">
+            <!--Creación de lista, para las características, en flex-->
+            <ul class="feature-list">
+                <!--Cada elemento de la lista es una característica-->
+                <li><a href="#">Envío 24/48h</a></li>
+                <li><a href="#">10% de descuento en compras superiores a 100€</a></li>
+                <li><a href="#">2x1 en artículos LEGO</a></li>
+
+            </ul>
+        </div>
+    </header>
+
+    <!--Cuerpo de la página-->
+    <div class="countainer">
+        <div class="pagina-barbie">
+            <div class="img-barbie"><img src="#">imagen barbie</div>
+            <div class="titulo-barbie">
+                <h1>Barbie</h1">
+            </div>
+            <div class="texto-barbie">
+                <p>✨ ¡Barbie es la muñeca más icónica del mundo, y en Jugueteka lo tenemos todo! 💖 Sabemos que siempre
+                    buscas lo último, ¡y Barbie se reinventa cada año con nuevos modelos y colecciones! 👗🌟
+                    Desde la muñeca clásica hasta Dreamtopia 🦄, princesas 👑, profesiones 👩‍🚀 y fashionistas ✨,
+                    ¡encontrarás tu Barbie favorita al mejor precio! 💸 No olvides explorar sus increíbles accesorios,
+                    desde caravanas hasta casas y hospitales de mascotas. 🚐🏡 ¡Todo está en Jugueteka! 🎁🎀</p>
+                <div class="form-group">
+                    <label class="control-label " for="sortForm1">
+                        Ordenar por:</label>
+
+                    <form id="sortForm1" name="sortForm1" method="get" action="#">
+                        <select id="sortOptions1" name="sort" class="form-control">
+                            <option disabled="">Ordenar por:</option>
+                            <option value="relevance" selected="selected">
+                                Relevancia</option>
+                            <option value="name-asc">
+                                Nombre (ascendente)</option>
+                            <option value="name-desc">
+                                Nombre (descendente)</option>
+                            <option value="price-asc">
+                                Precio (más bajos primero)</option>
+                            <option value="price-desc">
+                                Precio (más altos primero)</option>
+                            <option value="stars-desc">
+                                Mejor Valorados</option>
+                            <option value="stars-asc">
+                                Peor Valorados</option>
+                        </select>
+                        <input type="hidden" name="q" value=":relevance">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--Contenedor donde nos encontramos los filtros de la página-->
+        <nav class="menu-vertical">
+            <ul>
+                <li class="filtro edad"><a href="#">Comprar por edad</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro precio"><a href="#">Comprar por precio</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro valoracion"><a href="#">Comprar por valoracion</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro categoria"><a href="#">Comprar por categoria</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+                <li class="filtro promocion"><a href="#">Comprar por promocion</a>
+                    <ul>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                        <li><a href="#">-</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Contenedor donde nos encontramos los productos de la página-->
+        <div class="productos"></div>
+    </div>
+
+    <!--Contenedor de marcas colaboradoras-->
+    <div class="contenedor-marcas-colaboradoras">
+        <p class="active-colaboradora">Sigue a nuestra marca colaboradora</p>
+
+        <!--Contenedor que agrupa a preenatal y sus redes sociales-->
+        <div class="agrupacion-prenatal">
+            <!--Contenedor de la marca colaboradora prenatal-->
+            <div class="contenedor-prenatal">
+
+
+                <img src="resources/media/img/prenatal-footer.svg">
+            </div>
+            <!--Contenedor de las redes sociales de prenatal"-->
+            <div class="logos-prenatal">
+                <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_ES"> <img
+                        src="resources/media/logos/facebook-prenatal (1).svg"></a>
+                <a href="https://www.instagram.com/"> <img src="resources/media/logos/instagram-prenatal (1).svg"></a>
+                <a href="https://x.com/?lang=es"> <img src="resources/media/logos/x-prenatal (1).svg"></a>
+                <a href="https://www.youtube.com/account"><img src="resources/media/logos/youtube-prenatal (1).svg"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer de la página-->
+    <footer>
+        <!--Creacion del contenedor que agrupa ayuda,servicios...En display-flex-->
+        <div class="contenedor-footer-principal">
+
+            <!--Contenedor de ayuda, y sus párrafos correspondientes-->
+            <div class="contenedor-ayuda">
+                <p class="active">AYUDA</p>
+                <p>Contacto</p>
+                <p>Opciones de entrega y costes</p>
+                <p>Métodos de pago</p>
+                <p>Promociones</p>
+            </div>
+
+            <!--Contenedor de servicios, y sus párrafos correspondientes-->
+            <div class="contenedor-servicios">
+                <p class="active">SERVICIOS</p>
+                <p>Tarjeta de regalo digital</p>
+                <p>Devoluciones y garantías</p>
+                <p>Family Club</p>
+                <p>Programa de fidelidad</p>
+            </div>
+
+            <!--Contenedor de empresa, y sus párrafos correspondientes-->
+            <div class="contenedor-empresa">
+                <p class="active">EMPRESA</p>
+                <p>Historia</p>
+                <p>Tiendas</p>
+                <p>Empleo</p>
+                <p>Afiliados</p>
+            </div>
+
+            <!--Contenedor de "otros" y sus párrafos correspondientes-->
+            <div class="contenedor-otros">
+                <p class="active">OTROS</p>
+                <p>Condiciones de compra</p>
+                <p>Política de privacidad</p>
+                <p>Política de cookies</p>
+                <p>Eventos</p>
+            </div>
+        </div>
+
+        <!--Contenedor que agrupa a los metodos de pago y apps para descargar-->
+        <div class="contenedor-descarga-pago">
+            <!--Contenedor que agrupan las plataformas habilitadas para descargar la aplicación-->
+
+            <div class="descarga">
+                <p> DESCARGA NUESTRA APP</p>
+                <!--Contenedor que agrupan las plataformas (iconos)-->
+                <div class="iconos-descarga">
+                    <img src="resources/media/img/apple-ok (2).svg">
+                    <img src="resources/media/img/google-ok (3).svg">
+                </div>
+
+            </div>
+            <!--Contenedor que agrupan los metodos de pago-->
+            <div class="metodos-pago">
+                <p>MEDIOS DE PAGO</p>
+                <div class="iconos-metodos-pago">
+                    <img src="resources/media/img/medios-pago-es (1).png">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

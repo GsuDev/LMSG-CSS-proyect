@@ -1,339 +1,379 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 body {
-  margin: 0;
-  background-color: #ffffff;
-  /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
+    margin: 0;
+    background-color: #ffffff;
+    /*Eliminamos el margen para que se ajsute a la pantalla completa el contenido*/
 }
+
 /*Contenedor que agrupa a search-bar, menu-bar, features-bar*/
 header {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 /*Eliminación del punto de las listas*/
 ul {
-  list-style: none;
+    list-style: none;
 }
+
 /*Eliminación del subrayado de los enlaces*/
 ul li a {
-  text-decoration: none;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.45vw;
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.45vw;
 }
+
 /*Contenedor del logo y la barra de búsqueda*/
 .logo {
-  position: absolute;
-  left: 2vw;
+    position: absolute;
+    left: 2vw;
 }
+
 .logo-img {
-  height: 11vh;
+    height: 11vh;
 }
+
 /* Contenedor de la barra de búsqueda y el logo */
 .search-bar {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  height: 18vh;
-  /* Altura del contenedor */
-  background-color: #e72b6f;
-  /* Color de fondo */
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 18vh;
+    /* Altura del contenedor */
+    background-color: #e72b6f;
+    /* Color de fondo */
 }
+
 /* Logo dentro del contenedor */
 .logo {
-  width: 4vw;
-  /* Tamaño del logo basado en el ancho del viewport */
-  height: auto;
-  /* Mantener la proporción del logo */
-  margin-right: 2vw;
-  /* Espaciado a la derecha del logo */
+    width: 4vw;
+    /* Tamaño del logo basado en el ancho del viewport */
+    height: auto;
+    /* Mantener la proporción del logo */
+    margin-right: 2vw;
+    /* Espaciado a la derecha del logo */
 }
+
 /*Search bar*/
 .search-box {
-  display: flex;
-  justify-content: center;
-  /* Centra el input dentro de la caja */
-  background: rgba(255, 121, 176, 0.8);
-  /* Color semitransparente */
-  border-radius: 1.5vw;
-  /* Bordes redondeados */
-  padding: 0.5vh 1vw;
-  /* Espaciado interno relativo */
-  width: 25%;
-  position: absolute;
-  right: 60vw;
+    display: flex;
+    justify-content: center;
+    /* Centra el input dentro de la caja */
+    background: rgba(255, 121, 176, 0.8);
+    /* Color semitransparente */
+    border-radius: 1.5vw;
+    /* Bordes redondeados */
+    padding: 0.5vh 1vw;
+    /* Espaciado interno relativo */
+    width: 25%;
+    position: absolute;
+    right: 60vw;
 }
+
 /* Estilo para el campo de texto */
 .search-input {
-  border: none;
-  /* Sin borde */
-  background: transparent;
-  /* Fondo transparente */
-  color: white;
-  /* Texto blanco */
-  font-size: 1.3vw;
-  /* Tamaño de fuente relativo al ancho de la ventana */
-  outline: none;
-  /* Sin borde al seleccionar */
-  padding: 0.5vh;
-  /* Espaciado interno relativo */
+    border: none;
+    /* Sin borde */
+    background: transparent;
+    /* Fondo transparente */
+    color: white;
+    /* Texto blanco */
+    font-size: 1.3vw;
+    /* Tamaño de fuente relativo al ancho de la ventana */
+    outline: none;
+    /* Sin borde al seleccionar */
+    padding: 0.5vh;
+    /* Espaciado interno relativo */
 }
+
 /* Efecto focus en el input (cuando el usuario hace click en el campo) */
 .search-input:focus {
-  border-bottom: 0.1vw solid #ff79b0;
-  /* Subraya el borde con el mismo color que el fondo */
-  transition: border-bottom 0.3s ease;
-  /* Transición suave */
+    border-bottom: 0.1vw solid #ff79b0;
+    /* Subraya el borde con el mismo color que el fondo */
+    transition: border-bottom 0.3s ease;
+    /* Transición suave */
 }
+
 /*Contenedor del menú*/
 .menu-bar {
-  background-color: #e72b6f;
+    background-color: #e72b6f;
 }
+
 .menu-bar li {
-  padding: 0.7vw;
+    padding: 0.7vw;
 }
+
 .menu-bar li:hover {
-  border-radius: 0.3vw;
-  background-color: #00e5ff;
-  box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1);
-  /* Sombra con medidas relativas */
+    border-radius: 0.3vw;
+    background-color: #00e5ff;
+    box-shadow: 0 0.5vh 2vw rgba(0, 0, 0, 1);
+    /* Sombra con medidas relativas */
 }
+
 /*Menu de opciones, ul en flex*/
 .menu {
-  display: flex;
-  flex-direction: row;
-  gap: 18vw;
-  justify-content: center;
-  height: 7vh;
-  text-align: center;
+    display: flex;
+    flex-direction: row;
+    gap: 18vw;
+    justify-content: center;
+    height: 7vh;
+    text-align: center;
 }
+
 /* Estilo de cada elemento principal del menú */
 .menu>li {
-  position: relative;
-  /* Mantiene a cada elemento en su lugar sin afectar a los demás */
+    position: relative;
+    /* Mantiene a cada elemento en su lugar sin afectar a los demás */
 }
+
 /* Submenú: inicialmente oculto */
 .submenu-inicio,
 .submenu-productos,
 .submenu-nosotros,
 .submenu-contacto {
-  display: none;
-  position: absolute;
-  top: 100%;
-  /* Coloca el submenú justo debajo del elemento padre */
-  left: 0.5vw;
-  background-color: #ff79b0;
-  border-radius: 0.8vw;
-  padding: 2vw;
-  width: max-content;
-  /* Ajusta el ancho del submenú según el contenido */
-  padding-top: 1vh;
-  /* Ajusta según lo necesario */
-  z-index: 2;
+    display: none;
+    position: absolute;
+    top: 100%;
+    /* Coloca el submenú justo debajo del elemento padre */
+    left: 0.5vw;
+    background-color: #ff79b0;
+    border-radius: 0.8vw;
+    padding: 2vw;
+    width: max-content;
+    /* Ajusta el ancho del submenú según el contenido */
+    padding-top: 1vh;
+    /* Ajusta según lo necesario */
+    z-index: 2;
 }
+
 /* Al hacer hover sobre el elemento principal del menú, se muestra el submenú */
 .menu-inicio:hover .submenu-inicio,
 .menu-productos:hover .submenu-productos,
 .menu-nosotros:hover .submenu-nosotros,
 .menu-contacto:hover .submenu-contacto {
-  display: block;
+    display: block;
 }
+
 nav a {
-  padding-bottom: 1vh;
+    padding-bottom: 1vh;
 }
+
 /*Barra de direcciones*/
-.direccion-bar{
-  padding: 10px;
-  font-size: .8vw;
-  color: grey;
-  margin-left: 12vw;
+.direccion-bar {
+    padding: 10px;
+    font-size: .8vw;
+    color: grey;
+    margin-left: 12vw;
 }
-.direccion-bar a{
-  text-decoration: none;
+
+.direccion-bar a {
+    text-decoration: none;
 }
-.direccion-bar a:hover{
-  text-decoration: underline;
-  color:#0048a78a
+
+.direccion-bar a:hover {
+    text-decoration: underline;
+    color: #0048a78a
 }
+
 /*Ul de las características de la página en flex*/
 .feature-list {
-  display: flex;
-  flex-direction: row;
-  gap: 18vw;
-  justify-content: center;
-  align-items: center;
-  background-color: #c2c2c2;
-  height: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 18vw;
+    justify-content: center;
+    align-items: center;
+    background-color: #c2c2c2;
+    height: 5vh;
 }
+
 /*Estilos de el cuerpo*/
 .countainer {
-  margin-left: 15%;
-  margin-right: 15%;
+    margin-left: 15%;
+    margin-right: 15%;
 }
+
 /*Estilos de la sección de productos*/
 .form-group {
-  margin-left: 20%;
-  margin-bottom: 5vh;
+    margin-left: 20%;
+    margin-bottom: 5vh;
 }
+
 /*Menu vertical*/
 .menu-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 3vw;
-  justify-content: justify;
-  height: auto;
-  width: 20%;
-  text-align: center;
-  background-color:#e72b6f;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: justify;
+    height: auto;
+    width: 20%;
+    text-align: center;
+    background-color: #e72b6f;
 }
-nav ul{
-margin: 0;
-padding: 0;
-list-style: none;
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
-nav ul a{
-display: block;
-color: rgb(0, 0, 255);
-padding: 6px 10px;
-box-sizing: border-box;
+
+nav ul a {
+    display: block;
+    color: rgb(0, 0, 255);
+    padding: 6px 10px;
+    box-sizing: border-box;
 }
-nav ul ul{
-  height: 0px;
-  overflow: hidden;
+
+nav ul ul {
+    height: 0px;
+    overflow: hidden;
 }
-nav ul li ul li a{
-  margin-left: 10px;
+
+nav ul li ul li a {
+    margin-left: 10px;
 }
-nav ul li:hover ul{
-  height: auto;
+
+nav ul li:hover ul {
+    height: auto;
 }
-.filtro{
-  display: flex;
-  flex-direction: column;
-  padding: 1%;
-  margin-left: 10px;
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin-left: 10px;
 }
+
 /*Estilos del footer*/
 /*Marcas colaboradoras (Prenatal)*/
 .active-colaboradora {
-  text-align: center;
-}
-.contenedor-prenatal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 9vh;
+    text-align: center;
 }
 
-.contenedor-marcas-colaboradoras > p {
-  margin-top: 6vh; /*Lo separo de las opiniones*/
-  font-size: 2.5vw;
-  font-weight: bold;
+.contenedor-prenatal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 9vh;
 }
+
+.contenedor-marcas-colaboradoras>p {
+    margin-top: 6vh;
+    /*Lo separo de las opiniones*/
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+
 .agrupacion-prenatal {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #e72b6f;
-  height: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e72b6f;
+    height: 15vw;
 }
 
 .contenedor-prenatal {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
+
 .logos-prenatal {
-  display: flex;
-  flex-direction: row;
-  gap: 1vw;
-  margin-top: 1.5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 1.5vh;
 }
 
 /*Footer*/
 /*Agrupa a todo el footer, aplicamos display-flex*/
 footer {
-  display: flex;
-  flex-direction: column;
-  padding: 1.5vh;
-  }
+    display: flex;
+    flex-direction: column;
+    padding: 1.5vh;
+}
 
 /*Contenedor que agrupa a ayuda,servicios...*/
 .contenedor-footer-principal {
-  margin-top: 10vh;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  gap: 12vw;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 12vw;
 }
 
 /*Aplicamos estilos a los párrafos*/
 /*Título de ayuda, servicios...*/
 .contenedor-footer-principal .active {
-  text-align: center;
-  color: #333333;
-  font-weight: bold;
-  font-size: 1.3vw;
-  margin-bottom: 0.9vw;
+    text-align: center;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.3vw;
+    margin-bottom: 0.9vw;
 }
+
 .contenedor-footer-principal p {
-  font-size: 1vw;
-  margin-bottom: 0.4vw;
-  color: #5c5c5c;
+    font-size: 1vw;
+    margin-bottom: 0.4vw;
+    color: #5c5c5c;
 }
 
 /*Simulacion de enlace, a los p del contenedor principal de footer*/
-.contenedor-footer-principal p:hover{
-  text-decoration: underline;
-  cursor: pointer;
+.contenedor-footer-principal p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*Contenedor de los metodos de pago y plataformas de descarga para la app*/
 .contenedor-descarga-pago {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10vh;
-  gap: 17vw;
-  justify-content: center;
-  
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    gap: 17vw;
+    justify-content: center;
+
 }
 
 /*Contenedor de las plataformas de descarga de la app*/
 .descarga {
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  position: relative;
-  height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 15vh;
 
 }
-.iconos-descarga {  
-  position: absolute;
-  left: 0.01vw;
-  top: 4.5vh;
-  display: flex;
-  flex-direction: row;
-  gap: 1.5vw;
+
+.iconos-descarga {
+    position: absolute;
+    left: 0.01vw;
+    top: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
 }
 
-.iconos-descarga img:hover{
-  cursor: pointer;
+.iconos-descarga img:hover {
+    cursor: pointer;
 }
 
 /*Contenedor de los metodos de pago*/
 .metodos-pago {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  position: relative;
-  
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    position: relative;
+
 }
+
 .iconos-metodos-pago {
-  position: absolute;
-  top: 4.5vh;
-  left: 0.1vw;
+    position: absolute;
+    top: 4.5vh;
+    left: 0.1vw;
 }

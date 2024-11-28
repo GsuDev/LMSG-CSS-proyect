@@ -411,3 +411,55 @@ footer {
     margin-bottom: 0.4vw;
     color: #5c5c5c;
 }
+
+/*Simulacion de enlace, a los p del contenedor principal de footer*/
+.contenedor-footer-principal p:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/*Contenedor de los metodos de pago y plataformas de descarga para la app*/
+.contenedor-descarga-pago {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10vh;
+  gap: 17vw;
+  justify-content: center;
+  
+}
+
+/*Contenedor de las plataformas de descarga de la app*/
+.descarga {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  position: relative;
+  height: 15vh;
+
+}
+.iconos-descarga {  
+  position: absolute;
+  left: 0.01vw;
+  top: 4.5vh;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5vw;
+}
+
+.iconos-descarga img:hover{
+  cursor: pointer;
+}
+
+/*Contenedor de los metodos de pago*/
+.metodos-pago {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+  position: relative;
+  
+}
+.iconos-metodos-pago {
+  position: absolute;
+  top: 4.5vh;
+  left: 0.1vw;
+}

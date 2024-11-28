@@ -1,0 +1,293 @@
+body {
+	/*background-color: #212121;*/ /*Color de fondo: No necesario porque lo cambiamos con la animacion*/
+	width: 100vw; /*Tamaño de la pantalla de login*/
+	height: 100vh;
+	margin: 0; /*Reseteamos el margen por defecto para que no nos moleste*/
+	padding: 0; /*Reseteamos el padding por defecto para que no nos moleste*/
+	font-family: 'Inter'; /*Fuente del login*/
+	overflow: hidden; /*Para que no se muestre el scroll en la pantalla de login en alguna resolucion concreta*/
+    background-color: #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(710deg, #00e5ff,#4d44fc, #ff39d7);
+    background-size: 400% 400%; /* Amplía el área del degradado para animarlo */
+    animation: gradientShift 15s ease infinite; /* Suaviza el cambio de colores */
+  }
+  @keyframes gradientShift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+/*Estilos para el boton del logo de arriba a la derecha*/
+
+/*Contenedor del logo de arriba a la derecha*/
+.imagenLogo {
+	position: absolute;
+	top: 7vh;
+	left: 5vw;
+}
+
+/*Logo de arriba a la derecha*/
+.imagenLogo img {
+	width: 10vw;
+	transition: all 0.3s ease-in-out;
+
+}
+
+/*Animacion del logo de arriba a la derecha*/
+.imagenLogo img:hover {
+	transform: scale(1.05); /*Escala el logo un 5% al pasar el raton por encima*/
+	cursor: pointer; /*Cambia el cursor al pasar el raton por encima*/
+}
+
+
+/*Estilos para el formulario de login*/
+
+/*Contenedor exterior del formulario de login*/
+.form-container {
+	/*centramos el div del formulario*/
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/*Caja interior del formulario de login*/
+.form {
+	/*Utilizamos flexbox column para centrar los elementos del formulario*/
+	display: flex;
+	flex-direction: column;
+	/*Le damos medidas a la caja que posteriormente moveremos con JS*/
+	width: 20vw;
+	height: 65vh;
+	/*Hueco entre las cajas, los botones etc. Es el hueco vertical ej.: el espacio entre la caja user y la password*/
+	gap: 10px;
+	/*Damos padding a la caja para respetar la estetica (la unidad em es relativa al tamaño heredado de la fuente)*/
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-bottom: 0.4em;
+	background-color: #000000;
+	border-radius: 25px;
+    transition: transform 0.6s ease, border 0.3s ease; /* Suaviza los cambios en transform y border */
+}
+
+
+.form:hover {
+    transform: scale(1.05); /* Escala ligeramente */
+	border: 1.5px solid #00e5ff;
+}
+
+/*Texto "Login" de arriba del formulario*/
+#heading {
+	text-align: center;
+	margin: 1.6em;
+	color: rgb(255, 255, 255);
+	font-size: 1.6em;
+}
+
+/*Estilo de las cajas para UserName y password*/
+.field {
+	/*Utilizamos flexbox para centrar los elementos de cada caja*/
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5em;
+	border-radius: 25px; /*Redondeamos las esquinas de la caja*/
+	padding: 0.6em;
+
+	/*Quitamos los bordes y el outline por defecto en la caja para que los input no tengan borde ni outline*/
+	border: none;
+	outline: none;
+
+    box-shadow: inset 0 3px 15px rgba(200, 200, 200, 0.4); /* Sombra gris suave */
+	background-color: #FFFFFF; /*Color del fondo de las cajas*/
+}
+
+/*Símbolo de "@" y "candado"*/
+.input-icon {
+	height: 1.3em;
+	width: 1.3em;
+	fill: #000000;
+}
+
+/*Icono del boton de revelado de la contraseña*/
+.eye{
+	/*Quitamos los estilos por defecto de button*/
+	border: 0;
+    background-color: #FFFFFF;
+    
+	color: #000000;
+	cursor: pointer;
+	transform: translate(0%, 13%); /*Agregamos un desplazamiento vertical de 10%, para que el icono se vea centrado*/
+}
+
+/*Caja de texto interna de los campos de contraseña y usuario*/
+.input-field {
+	/*Quitamos los estilos por defecto de input*/
+	background: none;
+	border: none;
+	outline: none;
+	width: 100%;
+	color:#000000;
+    font: bold 0.8em 'Inter';
+}
+
+/*Estilo de los botones de login y sign up*/
+/*Contenedor de los botones*/
+.form .btn {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	margin-top: 2.5em;
+}
+
+/*Estilos para el botón de login*/
+.button1 {
+	/*Agregamos padding al los boton acorde con lo que mide la palabra (la unidad "em" es relativa al tamaño heredado de la fuente)*/
+	padding: 0.5em;
+	padding-left: 1.1em;
+	padding-right: 1.1em;
+	border-radius: 5px;
+	margin-right: 0.5em;
+	/*Quitamos el border y el outline por defecto de button*/
+	border: none;
+	outline: none;
+	/*Agregamos la transicion de color al botón ya que si este estilo lo ponemos en hover solo funciona cuando pones el raton encima y al quitarlo no hace el transition*/
+	transition: .4s ease-in-out;
+	/*Establecemos el color de fondo y el color del texto*/
+	background-color: #252525;
+	color: white;
+	/*Establecemos el ancho del botón*/
+	width: 15em;
+    font-weight: bold;
+
+}
+
+/*Estilo del boton de "login" al pasar el ratón por encima*/
+.button1:hover {
+	background-color: #00e5ff;
+	color: #000000; /*FIXME Redundante porque la fuente ya es blanca antes del hover*/
+}
+
+/*Boton de "Sign Up"*/
+.button2 {
+	/*Agregamos padding al los boton acorde con lo que mide la palabra (la unidad "em" es relativa al tamaño heredado de la fuente)*/
+	padding: 0.5em;
+	padding-left: 2.3em;
+	padding-right: 2.3em;
+	border-radius: 5px;
+	/*Quitamos el border y el outline por defecto de button*/
+	border: none;
+	outline: none;
+	/*Agregamos la transicion de color al botón ya que si este estilo lo ponemos en hover solo funciona cuando pones el raton encima y al quitarlo no hace el transition*/
+	transition: .4s ease-in-out;
+	/*Establecemos el color de fondo y el color del texto*/
+	background-color: #252525;
+	color: white;
+	/*Establecemos el ancho del botón*/
+	width: 15em;
+    font-weight: bold;
+
+}
+
+/*Estilo del boton de "Sign Up" al pasar el ratón por encima*/
+.button2:hover {
+	background-color: #00e5ff;
+    color: #000000;
+}
+
+/*Boton de "Forgot Password" (No tiene caja)*/
+.button3 {
+	margin-top: 0.5em;
+	padding: 0.5em;
+	border-radius: 5px;
+	/*Quitamos el border y el outline por defecto de button*/
+	border: none;
+	outline: none;
+	/*Agregamos la transicion de color al botón ya que si este estilo lo ponemos en hover solo funciona cuando pones el raton encima y al quitarlo no hace el transition*/
+	transition: .4s ease-in-out;
+	/*Establecemos el color de fondo y el color del texto*/
+	background-color: #252525;
+	color: white;
+	/*Establecemos el ancho del botón*/
+	width: 100%;
+    font-weight: bold;
+
+}
+/*Estilo del boton de "Sign Up" al pasar el ratón por encima*/
+.button3:hover {
+	background-color: #00e5ff;
+    color: #000000;
+}
+
+/* Contenedor del avión */
+.pelota {
+    height: 15vh;
+    z-index: 2;  
+    top: 91%;
+    left: -20%;  /* Empieza fuera de la pantalla */
+    position: absolute;
+    animation: moverPelota 5s ease-in-out infinite;
+}
+
+/* Imagen del avión */
+.pelota img {
+    height: 50%;
+    display: block;
+    width: auto;
+    transition: transform 0.2s ease-in-out;  /* Transición suave en caso de que quieras añadir más interacciones */
+}
+
+/* Animación del movimiento del avión */
+@keyframes moverPelota {
+    0% {
+        left: 100%; /* Empieza desde la derecha de la pantalla */
+        transform: translateY(0) scale(1) rotate(0deg); /* Sin transformación inicial */
+    }
+    20% {
+        left: 70%;
+        transform: translateY(-60px) scale(1.05) rotate(10deg); /* Subida suave */
+    }
+    40% {
+        left: 50%;
+        transform: translateY(0) scale(1.1) rotate(-10deg); /* Cae hacia el centro */
+    }
+    60% {
+        left: 30%;
+        transform: translateY(-40px) scale(1.05) rotate(8deg); /* Rebote hacia arriba */
+    }
+    80% {
+        left: 10%;
+        transform: translateY(0) scale(1.08) rotate(-8deg); /* Segundo rebote más pequeño */
+    }
+    100% {
+        left: 100%; /* Vuelve al principio */
+        transform: translateY(0) scale(1) rotate(0deg); /* Finaliza sin transformaciones */
+    }
+}
+
+.perro {
+    height: 15vh;
+    z-index: 2;  
+    top: 85%;
+    left: -20%;  /* Empieza fuera de la pantalla */
+    position: absolute;
+    animation: moverPelota 5s ease-in-out infinite;
+}
+
+/* Imagen del avión */
+.perro img {
+    height: 70%;
+    display: block;
+    width: auto;
+    transition: transform 0.2s ease-in-out;  /* Transición suave en caso de que quieras añadir más interacciones */
+}

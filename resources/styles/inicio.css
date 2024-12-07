@@ -94,7 +94,8 @@ header {
 }
 /* Le cambio el color al placeholder */
 .search-input::placeholder {
-    color: var(--bg-contrast-color);
+    color: var(--bg-color);
+    opacity: 0.6;
 }
 /* Efecto focus en el input (cuando el usuario hace click en el campo) */
 .search-input:focus {
@@ -102,6 +103,37 @@ header {
     /* Subraya el borde con el mismo color que el fondo */
     transition: border-bottom 0.3s ease;
     /* Transición suave */
+}
+
+.user, .cart {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: var(--bg-color);
+    gap: 0.4em;
+}
+.user-img, .cart-img {
+    height: 2.5em;
+}
+.cart-quantity-circle {
+    background-color: var(--my-orange);
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cart-quantity {
+    position: absolute;
+    top: -0.5em;
+    left: 0;
+    background-color: var(--my-orange);
+    color: var(--bg-color);
+    border-radius: 50%;
+    padding: 0.2em 0.4em;
+    font-size: 0.8em;
 }
 /*Contenedor del menú*/
 .menu-bar {

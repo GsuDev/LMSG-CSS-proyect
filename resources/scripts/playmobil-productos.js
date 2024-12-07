@@ -1,5 +1,5 @@
 // Ruta al archivo JSON
-const url = '../resources/products/barbie.json';
+const url = '../resources/products/playmobil.json';
 
 // Contenedor donde se mostrarán los juguetes
 const contenedor = document.getElementById('juguetes-contenedor');

@@ -9,12 +9,12 @@
     margin-top: 3%;
     max-inline-size: 90%;
 }
-.pagina-barbie{
+.descripcion{
     display: flex;
     align-items: top;
     gap: 2em;
 }
-.img-barbie img{
+.img-marca img{
     width: 10em;
 }
 

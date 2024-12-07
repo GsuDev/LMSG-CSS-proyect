@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../resources/styles/product-page.css">
+    <link rel="stylesheet" href="../resources/styles/inicio.css" />
+    <title>Jugueteka</title>
+</head>
+
+<body>
+    <!--Cabecera donde apareceran las barras de búsqueda y el logo-->
+    <header>
+        <!--Creación del container de la barra de búsqueda	-->
+        <div class="search-bar">
+            <!--Creación de un contenedor para el logo-->
+
+            <div class="search-bar-left">
+                <a href="../index.html">
+                    <div class="logo">
+                        <img class="logo-img" src="../resources/media/logos/logo.png" alt="logo" />
+                    </div>
+                </a>
+                <div class="search-box">
+                    <input class="search-input" type="text" placeholder="Busca aquí algo divertido " />
+                </div>
+            </div>
+
+            <div class="search-bar-right">
+                <a href="login.html">
+                    <div class="user">
+                        <img class="user-img" src="../resources/media/logos/user-icon.png" alt="user" /><label>Mi
+                            cuenta</label>
+                    </div>
+                </a>
+                <a href="cart.html">
+                    <div class="cart">
+                        <div class="cart-quantity-circle">
+                            <div id="cart-quantity">0</div>
+                        </div>
+                        <img class="cart-img" src="../resources/media/logos/cart-icon.png" alt="cart" /><label>Mi
+                            compra</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Menú de navegación-->
+        <nav class="menu-bar">
+            <!--Creación del menú de navegación-->
+            <ul class="menu">
+                <li class="menu-inicio">
+                    <a href="#">Inicio</a>
+                    <!--Creación de clase para identificar a cada elemento del menu, evitamos que se abran todos a la vez-->
+                    <ul class="submenu-inicio">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-productos">
+                    <a href="#">Productos</a>
+                    <ul class="submenu-productos">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-nosotros">
+                    <a href="#">Nosotros</a>
+                    <ul class="submenu-nosotros">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-contacto">
+                    <a href="#">Contacto</a>
+                    <ul class="submenu-contacto">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Características de la página-->
+        <div class="features-bar">
+            <!--Creación de lista, para las características, en flex-->
+            <ul class="feature-list">
+                <!--Cada elemento de la lista es una característica-->
+                <a href="#">
+                    <li>Envío 24/48h</li>
+                </a>
+                <a href="#">
+                    <li>10% de descuento en compras superiores a 100€</li>
+                </a>
+                <a href="#">
+                    <li>2x1 en artículos LEGO</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <!--Cuerpo de la página-->
+    <div class="container">
+        <div class="descripcion">
+            <div class="img-marca"><img src="../resources/media/logos/playmobil-page.svg"></div>
+
+            <div class="texto-marca">
+                <p>
+                    ¡Desde los piratas más valientes 🏴‍☠️ hasta las casas de muñecas más encantadoras 🏠, todos los increíbles universos
+                    Playmobil te están esperando en tu tienda de juguetes online de Toys R Us para vivir las aventuras más extraordinarias
+                    que seas capaz de imaginar 🌟! La vida en ciudad de City Life 🏙️ y City Action 🚓, las vacaciones de Summer Fun 🌞, las
+                    ideales princesas 👸 de Princess, el salvaje oeste del Western 🤠, o las escenas familiares de Family Fun 👨‍👩‍👧‍👦,
+                    todo lo que seas capaz de soñar, la selección de Playmobil en Toys R Us es capaz de hacerlo realidad para llenarte de
+                    ilusión ✨.
+                </p>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label " for="sortForm1">
+                Ordenar por:</label>
+
+            <form id="sortForm1" name="sortForm1" method="get" action="#">
+                <select id="sortOptions1" name="sort" class="form-control">
+                    <option disabled="">Ordenar por:</option>
+                    <option value="relevance" selected="selected">
+                        Relevancia</option>
+                    <option value="name-asc">
+                        Nombre (ascendente)</option>
+                    <option value="name-desc">
+                        Nombre (descendente)</option>
+                    <option value="price-asc">
+                        Precio (más bajos primero)</option>
+                    <option value="price-desc">
+                        Precio (más altos primero)</option>
+                    <option value="stars-desc">
+                        Mejor Valorados</option>
+                    <option value="stars-asc">
+                        Peor Valorados</option>
+                </select>
+                <input type="hidden" name="q" value=":relevance">
+            </form>
+        </div>
+        <div class="flex-row">
+            <!--Contenedor donde nos encontramos los filtros de la página-->
+            <nav class="menu-vertical">
+                <ul>
+                    <li class="filtro edad"><a href="#">Comprar por edad</a>
+                        <ul>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                        </ul>
+                    </li>
+                    <li class="filtro precio"><a href="#">Comprar por precio</a>
+                        <ul>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                        </ul>
+                    </li>
+                    <li class="filtro valoracion"><a href="#">Comprar por valoracion</a>
+                        <ul>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                        </ul>
+                    </li>
+                    <li class="filtro categoria"><a href="#">Comprar por categoria</a>
+                        <ul>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                        </ul>
+                    </li>
+                    <li class="filtro promocion"><a href="#">Comprar por promocion</a>
+                        <ul>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--Contenedor donde nos encontramos los productos de la página-->
+            <div class="productos" id="juguetes-contenedor"></div>
+        </div>
+
+    </div>
+
+    <script src="../resources/scripts/playmobil-productos.js"></script>
+    <!--Footer de la página-->
+    <footer>
+        <!--Creacion del contenedor que agrupa ayuda,servicios...En display-flex-->
+        <div class="contenedor-footer-principal">
+            <!--Contenedor de ayuda, y sus párrafos correspondientes-->
+            <div class="contenedor-ayuda">
+                <p class="active">AYUDA</p>
+                <p>Contacto</p>
+                <p>Opciones de entrega y costes</p>
+                <p>Métodos de pago</p>
+                <p>Promociones</p>
+            </div>
+
+            <!--Contenedor de servicios, y sus párrafos correspondientes-->
+            <div class="contenedor-servicios">
+                <p class="active">SERVICIOS</p>
+                <p>Tarjeta de regalo digital</p>
+                <p>Devoluciones y garantías</p>
+                <p>Family Club</p>
+                <p>Programa de fidelidad</p>
+            </div>
+
+            <!--Contenedor de empresa, y sus párrafos correspondientes-->
+            <div class="contenedor-empresa">
+                <p class="active">EMPRESA</p>
+                <p>Historia</p>
+                <p>Tiendas</p>
+                <p>Empleo</p>
+                <p>Afiliados</p>
+            </div>
+
+            <!--Contenedor de "otros" y sus párrafos correspondientes-->
+            <div class="contenedor-otros">
+                <p class="active">OTROS</p>
+                <p>Condiciones de compra</p>
+                <p>Política de privacidad</p>
+                <p>Política de cookies</p>
+                <p>Eventos</p>
+            </div>
+        </div>
+
+        <!--Contenedor que agrupa a los metodos de pago y apps para descargar-->
+        <div class="contenedor-descarga-pago">
+            <!--Contenedor que agrupan las plataformas habilitadas para descargar la aplicación-->
+
+            <div class="descarga">
+                <p>DESCARGA NUESTRA APP</p>
+                <!--Contenedor que agrupan las plataformas (iconos)-->
+                <div class="iconos-descarga">
+                    <img src="../resources/media/img/apple-ok (2).svg" />
+                    <img src="../resources/media/img/google-ok (3).svg" />
+                </div>
+            </div>
+            <!--Contenedor que agrupan los metodos de pago-->
+            <div class="metodos-pago">
+                <p>MEDIOS DE PAGO</p>
+                <div class="iconos-metodos-pago">
+                    <img src="../resources/media/img/medios-pago-es (1).png" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

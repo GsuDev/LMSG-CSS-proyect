@@ -428,6 +428,8 @@ footer {
     padding: 1.5vh;
     align-items: center;
     justify-content: space-around;
+    width: 100vw;
+    overflow: hidden;
 }
 /*Contenedor que agrupa a ayuda,servicios...*/
 .contenedor-footer-principal {

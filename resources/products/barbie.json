@@ -1,0 +1,73 @@
+[
+  {
+    "nombre": "Muñeca Barbie Extra - Trenzas rosas",
+    "imagen": "../resources/media/product-images/barbie/Barbie - Muñeca Extra - Trenzas rosas.jpg",
+    "descripcion": "Una muñeca Barbie de la colección Extra con peinado de trenzas rosas y accesorios modernos.",
+    "precio": 35.99,
+    "url": ""
+  },
+  {
+    "nombre": "Casa Barbie de 2 pisos",
+    "imagen": "../resources/media/product-images/barbie/Barbie-Casa2pisos.jpg",
+    "descripcion": "Una casa de dos pisos para Barbie con detalles únicos y muebles incluidos.",
+    "precio": 129.99,
+    "url": ""
+  },
+  {
+    "nombre": "Mochila casual Barbie 25 cm",
+    "imagen": "../resources/media/product-images/barbie/Mochila casual Barbie 25 cm.jpg",
+    "descripcion": "Mochila casual con diseño de Barbie, ideal para niñas de todas las edades.",
+    "precio": 25.49,
+    "url": ""
+  },
+  {
+    "nombre": "Neceser de viaje Barbie",
+    "imagen": "../resources/media/product-images/barbie/Neceser de viaje Barbie.jpg",
+    "descripcion": "Neceser compacto con diseño de Barbie, perfecto para viajes cortos.",
+    "precio": 15.99,
+    "url": ""
+  }
+  ,
+  {
+    "nombre": "Barbie - Barbie y Ken con vehículo y armario",
+    "imagen": "../resources/media/product-images/barbie/Barbie - Barbie y Ken con vehículo y armario.jpg",
+    "descripcion": "Barbie y Ken con un vehículo y un armario lleno de ropa y accesorios.",
+    "precio": 49.99,
+    "url": ""
+  },
+  {
+    "nombre": "Barbie - Cabriolet RC de Barbie",
+    "imagen": "../resources/media/product-images/barbie/Barbie - Cabriolet RC de Barbie.jpg",
+    "descripcion": "Un coche cabriolet a control remoto para Barbie.",
+    "precio": 39.99,
+    "url": ""
+  },
+  {
+    "nombre": "Barbie - Cocina con luz y sonido",
+    "imagen": "../resources/media/product-images/barbie/Barbie - Cocina con luz y sonido.jpg",
+    "descripcion": "Cocina de Barbie con efectos de luz y sonido.",
+    "precio": 29.99,
+    "url": ""
+  },
+  {
+    "nombre": "Barbie - Diversión en el jardín",
+    "imagen": "../resources/media/product-images/barbie/Barbie - Diversión en el jardín.jpg",
+    "descripcion": "Set de juego de Barbie para divertirse en el jardín.",
+    "precio": 19.99,
+    "url": ""
+  },
+  {
+    "nombre": "Barbie - Playset Barbie Pediatra",
+    "imagen": "../resources/media/product-images/barbie/Barbie - Playset Barbie Pediatra.jpg",
+    "descripcion": "Playset de Barbie como pediatra con accesorios médicos.",
+    "precio": 24.99,
+    "url": ""
+  },
+  {
+    "nombre": "Cuaderno premium Barbie A5",
+    "imagen": "../resources/media/product-images/barbie/Cuaderno premium Barbie A5.jpg",
+    "descripcion": "Cuaderno premium tamaño A5 con diseño de Barbie.",
+    "precio": 9.99,
+    "url": ""
+  }
+]

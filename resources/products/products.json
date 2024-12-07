@@ -1,0 +1,392 @@
+[
+    {
+        "id": 1,
+        "nombre": "Muñeca Barbie Extra - Trenzas rosas",
+        "imagen": "../resources/media/product-images/barbie/Barbie - Muñeca Extra - Trenzas rosas.jpg",
+        "descripcion": "Una muñeca Barbie de la colección Extra con peinado de trenzas rosas y accesorios modernos.",
+        "precio": 35.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 2,
+        "nombre": "Casa Barbie de 2 pisos",
+        "imagen": "../resources/media/product-images/barbie/Barbie-Casa2pisos.jpg",
+        "descripcion": "Una casa de dos pisos para Barbie con detalles únicos y muebles incluidos.",
+        "precio": 129.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 3,
+        "nombre": "Mochila casual Barbie 25 cm",
+        "imagen": "../resources/media/product-images/barbie/Mochila casual Barbie 25 cm.jpg",
+        "descripcion": "Mochila casual con diseño de Barbie, ideal para niñas de todas las edades.",
+        "precio": 25.49,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 4,
+        "nombre": "Neceser de viaje Barbie",
+        "imagen": "../resources/media/product-images/barbie/Neceser de viaje Barbie.jpg",
+        "descripcion": "Neceser compacto con diseño de Barbie, perfecto para viajes cortos.",
+        "precio": 15.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 5,
+        "nombre": "Barbie - Barbie y Ken con vehículo y armario",
+        "imagen": "../resources/media/product-images/barbie/Barbie - Barbie y Ken con vehículo y armario.jpg",
+        "descripcion": "Barbie y Ken con un vehículo y un armario lleno de ropa y accesorios.",
+        "precio": 49.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 6,
+        "nombre": "Barbie - Cabriolet RC de Barbie",
+        "imagen": "../resources/media/product-images/barbie/Barbie - Cabriolet RC de Barbie.jpg",
+        "descripcion": "Un coche cabriolet a control remoto para Barbie.",
+        "precio": 39.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 7,
+        "nombre": "Barbie - Cocina con luz y sonido",
+        "imagen": "../resources/media/product-images/barbie/Barbie - Cocina con luz y sonido.jpg",
+        "descripcion": "Cocina de Barbie con efectos de luz y sonido.",
+        "precio": 29.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 8,
+        "nombre": "Barbie - Diversión en el jardín",
+        "imagen": "../resources/media/product-images/barbie/Barbie - Diversión en el jardín.jpg",
+        "descripcion": "Set de juego de Barbie para divertirse en el jardín.",
+        "precio": 19.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 9,
+        "nombre": "Barbie - Playset Barbie Pediatra",
+        "imagen": "../resources/media/product-images/barbie/Barbie - Playset Barbie Pediatra.jpg",
+        "descripcion": "Playset de Barbie como pediatra con accesorios médicos.",
+        "precio": 24.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 10,
+        "nombre": "Cuaderno premium Barbie A5",
+        "imagen": "../resources/media/product-images/barbie/Cuaderno premium Barbie A5.jpg",
+        "descripcion": "Cuaderno premium tamaño A5 con diseño de Barbie.",
+        "precio": 9.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Barbie"
+    },
+    {
+        "id": 11,
+        "nombre": "Funko POP! - Disney - Jack Skellington",
+        "imagen": "../resources/media/product-images/funko/Funko POP! - Disney - Jack Skellington.jpg",
+        "descripcion": "Figura Funko POP! de Jack Skellington de Disney.",
+        "precio": 14.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 12,
+        "nombre": "Funko POP! - Disney - Stitch sentado",
+        "imagen": "../resources/media/product-images/funko/Funko Pop! - Disney - Stitch sentado.jpg",
+        "descripcion": "Figura Funko POP! de Stitch sentado.",
+        "precio": 14.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 13,
+        "nombre": "Funko POP! - Percy Jackson",
+        "imagen": "../resources/media/product-images/funko/Funko POP! - Percy Jackson.jpg",
+        "descripcion": "Figura Funko POP! de Percy Jackson.",
+        "precio": 15.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 14,
+        "nombre": "Funko POP! - Stitch in costume - Stitch con disfraz de Simba",
+        "imagen": "../resources/media/product-images/funko/Funko Pop! - Stitch in costume - Stitch con disfraz de Simba.jpg",
+        "descripcion": "Figura Funko POP! de Stitch con disfraz de Simba.",
+        "precio": 16.50,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 15,
+        "nombre": "Funko POP! Games - Pokémon - Greninja",
+        "imagen": "../resources/media/product-images/funko/Funko POP! Games - Pokémon - Greninja.jpg",
+        "descripcion": "Figura Funko POP! de Greninja de Pokémon.",
+        "precio": 17.00,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 16,
+        "nombre": "Funko POP! Games - Spider-man",
+        "imagen": "../resources/media/product-images/funko/Funko POP! Games - Spider-man.jpg",
+        "descripcion": "Figura Funko POP! de Spider-man.",
+        "precio": 14.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 17,
+        "nombre": "Funko POP! Movies - Shrek - Asno glitter",
+        "imagen": "../resources/media/product-images/funko/Funko POP! Movies - Shreck - Asno glitter.jpg",
+        "descripcion": "Figura Funko POP! de Asno de Shrek en versión glitter.",
+        "precio": 18.50,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 18,
+        "nombre": "Funko POP! Movies - Shrek",
+        "imagen": "../resources/media/product-images/funko/Funko POP! Movies - Shreck.jpg",
+        "descripcion": "Figura Funko POP! de Shrek.",
+        "precio": 16.00,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 19,
+        "nombre": "Funko POP! Rocks - Rosalía (Motomami Tour)",
+        "imagen": "../resources/media/product-images/funko/Funko Pop! Rocks - Rosalía (Motomami Tour).jpg",
+        "descripcion": "Figura Funko POP! de Rosalía del Motomami Tour.",
+        "precio": 19.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 20,
+        "nombre": "Queen - Freddie Mercury - Figura Funko POP",
+        "imagen": "../resources/media/product-images/funko/Queen - Freddie Mercury - Figura Funko POP.jpg",
+        "descripcion": "Figura Funko POP! de Freddie Mercury de Queen.",
+        "precio": 20.00,
+        "url": "",
+        "categoria": "",
+        "marca": "Funko"
+    },
+    {
+        "id": 21,
+        "nombre": "LEGO City - Camión de Torneo de Videojuegos - 60388",
+        "imagen": "../resources/media/product-images/lego/LEGO City - Camión de Torneo de Videojuegos - 60388.jpg",
+        "descripcion": "Camión de Torneo de Videojuegos de LEGO City, número de producto 60388.",
+        "precio": 29.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 22,
+        "nombre": "LEGO Icons - Chevrolet Camaro Z28 - 10304",
+        "imagen": "../resources/media/product-images/lego/LEGO Icons - Chevrolet Camaro Z28- 10304.jpg",
+        "descripcion": "Chevrolet Camaro Z28 de LEGO Icons, número de producto 10304.",
+        "precio": 149.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 23,
+        "nombre": "LEGO Icons - Ramo de flores silvestres - 10313",
+        "imagen": "../resources/media/product-images/lego/LEGO Icons - Ramo de flores silvestres - 10313.jpg",
+        "descripcion": "Ramo de flores silvestres de LEGO Icons, número de producto 10313.",
+        "precio": 49.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 24,
+        "nombre": "LEGO Minecraft - La granja del molino - 21262",
+        "imagen": "../resources/media/product-images/lego/LEGO Minecraft - La granja del molino - 21262.jpg",
+        "descripcion": "La granja del molino de LEGO Minecraft, número de producto 21262.",
+        "precio": 59.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 25,
+        "nombre": "LEGO Star Wars - Caza Estelar N-1 The Mandalorian - 75325",
+        "imagen": "../resources/media/product-images/lego/LEGO Star Wars - Caza Estelar N-1 The Mandalorian - 75325.jpg",
+        "descripcion": "Caza Estelar N-1 The Mandalorian de LEGO Star Wars, número de producto 75325.",
+        "precio": 69.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 26,
+        "nombre": "LEGO Star Wars - Caza TIE y Ala-X Fusionados - 75393",
+        "imagen": "../resources/media/product-images/lego/LEGO Star Wars - Caza TIE y Ala-X Fusionados - 75393.jpg",
+        "descripcion": "Caza TIE y Ala-X Fusionados de LEGO Star Wars, número de producto 75393.",
+        "precio": 89.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 27,
+        "nombre": "LEGO Star Wars - Meca de Darth Vader - 75368",
+        "imagen": "../resources/media/product-images/lego/LEGO Star Wars - Meca de Darth Vader - 75368.jpg",
+        "descripcion": "Meca de Darth Vader de LEGO Star Wars, número de producto 75368.",
+        "precio": 29.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 28,
+        "nombre": "LEGO Super Mario - Set de la Jungla Sirope - 71434",
+        "imagen": "../resources/media/product-images/lego/LEGO Super Mario - Set de la Jungla Sirope - 71434.jpg",
+        "descripcion": "Set de la Jungla Sirope de LEGO Super Mario, número de producto 71434.",
+        "precio": 54.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 29,
+        "nombre": "LEGO Superhéroes - Yo soy Groot - 76217",
+        "imagen": "../resources/media/product-images/lego/LEGO Superhéroes - Yo soy Groot - 76217.jpg",
+        "descripcion": "Yo soy Groot de LEGO Superhéroes, número de producto 76217.",
+        "precio": 49.99,
+        "url": "",
+        "categoria": "",
+        "marca": "LEGO"
+    },
+    {
+        "id": 30,
+        "nombre": "Playmobil - Casa de muñecas Maletín - 70985",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Casa de muñecas Maletín - 70985.jpg",
+        "descripcion": "Casa de muñecas Maletín de Playmobil, número de producto 70985.",
+        "precio": 29.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 31,
+        "nombre": "Playmobil - Coche de policía con luz y sonido - 70899",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Coche de policía con luz y sonido - 70899.jpg",
+        "descripcion": "Coche de policía de Playmobil con luz y sonido, número de producto 70899.",
+        "precio": 34.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 32,
+        "nombre": "Playmobil - Coche Policía Cruiser - 5673",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Coche Policía Cruiser - 5673.jpg",
+        "descripcion": "Coche Policía Cruiser de Playmobil, número de producto 5673.",
+        "precio": 26.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 33,
+        "nombre": "Playmobil - Consulta veterinaria en el zoo - 70900",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Consulta veterinaria en el zoo - 70900.jpg",
+        "descripcion": "Consulta veterinaria en el zoo de Playmobil, número de producto 70900.",
+        "precio": 39.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 34,
+        "nombre": "Playmobil - El coche fantástico - 70924",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - El coche fantástico - 70924.jpg",
+        "descripcion": "El coche fantástico de Playmobil, número de producto 70924.",
+        "precio": 44.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 35,
+        "nombre": "Playmobil - Hotel de mascotas",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Hotel de mascotas.jpg",
+        "descripcion": "Hotel de mascotas de Playmobil.",
+        "precio": 49.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 36,
+        "nombre": "Playmobil - Mercedes-Benz 300 SL - 70922",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Mercedes-Benz 300 SL - 70922.jpg",
+        "descripcion": "Mercedes-Benz 300 SL de Playmobil, número de producto 70922.",
+        "precio": 54.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 38,
+        "nombre": "Playmobil - City Life Ambulancia con luz y sonido",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Playmobil City Life Ambulancia con luz y sonido ㅤ.jpg",
+        "descripcion": "Ambulancia con luz y sonido de Playmobil City Life.",
+        "precio": 44.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 39,
+        "nombre": "Playmobil - Porsche 911 Carrera RS - 70923",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Porsche 911 Carrera RS - 70923.jpg",
+        "descripcion": "Porsche 911 Carrera RS de Playmobil, número de producto 70923.",
+        "precio": 59.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    },
+    {
+        "id": 40,
+        "nombre": "Playmobil - Tienda con Generales - 71015",
+        "imagen": "../resources/media/product-images/playmobil/Playmobil - Tienda con Generales - 71015.jpg",
+        "descripcion": "Tienda con Generales de Playmobil, número de producto 71015.",
+        "precio": 22.99,
+        "url": "",
+        "categoria": "",
+        "marca": "Playmobil"
+    }
+]

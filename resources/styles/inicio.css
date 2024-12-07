@@ -262,8 +262,8 @@ header {
     text-align: center;
     transition: transform 0.8s ease-in-out;
 }
-.box img {
-    height: 10vh;
+.box>img {
+    height: 50%;
 }
 .box:hover {
     transform: scale(1.05);

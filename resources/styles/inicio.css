@@ -31,14 +31,16 @@ header {
 /* Contenedor de la barra de búsqueda y el logo */
 .search-bar {
     display: flex;
-    position: relative;
+    position: fixed; /* Cambiamos de relative a fixed */
+    top: 0; /* Fijamos la barra al borde superior de la pantalla */
+    left: 0; /* Aseguramos que comience desde el borde izquierdo */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
     justify-content: center;
     gap: 5vw;
     align-items: center;
-    height: 10vh;
-    /* Altura del contenedor */
-    background-color: var(--main-color);
-    /* Color de fondo */
+    height: 10vh; /* Altura del contenedor */
+    background-color: var(--main-color); /* Color de fondo */
+    z-index: 1000; /* Aseguramos que esté por encima de otros elementos */
     overflow: hidden;
 }
 .search-bar-left {
@@ -106,6 +108,7 @@ header {
     background-color: var(--main-color);
     color: var(--bg-color);
     height: 5vh;
+    margin-top: 10vh; /* Asegura que el contenido no quede oculto detrás de la barra fija */
 }
 /* Estilo de cada elemento principal del menú */
 .menu-bar li {

@@ -5,6 +5,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie - Muñeca Extra - Trenzas rosas.jpg",
         "descripcion": "Una muñeca Barbie de la colección Extra con peinado de trenzas rosas y accesorios modernos.",
         "precio": 35.99,
+        "edad": 6,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -15,6 +16,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie-Casa2pisos.jpg",
         "descripcion": "Una casa de dos pisos para Barbie con detalles únicos y muebles incluidos.",
         "precio": 129.99,
+        "edad": 8,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -25,6 +27,7 @@
         "imagen": "../resources/media/product-images/barbie/Mochila casual Barbie 25 cm.jpg",
         "descripcion": "Mochila casual con diseño de Barbie, ideal para niñas de todas las edades.",
         "precio": 25.49,
+        "edad": 5,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -35,6 +38,7 @@
         "imagen": "../resources/media/product-images/barbie/Neceser de viaje Barbie.jpg",
         "descripcion": "Neceser compacto con diseño de Barbie, perfecto para viajes cortos.",
         "precio": 15.99,
+        "edad": 3,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -45,6 +49,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie - Barbie y Ken con vehículo y armario.jpg",
         "descripcion": "Barbie y Ken con un vehículo y un armario lleno de ropa y accesorios.",
         "precio": 49.99,
+        "edad": 6,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -55,6 +60,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie - Cabriolet RC de Barbie.jpg",
         "descripcion": "Un coche cabriolet a control remoto para Barbie.",
         "precio": 39.99,
+        "edad": 7,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -65,6 +71,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie - Cocina con luz y sonido.jpg",
         "descripcion": "Cocina de Barbie con efectos de luz y sonido.",
         "precio": 29.99,
+        "edad": 4,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -75,6 +82,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie - Diversión en el jardín.jpg",
         "descripcion": "Set de juego de Barbie para divertirse en el jardín.",
         "precio": 19.99,
+        "edad": 3,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -85,6 +93,7 @@
         "imagen": "../resources/media/product-images/barbie/Barbie - Playset Barbie Pediatra.jpg",
         "descripcion": "Playset de Barbie como pediatra con accesorios médicos.",
         "precio": 24.99,
+        "edad": 5,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -95,6 +104,7 @@
         "imagen": "../resources/media/product-images/barbie/Cuaderno premium Barbie A5.jpg",
         "descripcion": "Cuaderno premium tamaño A5 con diseño de Barbie.",
         "precio": 9.99,
+        "edad": 6,
         "url": "",
         "categoria": "",
         "marca": "Barbie"
@@ -105,6 +115,7 @@
         "imagen": "../resources/media/product-images/funko/Funko POP! - Disney - Jack Skellington.jpg",
         "descripcion": "Figura Funko POP! de Jack Skellington de Disney.",
         "precio": 14.99,
+        "edad": 10,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -115,6 +126,7 @@
         "imagen": "../resources/media/product-images/funko/Funko Pop! - Disney - Stitch sentado.jpg",
         "descripcion": "Figura Funko POP! de Stitch sentado.",
         "precio": 14.99,
+        "edad": 8,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -125,6 +137,7 @@
         "imagen": "../resources/media/product-images/funko/Funko POP! - Percy Jackson.jpg",
         "descripcion": "Figura Funko POP! de Percy Jackson.",
         "precio": 15.99,
+        "edad": 12,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -135,6 +148,7 @@
         "imagen": "../resources/media/product-images/funko/Funko Pop! - Stitch in costume - Stitch con disfraz de Simba.jpg",
         "descripcion": "Figura Funko POP! de Stitch con disfraz de Simba.",
         "precio": 16.50,
+        "edad": 10,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -145,6 +159,7 @@
         "imagen": "../resources/media/product-images/funko/Funko POP! Games - Pokémon - Greninja.jpg",
         "descripcion": "Figura Funko POP! de Greninja de Pokémon.",
         "precio": 17.00,
+        "edad": 8,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -155,6 +170,7 @@
         "imagen": "../resources/media/product-images/funko/Funko POP! Games - Spider-man.jpg",
         "descripcion": "Figura Funko POP! de Spider-man.",
         "precio": 14.99,
+        "edad": 10,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -165,6 +181,7 @@
         "imagen": "../resources/media/product-images/funko/Funko POP! Movies - Shreck - Asno glitter.jpg",
         "descripcion": "Figura Funko POP! de Asno de Shrek en versión glitter.",
         "precio": 18.50,
+        "edad": 10,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -175,6 +192,7 @@
         "imagen": "../resources/media/product-images/funko/Funko POP! Movies - Shreck.jpg",
         "descripcion": "Figura Funko POP! de Shrek.",
         "precio": 16.00,
+        "edad": 8,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -185,6 +203,7 @@
         "imagen": "../resources/media/product-images/funko/Funko Pop! Rocks - Rosalía (Motomami Tour).jpg",
         "descripcion": "Figura Funko POP! de Rosalía del Motomami Tour.",
         "precio": 19.99,
+        "edad": 12,
         "url": "",
         "categoria": "",
         "marca": "Funko"
@@ -197,7 +216,8 @@
         "precio": 20.00,
         "url": "",
         "categoria": "",
-        "marca": "Funko"
+        "marca": "Funko",
+        "edad": 12
     },
     {
         "id": 21,
@@ -207,7 +227,8 @@
         "precio": 29.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 8
     },
     {
         "id": 22,
@@ -217,7 +238,8 @@
         "precio": 149.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 10
     },
     {
         "id": 23,
@@ -227,7 +249,8 @@
         "precio": 49.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 8
     },
     {
         "id": 24,
@@ -237,7 +260,8 @@
         "precio": 59.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 8
     },
     {
         "id": 25,
@@ -247,7 +271,8 @@
         "precio": 69.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 10
     },
     {
         "id": 26,
@@ -257,7 +282,8 @@
         "precio": 89.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 10
     },
     {
         "id": 27,
@@ -267,7 +293,8 @@
         "precio": 29.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 8
     },
     {
         "id": 28,
@@ -277,7 +304,8 @@
         "precio": 54.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 6
     },
     {
         "id": 29,
@@ -287,7 +315,8 @@
         "precio": 49.99,
         "url": "",
         "categoria": "",
-        "marca": "LEGO"
+        "marca": "LEGO",
+        "edad": 8
     },
     {
         "id": 30,
@@ -297,7 +326,8 @@
         "precio": 29.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 31,
@@ -307,7 +337,8 @@
         "precio": 34.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 32,
@@ -317,7 +348,8 @@
         "precio": 26.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 33,
@@ -327,7 +359,8 @@
         "precio": 39.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 34,
@@ -337,7 +370,8 @@
         "precio": 44.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 35,
@@ -347,7 +381,8 @@
         "precio": 49.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 36,
@@ -357,7 +392,8 @@
         "precio": 54.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 38,
@@ -367,7 +403,8 @@
         "precio": 44.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 39,
@@ -377,7 +414,8 @@
         "precio": 59.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     },
     {
         "id": 40,
@@ -387,6 +425,7 @@
         "precio": 22.99,
         "url": "",
         "categoria": "",
-        "marca": "Playmobil"
+        "marca": "Playmobil",
+        "edad": 4
     }
 ]

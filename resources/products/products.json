@@ -7,8 +7,9 @@
         "precio": 35.99,
         "edad": 6,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "dolls",
+        "marca": "Barbie",
+        "valoracion": 5
     },
     {
         "id": 2,
@@ -18,8 +19,9 @@
         "precio": 129.99,
         "edad": 8,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "houses",
+        "marca": "Barbie",
+        "valoracion": 4
     },
     {
         "id": 3,
@@ -29,8 +31,9 @@
         "precio": 25.49,
         "edad": 5,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "accessories",
+        "marca": "Barbie",
+        "valoracion": 4
     },
     {
         "id": 4,
@@ -40,8 +43,9 @@
         "precio": 15.99,
         "edad": 3,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "accessories",
+        "marca": "Barbie",
+        "valoracion": 3
     },
     {
         "id": 5,
@@ -51,8 +55,9 @@
         "precio": 49.99,
         "edad": 6,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "dolls",
+        "marca": "Barbie",
+        "valoracion": 2
     },
     {
         "id": 6,
@@ -62,8 +67,9 @@
         "precio": 39.99,
         "edad": 7,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "cars",
+        "marca": "Barbie",
+        "valoracion": 1
     },
     {
         "id": 7,
@@ -73,8 +79,9 @@
         "precio": 29.99,
         "edad": 4,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "houses",
+        "marca": "Barbie",
+        "valoracion": 3
     },
     {
         "id": 8,
@@ -84,8 +91,9 @@
         "precio": 19.99,
         "edad": 3,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "dolls",
+        "marca": "Barbie",
+        "valoracion": 2
     },
     {
         "id": 9,
@@ -95,8 +103,9 @@
         "precio": 24.99,
         "edad": 5,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "accessories",
+        "marca": "Barbie",
+        "valoracion": 4
     },
     {
         "id": 10,
@@ -106,8 +115,9 @@
         "precio": 9.99,
         "edad": 6,
         "url": "",
-        "categoria": "",
-        "marca": "Barbie"
+        "categoria": "accessories",
+        "marca": "Barbie",
+        "valoracion": 3
     },
     {
         "id": 11,
@@ -117,8 +127,9 @@
         "precio": 14.99,
         "edad": 10,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 5
     },
     {
         "id": 12,
@@ -128,8 +139,9 @@
         "precio": 14.99,
         "edad": 8,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 5
     },
     {
         "id": 13,
@@ -139,30 +151,33 @@
         "precio": 15.99,
         "edad": 12,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 5
     },
     {
         "id": 14,
         "nombre": "Funko POP! - Stitch in costume - Stitch con disfraz de Simba",
         "imagen": "../resources/media/product-images/funko/Funko Pop! - Stitch in costume - Stitch con disfraz de Simba.jpg",
         "descripcion": "Figura Funko POP! de Stitch con disfraz de Simba.",
-        "precio": 16.50,
+        "precio": 16.5,
         "edad": 10,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 4
     },
     {
         "id": 15,
         "nombre": "Funko POP! Games - Pokémon - Greninja",
         "imagen": "../resources/media/product-images/funko/Funko POP! Games - Pokémon - Greninja.jpg",
         "descripcion": "Figura Funko POP! de Greninja de Pokémon.",
-        "precio": 17.00,
+        "precio": 17.0,
         "edad": 8,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 4
     },
     {
         "id": 16,
@@ -172,30 +187,33 @@
         "precio": 14.99,
         "edad": 10,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 4
     },
     {
         "id": 17,
         "nombre": "Funko POP! Movies - Shrek - Asno glitter",
         "imagen": "../resources/media/product-images/funko/Funko POP! Movies - Shreck - Asno glitter.jpg",
         "descripcion": "Figura Funko POP! de Asno de Shrek en versión glitter.",
-        "precio": 18.50,
+        "precio": 18.5,
         "edad": 10,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 3
     },
     {
         "id": 18,
         "nombre": "Funko POP! Movies - Shrek",
         "imagen": "../resources/media/product-images/funko/Funko POP! Movies - Shreck.jpg",
         "descripcion": "Figura Funko POP! de Shrek.",
-        "precio": 16.00,
+        "precio": 16.0,
         "edad": 8,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 3
     },
     {
         "id": 19,
@@ -205,19 +223,21 @@
         "precio": 19.99,
         "edad": 12,
         "url": "",
-        "categoria": "",
-        "marca": "Funko"
+        "categoria": "dolls",
+        "marca": "Funko",
+        "valoracion": 3
     },
     {
         "id": 20,
         "nombre": "Queen - Freddie Mercury - Figura Funko POP",
         "imagen": "../resources/media/product-images/funko/Queen - Freddie Mercury - Figura Funko POP.jpg",
         "descripcion": "Figura Funko POP! de Freddie Mercury de Queen.",
-        "precio": 20.00,
+        "precio": 20.0,
         "url": "",
-        "categoria": "",
+        "categoria": "dolls",
         "marca": "Funko",
-        "edad": 12
+        "edad": 12,
+        "valoracion": 2
     },
     {
         "id": 21,
@@ -226,9 +246,10 @@
         "descripcion": "Camión de Torneo de Videojuegos de LEGO City, número de producto 60388.",
         "precio": 29.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "LEGO",
-        "edad": 8
+        "edad": 8,
+        "valoracion": 2
     },
     {
         "id": 22,
@@ -237,9 +258,10 @@
         "descripcion": "Chevrolet Camaro Z28 de LEGO Icons, número de producto 10304.",
         "precio": 149.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "LEGO",
-        "edad": 10
+        "edad": 10,
+        "valoracion": 2
     },
     {
         "id": 23,
@@ -248,9 +270,10 @@
         "descripcion": "Ramo de flores silvestres de LEGO Icons, número de producto 10313.",
         "precio": 49.99,
         "url": "",
-        "categoria": "",
+        "categoria": "accessories",
         "marca": "LEGO",
-        "edad": 8
+        "edad": 8,
+        "valoracion": 1
     },
     {
         "id": 24,
@@ -259,9 +282,10 @@
         "descripcion": "La granja del molino de LEGO Minecraft, número de producto 21262.",
         "precio": 59.99,
         "url": "",
-        "categoria": "",
+        "categoria": "houses",
         "marca": "LEGO",
-        "edad": 8
+        "edad": 8,
+        "valoracion": 1
     },
     {
         "id": 25,
@@ -270,9 +294,10 @@
         "descripcion": "Caza Estelar N-1 The Mandalorian de LEGO Star Wars, número de producto 75325.",
         "precio": 69.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "LEGO",
-        "edad": 10
+        "edad": 10,
+        "valoracion": 2
     },
     {
         "id": 26,
@@ -281,9 +306,10 @@
         "descripcion": "Caza TIE y Ala-X Fusionados de LEGO Star Wars, número de producto 75393.",
         "precio": 89.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "LEGO",
-        "edad": 10
+        "edad": 10,
+        "valoracion": 3
     },
     {
         "id": 27,
@@ -292,9 +318,10 @@
         "descripcion": "Meca de Darth Vader de LEGO Star Wars, número de producto 75368.",
         "precio": 29.99,
         "url": "",
-        "categoria": "",
+        "categoria": "dolls",
         "marca": "LEGO",
-        "edad": 8
+        "edad": 8,
+        "valoracion": 3
     },
     {
         "id": 28,
@@ -303,9 +330,10 @@
         "descripcion": "Set de la Jungla Sirope de LEGO Super Mario, número de producto 71434.",
         "precio": 54.99,
         "url": "",
-        "categoria": "",
+        "categoria": "houses",
         "marca": "LEGO",
-        "edad": 6
+        "edad": 6,
+        "valoracion": 4
     },
     {
         "id": 29,
@@ -314,9 +342,10 @@
         "descripcion": "Yo soy Groot de LEGO Superhéroes, número de producto 76217.",
         "precio": 49.99,
         "url": "",
-        "categoria": "",
+        "categoria": "dolls",
         "marca": "LEGO",
-        "edad": 8
+        "edad": 8,
+        "valoracion": 4
     },
     {
         "id": 30,
@@ -325,9 +354,10 @@
         "descripcion": "Casa de muñecas Maletín de Playmobil, número de producto 70985.",
         "precio": 29.99,
         "url": "",
-        "categoria": "",
+        "categoria": "houses",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 4
     },
     {
         "id": 31,
@@ -336,9 +366,10 @@
         "descripcion": "Coche de policía de Playmobil con luz y sonido, número de producto 70899.",
         "precio": 34.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 5
     },
     {
         "id": 32,
@@ -347,9 +378,10 @@
         "descripcion": "Coche Policía Cruiser de Playmobil, número de producto 5673.",
         "precio": 26.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 5
     },
     {
         "id": 33,
@@ -358,9 +390,10 @@
         "descripcion": "Consulta veterinaria en el zoo de Playmobil, número de producto 70900.",
         "precio": 39.99,
         "url": "",
-        "categoria": "",
+        "categoria": "houses",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 5
     },
     {
         "id": 34,
@@ -369,9 +402,10 @@
         "descripcion": "El coche fantástico de Playmobil, número de producto 70924.",
         "precio": 44.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 4
     },
     {
         "id": 35,
@@ -380,9 +414,10 @@
         "descripcion": "Hotel de mascotas de Playmobil.",
         "precio": 49.99,
         "url": "",
-        "categoria": "",
+        "categoria": "houses",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 4
     },
     {
         "id": 36,
@@ -391,9 +426,10 @@
         "descripcion": "Mercedes-Benz 300 SL de Playmobil, número de producto 70922.",
         "precio": 54.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 4
     },
     {
         "id": 38,
@@ -402,9 +438,10 @@
         "descripcion": "Ambulancia con luz y sonido de Playmobil City Life.",
         "precio": 44.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 3
     },
     {
         "id": 39,
@@ -413,9 +450,10 @@
         "descripcion": "Porsche 911 Carrera RS de Playmobil, número de producto 70923.",
         "precio": 59.99,
         "url": "",
-        "categoria": "",
+        "categoria": "cars",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 4
     },
     {
         "id": 40,
@@ -424,8 +462,153 @@
         "descripcion": "Tienda con Generales de Playmobil, número de producto 71015.",
         "precio": 22.99,
         "url": "",
-        "categoria": "",
+        "categoria": "houses",
         "marca": "Playmobil",
-        "edad": 4
+        "edad": 4,
+        "valoracion": 4
+    },
+    {
+        "id": 41,
+        "nombre": "Muñeca Nancy Loco Loco",
+        "imagen": "../resources/media/product-images/nancy/Muñeca Nancy Loco Loco.jpg",
+        "descripcion": "Nancy Loco Loco, divertida y aventurera.",
+        "precio": 19.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 6,
+        "valoracion": 4
+    },
+    {
+        "id": 42,
+        "nombre": "Nancy Aitana Alphahouse Muñeca Edición Especial 2024",
+        "imagen": "../resources/media/product-images/nancy/Nancy Aitana Alphahouse Muñeca Edición Especial 2024.jpg",
+        "descripcion": "Edición especial de Nancy inspirada en Aitana.",
+        "precio": 24.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 8,
+        "valoracion": 5
+    },
+    {
+        "id": 43,
+        "nombre": "Nancy Colección Azafata",
+        "imagen": "../resources/media/product-images/nancy/Nancy Coleccion Azafata.jpg",
+        "descripcion": "Nancy lista para volar como azafata.",
+        "precio": 22.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 7,
+        "valoracion": 5
+    },
+    {
+        "id": 44,
+        "nombre": "Nancy Coral",
+        "imagen": "../resources/media/product-images/nancy/Nancy Coral.jpg",
+        "descripcion": "Nancy Coral, exploradora del océano.",
+        "precio": 18.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 5,
+        "valoracion": 3
+    },
+    {
+        "id": 45,
+        "nombre": "Nancy Neon Muñeca Pink",
+        "imagen": "../resources/media/product-images/nancy/Nancy Neon Muñeca Pink.jpg",
+        "descripcion": "Nancy Neon Pink, con estilo brillante.",
+        "precio": 20.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 7,
+        "valoracion": 2
+    },
+    {
+        "id": 46,
+        "nombre": "Nancy Neon Muñeca Yellow",
+        "imagen": "../resources/media/product-images/nancy/Nancy Neon Muñeca Yellow.jpg",
+        "descripcion": "Nancy Neon Yellow, resplandeciente en amarillo.",
+        "precio": 20.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 7,
+        "valoracion": 1
+    },
+    {
+        "id": 47,
+        "nombre": "Nancy Shine Brights Pink",
+        "imagen": "../resources/media/product-images/nancy/Nancy Shine Brights Pink.jpg",
+        "descripcion": "Nancy Shine Brights, luz y glamour.",
+        "precio": 21.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 6,
+        "valoracion": 1
+    },
+    {
+        "id": 48,
+        "nombre": "Nancy un día de look brillante Muñeca",
+        "imagen": "../resources/media/product-images/nancy/Nancy un día de look brillante Muñeca.jpg",
+        "descripcion": "Nancy, el look más brillante del día.",
+        "precio": 23.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 8,
+        "valoracion": 1
+    },
+    {
+        "id": 49,
+        "nombre": "Nancy Un día de Yoga Complemento Ropa Muñeca",
+        "imagen": "../resources/media/product-images/nancy/Nancy Un dia de Yoga Complemento Ropa Muñeca.jpg",
+        "descripcion": "Nancy, zen y lista para yoga.",
+        "precio": 21.5,
+        "url": "",
+        "categoria": "accessories",
+        "marca": "nancy",
+        "edad": 9,
+        "valoracion": 2
+    },
+    {
+        "id": 50,
+        "nombre": "Nancy Un Look De Lluvia",
+        "imagen": "../resources/media/product-images/nancy/Nancy Un Look De Lluvia.jpg",
+        "descripcion": "Nancy con el look perfecto para la lluvia.",
+        "precio": 19.99,
+        "url": "",
+        "categoria": "accessories",
+        "marca": "nancy",
+        "edad": 6,
+        "valoracion": 3
+    },
+    {
+        "id": 51,
+        "nombre": "Nancy Vestidos Un Día Trendy",
+        "imagen": "../resources/media/product-images/nancy/Nancy Vestidos Un Día Trendy.jpg",
+        "descripcion": "Nancy, siempre a la moda y trendy.",
+        "precio": 22.99,
+        "url": "",
+        "categoria": "accessories",
+        "marca": "nancy",
+        "edad": 7,
+        "valoracion": 4
+    },
+    {
+        "id": 52,
+        "nombre": "Nancy, Un Día De Catrina",
+        "imagen": "../resources/media/product-images/nancy/Nancy, Un Dia De Catrina.jpg",
+        "descripcion": "Nancy Catrina, lista para el Día de Muertos.",
+        "precio": 24.99,
+        "url": "",
+        "categoria": "dolls",
+        "marca": "nancy",
+        "edad": 10,
+        "valoracion": 5
     }
 ]

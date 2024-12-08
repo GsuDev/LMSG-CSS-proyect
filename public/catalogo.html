@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../resources/styles/product-page.css">
+    <link rel="stylesheet" href="../resources/styles/inicio.css" />
+    <title>Jugueteka</title>
+</head>
+
+<body>
+    <!--Cabecera donde apareceran las barras de búsqueda y el logo-->
+    <header>
+        <!--Creación del container de la barra de búsqueda	-->
+        <div class="search-bar">
+            <!--Creación de un contenedor para el logo-->
+
+            <div class="search-bar-left">
+                <a href="../index.html">
+                    <div class="logo">
+                        <img class="logo-img" src="../resources/media/logos/logo.png" alt="logo" />
+                    </div>
+                </a>
+                <div class="search-box">
+                    <input class="search-input" type="text" placeholder="Busca aquí algo divertido " />
+                </div>
+            </div>
+
+            <div class="search-bar-right">
+                <a href="login.html">
+                    <div class="user">
+                        <img class="user-img" src="../resources/media/logos/user-icon.png" alt="user" /><label>Mi
+                            cuenta</label>
+                    </div>
+                </a>
+                <a href="cart.html">
+                    <div class="cart">
+                        <div class="cart-quantity-circle">
+                            <div id="cart-quantity">0</div>
+                        </div>
+                        <img class="cart-img" src="../resources/media/logos/cart-icon.png" alt="cart" /><label>Mi
+                            compra</label>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!--Menú de navegación-->
+        <nav class="menu-bar">
+            <!--Creación del menú de navegación-->
+            <ul class="menu">
+                <li class="menu-inicio">
+                    <a href="#">Inicio</a>
+                    <!--Creación de clase para identificar a cada elemento del menu, evitamos que se abran todos a la vez-->
+                    <ul class="submenu-inicio">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-productos">
+                    <a href="#">Productos</a>
+                    <ul class="submenu-productos">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-nosotros">
+                    <a href="#">Nosotros</a>
+                    <ul class="submenu-nosotros">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="menu-contacto">
+                    <a href="#">Contacto</a>
+                    <ul class="submenu-contacto">
+                        <a href="#">
+                            <li>Submenu 1</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 2</li>
+                        </a>
+                        <a href="#">
+                            <li>Submenu 3</li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!--Características de la página-->
+        <div class="features-bar">
+            <!--Creación de lista, para las características, en flex-->
+            <ul class="feature-list">
+                <!--Cada elemento de la lista es una característica-->
+                <a href="#">
+                    <li>Envío 24/48h</li>
+                </a>
+                <a href="#">
+                    <li>10% de descuento en compras superiores a 100€</li>
+                </a>
+                <a href="#">
+                    <li>2x1 en artículos LEGO</li>
+                </a>
+            </ul>
+        </div>
+    </header>
+
+    <!--Cuerpo de la página-->
+    <div class="container">
+        <div class="descripcion">
+            <div class="img-marca"><img src="../resources/media/logos/logo.png"></div>
+
+            <div class="texto-marca">
+                <p><p>✨ <strong>Bienvenido a Jugueteka</strong>, tu tienda online donde la diversión no tiene fin. 🎉 Aquí encontrarás
+                    <strong>todos los productos</strong> que necesitas para hacer realidad tus sueños de juego. 💫 Desde
+                    <strong>muñecas</strong> y <strong>juguetes clásicos</strong> hasta lo último en <strong>tecnología y
+                        gadgets</strong>. 🚀📱 🧸 <strong>Juguetes para todas las edades</strong>: ¡Tenemos opciones para los más
+                    pequeños de la casa, los más grandes y hasta los más exigentes! 👶👦👧 Todos nuestros productos están pensados para
+                    que disfrutes de horas de entretenimiento, creatividad y aprendizaje. 🎨📚 🛍️ <strong>Explora nuestras
+                        categorías</strong>: - <strong>Muñecas y figuras</strong>: Con opciones para todos los gustos, desde las más
+                    clásicas hasta las más modernas. 👸🤖 - <strong>Juguetes educativos</strong>: Potencia el aprendizaje mientras
+                    juegas. 📚🎓 - <strong>Tecnología</strong>: Gadgets, juegos electrónicos y más para los fanáticos de lo digital.
+                    💻🎮 - <strong>Accesorios y moda</strong>: ¡Viste a tus muñecas o personaliza tu estilo con nuestros productos
+                    exclusivos! 👗🧢 🎁 En <strong>Jugueteka</strong>, cada producto es una <strong>nueva aventura</strong> esperando a
+                    ser descubierta. ¡Haz tu pedido hoy mismo y vive la experiencia Jugueteka! 🚚🎉</p>
+
+                </p>
+
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label " for="sortForm1">
+                Ordenar por:</label>
+
+            <form id="sortForm1" name="sortForm1" method="get" action="#">
+                <select id="sortOptions1" name="sort" class="form-control">
+                    <option disabled="">Ordenar por:</option>
+                    <option value="relevance" selected="selected">
+                        Relevancia</option>
+                    <option value="name-asc">
+                        Nombre (ascendente)</option>
+                    <option value="name-desc">
+                        Nombre (descendente)</option>
+                    <option value="price-asc">
+                        Precio (más bajos primero)</option>
+                    <option value="price-desc">
+                        Precio (más altos primero)</option>
+                    <option value="stars-desc">
+                        Mejor Valorados</option>
+                    <option value="stars-asc">
+                        Peor Valorados</option>
+                </select>
+                <input type="hidden" name="q" value=":relevance">
+            </form>
+        </div>
+        <div class="flex-row">
+            <!--Contenedor donde nos encontramos los filtros de la página-->
+            <nav class="menu-vertical">
+                <ul>
+                    <!-- Filtro por Edad -->
+                    <li class="filtro edad">
+                        <div class="toggle" onclick="toggleHeight('.edades')">Comprar por edad</div>
+                        <ul class="edades">
+                            <li><a href="#" class="edad" data-edad="3">Menos de 3 años</a></li>
+                            <li><a href="#" class="edad" data-edad="3-6">De 3 a 6 años</a></li>
+                            <li><a href="#" class="edad" data-edad="6-10">De 6 a 10 años</a></li>
+                            <li><a href="#" class="edad" data-edad="10-16">De 10 a 16 años</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Filtro por Precio -->
+                    <li class="filtro precio">
+                        <div class="toggle" onclick="toggleHeight('.precios')">Comprar por precio</div>
+                        <ul class="submenu-filtro precios">
+                            <li>
+                                <input type="range" id="filtroPrecio" min="0" max="100" step="1" value="50">
+                                <span id="precioValor">50€</span>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Filtro por Valoración -->
+                    <li class="filtro valoracion">
+                        <div class="toggle" onclick="toggleHeight('.valoraciones')">Comprar por valoracion</div>
+                        <ul class="valoraciones">
+                            <li><a href="#" class="valoracion" data-valoracion="1">1 Estrella</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="2">2 Estrellas</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="3">3 Estrellas</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="4">4 Estrellas</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="5">5 Estrellas</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Filtro por Categoría -->
+                    <li class="filtro categoria">
+                        <div class="toggle" onclick="toggleHeight('.categorias')">Comprar por categoria</div>
+                        <ul class="categorias">
+                            <li><a href="#" class="categoria" data-categoria="houses">Casas</a></li>
+                            <li><a href="#" class="categoria" data-categoria="cars">Coches</a></li>
+                            <li><a href="#" class="categoria" data-categoria="dolls">Muñecas</a></li>
+                            <li><a href="#" class="categoria" data-categoria="accessories">Accesorios</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Filtro por Promoción (aún sin funcionalidad) -->
+                    <li class="filtro promocion">
+                        <div class="toggle" onclick="toggleHeight('.promocion')">Comprar por promocion</div>
+                        <ul class="promociones">
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                            <li><a href="#">-</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!--Contenedor donde nos encontramos los productos de la página-->
+            <div class="productos" id="juguetes-contenedor"></div>
+            <script src="../../resources/scripts/product-loader.js"></script>
+        </div>
+
+    </div>
+
+
+    <!--Footer de la página-->
+    <footer>
+        <!--Creacion del contenedor que agrupa ayuda,servicios...En display-flex-->
+        <div class="contenedor-footer-principal">
+            <!--Contenedor de ayuda, y sus párrafos correspondientes-->
+            <div class="contenedor-ayuda">
+                <p class="active">AYUDA</p>
+                <p>Contacto</p>
+                <p>Opciones de entrega y costes</p>
+                <p>Métodos de pago</p>
+                <p>Promociones</p>
+            </div>
+
+            <!--Contenedor de servicios, y sus párrafos correspondientes-->
+            <div class="contenedor-servicios">
+                <p class="active">SERVICIOS</p>
+                <p>Tarjeta de regalo digital</p>
+                <p>Devoluciones y garantías</p>
+                <p>Family Club</p>
+                <p>Programa de fidelidad</p>
+            </div>
+
+            <!--Contenedor de empresa, y sus párrafos correspondientes-->
+            <div class="contenedor-empresa">
+                <p class="active">EMPRESA</p>
+                <p>Historia</p>
+                <p>Tiendas</p>
+                <p>Empleo</p>
+                <p>Afiliados</p>
+            </div>
+
+            <!--Contenedor de "otros" y sus párrafos correspondientes-->
+            <div class="contenedor-otros">
+                <p class="active">OTROS</p>
+                <p>Condiciones de compra</p>
+                <p>Política de privacidad</p>
+                <p>Política de cookies</p>
+                <p>Eventos</p>
+            </div>
+        </div>
+
+        <!--Contenedor que agrupa a los metodos de pago y apps para descargar-->
+        <div class="contenedor-descarga-pago">
+            <!--Contenedor que agrupan las plataformas habilitadas para descargar la aplicación-->
+
+            <div class="descarga">
+                <p>DESCARGA NUESTRA APP</p>
+                <!--Contenedor que agrupan las plataformas (iconos)-->
+                <div class="iconos-descarga">
+                    <img src="../resources/media/img/apple-ok (2).svg" />
+                    <img src="../resources/media/img/google-ok (3).svg" />
+                </div>
+            </div>
+            <!--Contenedor que agrupan los metodos de pago-->
+            <div class="metodos-pago">
+                <p>MEDIOS DE PAGO</p>
+                <div class="iconos-metodos-pago">
+                    <img src="../resources/media/img/medios-pago-es (1).png" />
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

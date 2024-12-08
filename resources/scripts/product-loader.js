@@ -6,13 +6,13 @@ const contenedor = document.getElementById('juguetes-contenedor');
 
 // Obtener el nombre de la página actual sin extensión
 const paginaActual = window.location.pathname.split('/').pop().replace('.html', '');
-console.log(paginaActual);
 
 // Obtener los elementos de ordenación y filtro
 const sortSelect = document.getElementById('sortOptions1');
-const filtrosEdad = document.querySelector('.filtro.edad');
-const filtrosPrecio = document.querySelector('.filtro.precio');
-const filtrosValoracion = document.querySelector('.filtro.valoracion');
+const filtrosEdad = document.querySelectorAll('.filtro.edad a');
+const filtrosPrecio = document.getElementById('filtroPrecio');
+const filtrosValoracion = document.querySelectorAll('.filtro.valoracion a');
+const filtrosCategoria = document.querySelectorAll('.filtro.categoria a');
 
 // Cargar y procesar el JSON
 fetch(url)
@@ -83,25 +83,55 @@ fetch(url)
             mostrarProductos(productosOrdenados);
         });
 
-        // Filtros por edad (puedes implementar lógica según el producto)
-        filtrosEdad.addEventListener('click', () => {
-            // Lógica para filtrar por edad
-            const edadFiltrada = productosFiltrados.filter(producto => producto.edad >= 3); // Ejemplo de filtrado
-            mostrarProductos(edadFiltrada);
+        // Filtros por categoría
+        filtrosCategoria.forEach(filtro => {
+            filtro.addEventListener('click', () => {
+                const categoriaFiltrada = productosFiltrados.filter(producto => producto.categoria === filtro.getAttribute('data-categoria'));
+                mostrarProductos(categoriaFiltrada);
+            });
         });
 
-        // Filtros por precio
-        filtrosPrecio.addEventListener('click', () => {
-            // Lógica para filtrar por precio
-            const precioFiltrado = productosFiltrados.filter(producto => producto.precio <= 50); // Ejemplo de filtrado
+        // Filtros por edad
+        filtrosEdad.forEach(filtro => {
+            filtro.addEventListener('click', () => {
+                const edad = filtro.getAttribute('data-edad');
+                let edadFiltrada;
+
+                switch (edad) {
+                    case '3':
+                        edadFiltrada = productosFiltrados.filter(producto => producto.edad < 3);
+                        break;
+                    case '3-6':
+                        edadFiltrada = productosFiltrados.filter(producto => producto.edad >= 3 && producto.edad <= 6);
+                        break;
+                    case '6-10':
+                        edadFiltrada = productosFiltrados.filter(producto => producto.edad >= 6 && producto.edad <= 10);
+                        break;
+                    case '10-16':
+                        edadFiltrada = productosFiltrados.filter(producto => producto.edad >= 10 && producto.edad <= 16);
+                        break;
+                    default:
+                        edadFiltrada = productosFiltrados;
+                }
+                mostrarProductos(edadFiltrada);
+            });
+        });
+
+        // Filtro por precio
+        filtrosPrecio.addEventListener('input', () => {
+            const precio = filtrosPrecio.value;
+            document.getElementById('precioValor').textContent = `${precio}€`;
+            const precioFiltrado = productosFiltrados.filter(producto => producto.precio <= precio);
             mostrarProductos(precioFiltrado);
         });
 
         // Filtros por valoración
-        filtrosValoracion.addEventListener('click', () => {
-            // Lógica para filtrar por valoración
-            const valoracionFiltrada = productosFiltrados.filter(producto => producto.valoracion >= 4); // Ejemplo de filtrado
-            mostrarProductos(valoracionFiltrada);
+        filtrosValoracion.forEach(filtro => {
+            filtro.addEventListener('click', () => {
+                const valoracion = parseInt(filtro.getAttribute('data-valoracion'));
+                const valoracionFiltrada = productosFiltrados.filter(producto => producto.valoracion === valoracion);
+                mostrarProductos(valoracionFiltrada);
+            });
         });
 
     })
@@ -109,3 +139,12 @@ fetch(url)
         console.error('Error al cargar los productos:', error);
         contenedor.innerHTML = '<p>Error al cargar los datos.</p>';
     });
+
+function toggleHeight(cual) {
+    const contenido = document.querySelector(cual);
+    if (contenido.style.height === '0px' || contenido.style.height === '') {
+        contenido.style.height = 'auto'; // Cambia la altura a auto para expandir
+    } else {
+        contenido.style.height = '0'; // Cambia la altura a 0 para contraer
+    }
+}

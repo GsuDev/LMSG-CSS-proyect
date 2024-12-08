@@ -52,7 +52,7 @@ nav ul a {
     color: var(--bg-color);
 }
 
-nav ul ul {
+.edades, .valoraciones, .precios, .categorias, .promociones {
     height: 0px;
     overflow: hidden;
 }
@@ -61,8 +61,11 @@ nav ul li ul li a {
     margin-left: 10px;
 }
 
-nav ul li:hover ul {
-    height: auto;
+nav ul li{
+    color: var(--bg-color);
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+    cursor: pointer;
 }
 
 .filtro {
@@ -206,13 +209,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;;
+width: 100vw;
 }
 
 .juguete {
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 16px;
-  max-width: 200px;
+  max-width: 15vw;
+  min-width: 10vw;
   text-align: center;
 }
 
@@ -230,4 +235,8 @@ footer {
 .juguete span {
   font-weight: bold;
   color: #e91e63;
+}
+
+#precioValor {
+    color: var(--bg-color);
 }

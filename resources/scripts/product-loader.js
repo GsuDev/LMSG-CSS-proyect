@@ -6,7 +6,7 @@ const contenedor = document.getElementById('juguetes-contenedor');
 
 // Obtener el nombre de la página actual sin extensión
 const paginaActual = window.location.pathname.split('/').pop().replace('.html', '');
-
+console.log(paginaActual);
 // Obtener los elementos de ordenación y filtro
 const sortSelect = document.getElementById('sortOptions1');
 const filtrosEdad = document.querySelectorAll('.filtro.edad a');

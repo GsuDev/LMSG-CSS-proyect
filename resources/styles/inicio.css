@@ -116,6 +116,9 @@ header {
 .user-img, .cart-img {
     height: 2.5em;
 }
+label{
+    cursor: pointer;
+}
 .cart-quantity-circle {
     background-color: var(--my-orange);
     border-radius: 50%;

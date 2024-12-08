@@ -133,12 +133,17 @@
 
             <div class="texto-marca">
                 <p>
-                🎉 ¡Las figuras Funko son la mejor noticia para todos los coleccionistas en muchísimo tiempo! 😍 Estas figuras de
-                vinilo, de no más de 10 cm de altura y con su cabeza encantadoramente sobredimensionada, han llegado para convertir tu
-                vida cotidiana en una sucesión de episodios de tus personajes favoritos. 🎬 En Toys"R"Us encontrarás cualquier personaje
-                Funko que puedas imaginar: desde los primeros personajes de Juego de Tronos que lo comenzaron todo 🐉👑, hasta héroes de
-                Marvel 💥🦸, Star Wars 🌌 o el universo Disney 🏰. En nuestra tienda online de juguetes de Toys"R" Us, el universo Funko
-                no tiene límites. 🚀 ¡Aprovecha y ven a por los tuyos! 🛒
+                    🎉 ¡Las figuras Funko son la mejor noticia para todos los coleccionistas en muchísimo tiempo! 😍
+                    Estas figuras de
+                    vinilo, de no más de 10 cm de altura y con su cabeza encantadoramente sobredimensionada, han llegado
+                    para convertir tu
+                    vida cotidiana en una sucesión de episodios de tus personajes favoritos. 🎬 En Toys"R"Us encontrarás
+                    cualquier personaje
+                    Funko que puedas imaginar: desde los primeros personajes de Juego de Tronos que lo comenzaron todo
+                    🐉👑, hasta héroes de
+                    Marvel 💥🦸, Star Wars 🌌 o el universo Disney 🏰. En nuestra tienda online de juguetes de Toys"R"
+                    Us, el universo Funko
+                    no tiene límites. 🚀 ¡Aprovecha y ven a por los tuyos! 🛒
                 </p>
 
             </div>
@@ -172,44 +177,55 @@
             <!--Contenedor donde nos encontramos los filtros de la página-->
             <nav class="menu-vertical">
                 <ul>
-                    <li class="filtro edad"><a href="#">Comprar por edad</a>
-                        <ul>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
+                    <!-- Filtro por Edad -->
+                    <li class="filtro edad">
+                        <div class="toggle" onclick="toggleHeight('.edades')">Comprar por edad</div>
+                        <ul class="edades">
+                            <li><a href="#" class="edad" data-edad="3">Menos de 3 años</a></li>
+                            <li><a href="#" class="edad" data-edad="3-6">De 3 a 6 años</a></li>
+                            <li><a href="#" class="edad" data-edad="6-10">De 6 a 10 años</a></li>
+                            <li><a href="#" class="edad" data-edad="10-16">De 10 a 16 años</a></li>
                         </ul>
                     </li>
-                    <li class="filtro precio"><a href="#">Comprar por precio</a>
-                        <ul>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
+
+                    <!-- Filtro por Precio -->
+                    <li class="filtro precio">
+                        <div class="toggle" onclick="toggleHeight('.precios')">Comprar por precio</div>
+                        <ul class="submenu-filtro precios">
+                            <li>
+                                <input type="range" id="filtroPrecio" min="0" max="100" step="1" value="50">
+                                <span id="precioValor">50€</span>
+                            </li>
                         </ul>
                     </li>
-                    <li class="filtro valoracion"><a href="#">Comprar por valoracion</a>
-                        <ul>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
+
+                    <!-- Filtro por Valoración -->
+                    <li class="filtro valoracion">
+                        <div class="toggle" onclick="toggleHeight('.valoraciones')">Comprar por valoracion</div>
+                        <ul class="valoraciones">
+                            <li><a href="#" class="valoracion" data-valoracion="1">1 Estrella</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="2">2 Estrellas</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="3">3 Estrellas</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="4">4 Estrellas</a></li>
+                            <li><a href="#" class="valoracion" data-valoracion="5">5 Estrellas</a></li>
                         </ul>
                     </li>
-                    <li class="filtro categoria"><a href="#">Comprar por categoria</a>
-                        <ul>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
-                            <li><a href="#">-</a></li>
+
+                    <!-- Filtro por Categoría -->
+                    <li class="filtro categoria">
+                        <div class="toggle" onclick="toggleHeight('.categorias')">Comprar por categoria</div>
+                        <ul class="categorias">
+                            <li><a href="#" class="categoria" data-categoria="houses">Casas</a></li>
+                            <li><a href="#" class="categoria" data-categoria="cars">Coches</a></li>
+                            <li><a href="#" class="categoria" data-categoria="dolls">Muñecas</a></li>
+                            <li><a href="#" class="categoria" data-categoria="accessories">Accesorios</a></li>
                         </ul>
                     </li>
-                    <li class="filtro promocion"><a href="#">Comprar por promocion</a>
-                        <ul>
+
+                    <!-- Filtro por Promoción (aún sin funcionalidad) -->
+                    <li class="filtro promocion">
+                        <div class="toggle" onclick="toggleHeight('.promocion')">Comprar por promocion</div>
+                        <ul class="promociones">
                             <li><a href="#">-</a></li>
                             <li><a href="#">-</a></li>
                             <li><a href="#">-</a></li>
@@ -221,11 +237,10 @@
             </nav>
             <!--Contenedor donde nos encontramos los productos de la página-->
             <div class="productos" id="juguetes-contenedor"></div>
+            <script src="../../resources/scripts/product-loader.js"></script>
         </div>
 
     </div>
-
-    <script src="../resources/scripts/product-loader.js"></script>
     <!--Footer de la página-->
     <footer>
         <!--Creacion del contenedor que agrupa ayuda,servicios...En display-flex-->

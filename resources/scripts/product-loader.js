@@ -46,6 +46,7 @@ fetch(url)
                     <p>${producto.descripcion}</p>
                     <span>Precio: ${producto.precio}€</span>
                     </a>
+                    <button onclick="addToCart(${producto.id})">Añadir al carrito</button>
                 `;
                 contenedor.appendChild(productoDiv);
             });

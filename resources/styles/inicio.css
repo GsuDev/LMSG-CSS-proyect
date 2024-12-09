@@ -1,7 +1,14 @@
+/*//////////////////////*/
+/*ESTILOS GENERALES*/
+/*//////////////////////*/
+
+/*Fuente del proyecto*/
 @font-face {
     font-family: "Grandstander";
     src: url(../fonts/Grandstander-VariableFont_wght.ttf) format("truetype");
 }
+
+/*Uso de variables globales para los colores*/
 :root {
     --bg-color: #eeebe8;
     --bg-contrast-color: #2e2f34;
@@ -9,8 +16,8 @@
     --my-orange: #ea8250;
     --main-color: #9c234a;
 }
+/*Reseteamos los estilos por defecto*/
 * {
-    /*Reseteamos los estilos por defecto*/
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,16 +25,31 @@
     list-style: none;
     color: inherit;
 }
+/*Seteamos el color de fondo y el color del texto aparte de la fuente*/
 body {
     background-color: var(--bg-color);
     color: var(--bg-contrast-color);
     font-family: "Grandstander", sans-serif;
+    overflow-x: hidden;
 }
+
+/*Estilo para poner en flex*/
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    gap: 10em;
+}
+
+/*//////////////////////*/
+/*ESTILOS DEL ENCABEZADO*/
+/*//////////////////////*/
+
 /*Contenedor que agrupa a search-bar, menu-bar, features-bar*/
 header {
     display: flex;
     flex-direction: column;
 }
+
 /* Contenedor de la barra de búsqueda y el logo */
 .search-bar {
     display: flex;
@@ -41,43 +63,28 @@ header {
     height: 10vh; /* Altura del contenedor */
     background-color: var(--main-color); /* Color de fondo */
     z-index: 1000; /* Aseguramos que esté por encima de otros elementos */
-    overflow: hidden;
 }
+
+/*PARTE IZQUIERDA*/
+
+/*Estilo del contenedor de la caja de busqueda y el logo*/
 .search-bar-left {
     display: flex;
+    height: 100%;
     flex-direction: row;
     gap: 2vw;
     justify-content: center;
     align-items: center;
 }
-.search-bar-right {
-    display: flex;
-    flex-direction: row;
-    gap: 2vw;
-    align-items: center;
-}
-.cart-img{
-    height: 4vh;
-}
 /* Logo */
+.logo {
+    height: 100%;
+}
 .logo-img {
     height: 25vh;
     margin-top: 2vh;
 }
-/*Caja de busqueda*/
-.search-box {
-    display: flex;
-    justify-content: center;
-    /* Centra el input dentro de la caja */
-    background: var(--my-blue);
-    /* Color semitransparente */
-    border-radius: 1.5vw;
-    /* Bordes redondeados */
-    padding: 0.5vh 1vw;
-    /* Espaciado interno relativo */
-    width: 20vw;
-}
-/* Estilo para el campo de texto */
+/* Estilo para el campo de texto de busqueda */
 .search-input {
     border: none;
     /* Sin borde */
@@ -104,8 +111,90 @@ header {
     transition: border-bottom 0.3s ease;
     /* Transición suave */
 }
+/* Para la barra de búsqueda */
+.search-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background: var(--my-blue);
+    border-radius: 1.5vw;
+    padding: 0.5vh 1vw;
+    width: 20vw;
+}
 
-.user, .cart {
+.search-input {
+    border: none;
+    background: transparent;
+    color: white;
+    font-size: 1.3vw;
+    outline: none;
+    padding: 0.5vh;
+}
+
+.search-input::placeholder {
+    color: var(--bg-color);
+    opacity: 0.6;
+}
+
+.search-input:focus {
+    border-bottom: 0.1vw solid var(--bg-color);
+    transition: border-bottom 0.3s ease;
+}
+
+/* Modal para los resultados de la búsqueda */
+.search-modal {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 10px;
+    width: 100%; /* Ocupa todo el ancho del contenedor de búsqueda */
+    max-height: 50vh;
+    overflow-y: auto;
+}
+
+.search-result-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.search-result-detalle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-result-imagen {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.hidden {
+    display: none;
+}
+
+/***************/
+/*PARTE DERECHA*/
+/***************/
+
+/*Estilo del contenedor de las opciones de login y el carrito*/
+.search-bar-right {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    align-items: center;
+}
+/* Estilo para los botones de login y carrito */
+.user,
+.cart {
     display: flex;
     position: relative;
     justify-content: center;
@@ -113,12 +202,16 @@ header {
     color: var(--bg-color);
     gap: 0.4em;
 }
-.user-img, .cart-img {
+.user-img,
+.cart-img {
     height: 2.5em;
 }
-label{
+
+/*Label de los botones*/
+label {
     cursor: pointer;
 }
+/*Circulo naranja del numero de productos en el carrito*/
 .cart-quantity-circle {
     background-color: var(--my-orange);
     border-radius: 50%;
@@ -128,6 +221,7 @@ label{
     justify-content: center;
     align-items: center;
 }
+/*Numero de productos en el carrito*/
 .cart-quantity {
     position: absolute;
     top: -0.5em;
@@ -138,6 +232,135 @@ label{
     padding: 0.2em 0.4em;
     font-size: 0.8em;
 }
+
+/*Animacion de aparicion de la modal del carrito*/
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/*Animacion de desaparicion de la modal del carrito*/
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+/*Animacion del carrito al añadir productos*/
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/*Estilos que aplican las animaciones*/
+.fadeIn {
+    animation: fadeIn 0.5s forwards;
+}
+
+.fadeOut {
+    animation: fadeOut 0.5s forwards;
+}
+
+.pulse {
+    animation: pulse 1s forwards;
+}
+
+/*Modal del carrito*/
+.modal {
+    position: absolute;
+    top: 100%; /* Aparece justo debajo del icono */
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 1.2em;
+    width: 17vw;
+    display: none;
+    overflow-y: auto; /* Permite el desplazamiento vertical */
+    max-height: 70vh; /* Máxima altura para evitar que se corte */
+}
+
+/*Contenido de la modal*/
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+/*Contenido del carrito*/
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+/*Detalle del carrito*/
+.carrito-detalle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/*Imagen de cada producto en el carrito*/
+.carrito-imagen {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/*Estilos para ocultar el carrito*/
+.hidden {
+    display: none;
+}
+/*Div del total del carrito*/
+#carrito-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+/*Texto del total*/
+#carrito-total h4 {
+    font-weight: bold;
+    color: #333;
+}
+/*Botón para vaciar el carrito*/
+button {
+    padding: 5px 10px;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/*Efecto de hover*/
+button:hover {
+    background-color: #c2185b;
+}
+/*Contenedor del carrito*/
+#carrito-contenedor {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/*//////////////////////*/
+/*ESTILOS DE LA SEGUNDA BARRA (MENÚ DE NAVEGACIÓN)*/
+/*//////////////////////*/
+
 /*Contenedor del menú*/
 .menu-bar {
     background-color: var(--main-color);
@@ -209,6 +432,11 @@ label{
     height: 3vh;
     color: var(--bg-contrast-color);
 }
+
+/*//////////////////////*/
+/*ESTILOS DEL CARRUSEL*/
+/*//////////////////////*/
+
 /* Contenedor del carrusel */
 .carousel {
     position: relative;
@@ -278,6 +506,132 @@ label{
 .imagen2-carrusel img {
     width: 100vw;
 }
+
+/*//////////////////////*/
+/*ESTILOS DE lOS FILTROS*/
+/*//////////////////////*/
+
+/*Imagen de cada marca*/
+.img-marca img {
+    width: 10em;
+}
+
+/*Estilos de la sección de productos*/
+.form-group {
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+/*Menu vertical*/
+.menu-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: justify;
+    height: auto;
+    width: 50vh;
+    height: fit-content;
+    text-align: center;
+    background-color: var(--main-color);
+}
+/*Lista exterior de los filtros*/
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*Cada filtro*/
+nav ul a {
+    display: block;
+    color: rgb(0, 0, 255);
+    padding: 6px 10px;
+    box-sizing: border-box;
+    color: var(--bg-color);
+}
+
+/*Aquí cada filtro tiene height 0 hasta que se pincha que el js (product-loader.js) la cambia a auto*/
+.edades,
+.valoraciones,
+.precios,
+.categorias,
+.promociones {
+    height: 0px;
+    overflow: hidden;
+}
+
+nav ul li ul li a {
+    margin-left: 10px;
+}
+
+nav ul li {
+    color: var(--bg-color);
+    margin-top: 1vmin;
+    margin-bottom: 1vmin;
+    cursor: pointer;
+}
+
+.filtro {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    margin-left: 10px;
+}
+
+/*//////////////////////*/
+/*ESTILOS DE LOS JUGUETES*/
+/*//////////////////////*/
+
+/*Contenedor de los juguetes donde inyectamos las tarjetas de productos*/
+.container {
+    margin-left: 5%;
+    margin-top: 3%;
+    max-inline-size: 90%; /*Este estilo define un tamaño máximo para el contenedor para cuando hay mas juguetes */
+}
+/*Estilo de cada descripcion de producto*/
+.descripcion {
+    display: flex;
+    align-items: top;
+    gap: 2em;
+}
+
+/*Contenedor de los juguetes*/
+#juguetes-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 100vw;
+}
+/*Tarjeta de juguete*/
+.juguete {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 15vw;
+    min-width: 10vw;
+    text-align: center;
+}
+
+/*Imagen de cada juguete*/
+.juguete img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+/*Nombre de cada juguete*/
+.juguete h3 {
+    font-size: 1.2em;
+    margin: 8px 0;
+}
+/**/
+.juguete span {
+    font-weight: bold;
+    color: #e91e63;
+}
+/*Numero de precio de cada juguete*/
+#precioValor {
+    color: var(--bg-color);
+}
+
 /*Contenedor de algunos tipos de juguetes*/
 .seleccionador-juguetes {
     display: flex;
@@ -286,6 +640,11 @@ label{
     justify-content: center;
     align-items: center;
 }
+
+/*//////////////////////*/
+/*ESTILOS DE LOS PRODUCTOS IMPRESCINDIBLES*/
+/*//////////////////////*/
+
 .box {
     height: 22vh;
     width: 15vw;
@@ -300,7 +659,7 @@ label{
     text-align: center;
     transition: transform 0.8s ease-in-out;
 }
-.box>img {
+.box > img {
     height: 50%;
 }
 .box:hover {
@@ -381,6 +740,7 @@ label{
     text-align: center;
     width: 19vw;
 }
+
 /*Información de las opiniones*/
 .opiniones {
     display: flex;
@@ -391,6 +751,7 @@ label{
 .opiniones-informacion img {
     width: 98vw;
 }
+
 /*Marcas colaboradoras (Prenatal)*/
 .contenedor-prenatal {
     display: flex;
@@ -422,6 +783,11 @@ label{
     gap: 1vw;
     margin-top: 1.5vh;
 }
+
+/*////////////////////////////*/
+/*ESTILOS DEL FOOTER*/
+/*////////////////////////////*/
+
 /*Footer*/
 /*Agrupa a todo el footer, aplicamos display-flex*/
 footer {
@@ -430,7 +796,8 @@ footer {
     align-items: center;
     padding: 1.5vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 2vw;
     width: 100vw;
     overflow: hidden;
 }
@@ -440,8 +807,8 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
-    gap: 12vw;
+    justify-content: center;
+    gap: 5vw;
 }
 /*Aplicamos estilos a los párrafos*/
 /*Título de ayuda, servicios...*/
@@ -459,53 +826,50 @@ footer {
 }
 
 /*Simulacion de enlace, a los p del contenedor principal de footer*/
-.contenedor-footer-principal p:hover{
-  text-decoration: underline;
-  cursor: pointer;
+.contenedor-footer-principal p:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /*Contenedor de los metodos de pago y plataformas de descarga para la app*/
 .contenedor-descarga-pago {
-  display: flex;
-  flex-direction: row;
-  margin-top: 10vh;
-  gap: 17vw;
-  justify-content: center;
-  
+    display: flex;
+    flex-direction: row;
+    margin-top: 10vh;
+    gap: 5vw;
+    justify-content: center;
 }
 
 /*Contenedor de las plataformas de descarga de la app*/
 .descarga {
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  position: relative;
-  height: 15vh;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 15vh;
 }
-.iconos-descarga {  
-  position: absolute;
-  left: 0.01vw;
-  top: 4.5vh;
-  display: flex;
-  flex-direction: row;
-  gap: 1.5vw;
+.iconos-descarga {
+    position: absolute;
+    left: 0.01vw;
+    top: 4.5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
 }
 
-.iconos-descarga img:hover{
-  cursor: pointer;
+.iconos-descarga img:hover {
+    cursor: pointer;
 }
 
 /*Contenedor de los metodos de pago*/
 .metodos-pago {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5vh;
-  position: relative;
-  
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    position: relative;
 }
 .iconos-metodos-pago {
-  position: absolute;
-  top: 4.5vh;
-  left: 0.1vw;
+    position: absolute;
+    top: 4.5vh;
+    left: 0.1vw;
 }

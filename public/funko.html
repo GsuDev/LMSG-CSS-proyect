@@ -15,7 +15,7 @@
         <!--Creación del container de la barra de búsqueda	-->
         <div class="search-bar">
             <!--Creación de un contenedor para el logo-->
-    
+
             <div class="search-bar-left">
                 <a href="../index.html">
                     <div class="logo">
@@ -23,10 +23,11 @@
                     </div>
                 </a>
                 <div class="search-box">
-                    <input class="search-input" type="text" placeholder="Busca aquí algo divertido " />
+                    <input class="search-input" type="text" placeholder="Busca aquí algo divertido" id="product-search" />
+                    <div id="search-results" class="search-modal hidden"></div>
                 </div>
             </div>
-    
+
             <div class="search-bar-right">
                 <a href="../login.html">
                     <div class="user">
@@ -34,15 +35,27 @@
                             cuenta</label>
                     </div>
                 </a>
-                <a href="cart.html">
-                    <div class="cart">
-                        <div class="cart-quantity-circle">
-                            <div id="cart-quantity">0</div>
-                        </div>
-                        <img class="cart-img" src="../resources/media/logos/cart-icon.png" alt="cart" /><label>Mi
-                            compra</label>
+                <div class="cart" id="cart-icon">
+                    <div class="cart-quantity-circle">
+                        <div id="cart-quantity">0</div>
                     </div>
-                </a>
+                    <img class="cart-img" src="../resources/media/logos/cart-icon.png" alt="cart" />
+                    <label>Mi compra</label>
+                </div>
+
+                <!-- Modal del carrito -->
+                <div id="carrito-modal" class="modal hidden">
+                    <div class="modal-content">
+                        <h3>Mi carrito</h3>
+                        <div id="carrito-contenedor"></div>
+                        <div id="carrito-total">
+                            <h4>Total: <span id="total-precio">0€</span></h4>
+                            <button onclick="vaciarCarrito()">Vaciar carrito</button>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
         <!--Menú de navegación-->
@@ -232,6 +245,8 @@
             <!--Contenedor donde nos encontramos los productos de la página-->
             <div class="productos" id="juguetes-contenedor"></div>
             <script src="../resources/scripts/product-loader.js"></script>
+            <script src="../resources/scripts/cart.js"></script>
+            <script src="../resources/scripts/product-search.js"></script>
         </div>
 
     </div>
